@@ -1,0 +1,48 @@
+@mixin dFlex($fd, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+footer {
+    height: 291px;
+    width: 100%;
+    border-top: 4px solid #70E61C;
+    background: #141D2F;
+    @include dFlex(row);
+    padding: 0 100px;
+
+    >.main-content {
+        max-width: 1440px;
+        width: 100%;
+        @include dFlex(column, center, space-between);
+    }
+}
+
+.logo-links {
+    @include dFlex(row, space-between, center);
+
+    >img {
+        height: 40.14px;
+    }
+
+    >span {
+        font-size: 24px;
+    }
+
+    >.media-links {
+        @include dFlex(row, space-between, center);
+        width: 174px;
+        height: 40px;
+
+        >.link-icon {
+            height: 30px;
+            aspect-ratio: 1 / 1;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
