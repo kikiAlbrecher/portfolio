@@ -1,0 +1,43 @@
+@mixin dFlex($fd, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+header {
+    height: 109px;
+    width: 100%;
+    background: #141D2F;
+    position: fixed;
+    @include dFlex(row);
+
+    >.header-section {
+        padding: 37px 100px;
+    }
+
+}
+
+nav {
+    @include dFlex(row, space-between, center);
+
+    >.logo {
+        height: 27.9px;
+    }
+
+    >.options {
+        @include dFlex(row, space-between, center);
+        gap: 92px;
+    }
+}
+
+.forwarding {
+    @include dFlex(row, space-between, center);
+    gap: 29px;
+
+    >a {
+        &:hover {
+            color: #70E61C;
+        }
+    }
+}

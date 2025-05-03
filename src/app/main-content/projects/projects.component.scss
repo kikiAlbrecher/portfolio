@@ -1,0 +1,11 @@
+@mixin dFlex($fd, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.headline-projects {
+    @include dFlex(row, flex-end, center);
+    gap: 32px;
+}

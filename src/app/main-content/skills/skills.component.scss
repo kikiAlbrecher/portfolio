@@ -1,0 +1,39 @@
+@mixin dFlex($fd, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.skills {
+    @include dFlex(row, space-between, center);
+    gap: 105px;
+
+    >.stack {
+        @include dFlex(row, flex-start, flex-start);
+        flex-wrap: wrap;
+        gap: 88px;
+    }
+
+    // >.skills-description {
+
+    // }
+}
+
+.stack-component {
+    @include dFlex(column, space-between, center);
+    padding-top: 12px;
+    gap: 10px;
+
+    >.stack-icon {
+        height: 60px;
+        &:hover {
+            transform: translateY(-16px);
+        }
+    }
+
+    >.stack-name {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}

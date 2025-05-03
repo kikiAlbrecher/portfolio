@@ -2,8 +2,12 @@
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    color: white;
+    color: #FFFFFF;
     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    background: #141D2F;
 }
 
 @font-face {
@@ -12,7 +16,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
-  }
+}
 
 
 
@@ -21,4 +25,76 @@
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
+}
+
+@mixin violet() {
+    color: #9747FF;
+}
+
+.violet {
+    color: #9747FF;
+}
+
+@mixin bg-violet() {
+    background: #9747FF;
+}
+
+@mixin bg-green() {
+    background: #70E61C;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 58px;
+    @include violet();
+}
+
+button {
+    border: unset;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out ;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+.button-green {
+    @include bg-green();
+    padding: 15px 30px;
+
+    &:hover {
+        @include bg-violet();
+    }
+}
+
+.general-main-section {
+    width: 100%;
+    @include dFlex(row);
+}
+
+.section-content {
+    max-width: 1440px;
+    width: 100%;
+    @include dFlex(column, center, space-between);
+}
+
+.separator100px {
+    height: 4px;
+    width: 100px;
+    @include bg-violet();
+}
+
+.long-separator {
+    width: 507px;
 }
