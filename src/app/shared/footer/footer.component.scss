@@ -1,14 +1,9 @@
-@mixin dFlex($fd, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import 'shared';
 
 footer {
     height: 291px;
     width: 100%;
-    border-top: 4px solid #70E61C;
+    border-top: 4px solid $green;
     @include dFlex(row);
     padding: 0 100px;
 }

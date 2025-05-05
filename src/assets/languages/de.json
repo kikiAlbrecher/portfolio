@@ -1,0 +1,20 @@
+{
+    "NAV": {
+        "ABOUT": "Über mich",
+        "SKILLS": "Fähigkeiten",
+        "PROJECTS": "Projekte",
+        "CONTACT": "Kontakt"
+    },
+    "BUTTON": {
+        "SUBMIT": "Absenden"
+    },
+
+    "CONTACT": {
+        "HEADLINE": "Kontakt",
+        "SUBHEADLINE": "Hast du ein Problem zu lösen?",
+        "TEXT1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert.",
+        "TEXT2": "Brauchst du einen Frontend-Entwickler?",
+        "PLEA": "Melde dich bei mir!",
+        "FORM": "Kontaktformular"
+    }
+}

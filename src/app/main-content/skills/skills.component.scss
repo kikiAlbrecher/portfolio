@@ -1,9 +1,4 @@
-@mixin dFlex($fd, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import 'shared';
 
 .skills {
     @include dFlex(row, space-between, center);
@@ -36,4 +31,8 @@
         font-weight: 700;
         font-size: 16px;
     }
+}
+
+.violet-font {
+    color: $violet;
 }

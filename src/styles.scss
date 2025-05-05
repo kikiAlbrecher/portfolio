@@ -1,3 +1,18 @@
+@mixin dFlex($fd: row, $jc: center, $ai: center, $g: 0) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+$blue-grey: #141D2F;
+
+$violet: #9747FF;
+
+$green: #70E61C;
+
+
 * {
     margin: 0;
     scroll-behavior: smooth;
@@ -7,7 +22,7 @@
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
-    background: #141D2F;
+    background: $blue-grey;
 }
 
 @font-face {
@@ -18,29 +33,8 @@
     src: url('assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
 }
 
-
-
-@mixin dFlex($fd: row, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
-
-@mixin violet() {
-    color: #9747FF;
-}
-
-.violet {
-    color: #9747FF;
-}
-
-@mixin bg-violet() {
-    background: #9747FF;
-}
-
-@mixin bg-green() {
-    background: #70E61C;
+.fs-small {
+    font-size: 16px;
 }
 
 a {
@@ -50,18 +44,24 @@ a {
 h1 {
     font-weight: 700;
     font-size: 90px;
+    text-align: center;
 }
 
 h2 {
     font-size: 58px;
-    @include violet();
+    color: $violet;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 32px;
 }
 
 button {
     border: unset;
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease-out ;
+    transition: all 0.3s ease-out;
 
     &:hover {
         cursor: pointer;
@@ -70,31 +70,35 @@ button {
 }
 
 .button-green {
-    @include bg-green();
+    background: $green;
     padding: 15px 30px;
 
     &:hover {
-        @include bg-violet();
+        background: $violet;
     }
 }
 
 .general-main-section {
     width: 100%;
-    @include dFlex(row);
+    @include dFlex();
 }
 
 .section-content {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
-    @include dFlex(column, center, space-between);
+    @include dFlex($fd: column, $ai: space-between);
 }
+
+// .centered-text {
+//     align-items: center;
+// }
 
 .separator100px {
     height: 4px;
     width: 100px;
-    @include bg-violet();
+    background: $violet;
 }
 
 .long-separator {
-    width: 507px;
+    width: calc(100vw / 2 - 250px - 32px);
 }

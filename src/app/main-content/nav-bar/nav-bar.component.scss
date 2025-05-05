@@ -1,21 +1,11 @@
-@mixin dFlex($fd, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import 'shared';
 
 header {
     height: 109px;
     width: 100%;
-    background: #141D2F;
     position: fixed;
     @include dFlex(row);
-
-    >.header-section {
-        padding: 37px 100px;
-    }
-
+    padding: 37px 100px;
 }
 
 nav {
@@ -37,7 +27,7 @@ nav {
 
     >a {
         &:hover {
-            color: #70E61C;
+            color: $green;
         }
     }
 }

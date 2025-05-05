@@ -1,0 +1,27 @@
+@import 'shared';
+
+.headline {
+    @include dFlex($jc: flex-start, $g: 32px);
+}
+
+.contact-section {
+    @include dFlex($fd: row, $jc: flex-start, $ai: space-between);
+
+    >.invitation {
+        width: 50%;
+        @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+
+        >.invitation-text {
+            @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
+            padding-right: 32px;
+
+            >.contact-plea {
+                font-weight: 700;
+            }
+        }
+    }
+
+    >.contact-form {
+        width: 50%;
+    }
+}

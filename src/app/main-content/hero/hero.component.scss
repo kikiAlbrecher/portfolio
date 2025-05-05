@@ -1,40 +1,50 @@
-@mixin dFlex($fd, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import 'shared';
 
 .hero {
     min-height: 100vh;
     width: 100%;
-    @include dFlex(row);
+    @include dFlex();
     padding: 0 100px 0 0;
 }
 
+.introduction-with-image {
+    @include dFlex($jc: space-between);
+
+    >.photo-space {
+        width: 40%;
+        aspect-ratio: 1 / 1.2;
+        background-image: url('/assets/img/photo-shadow.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // >.body-photo {
+
+        // }
+    }
+}
+
 .introduce-myself {
-    @include dFlex(column);
-    gap: 44px;
+    @include dFlex($fd: column, $g: 44px);
 
     .introduction {
-        @include dFlex(row, flex-end, center);
-        gap: 35px;
+        @include dFlex($jc: flex-end, $g: 35px);
         padding-top: 188px;
 
         .start-introduction {
             font-size: 64px;
             transform: rotate(270deg);
+            text-wrap: nowrap;
         }
 
         .name-profession {
-            @include dFlex(column);
+            @include dFlex($fd: column);
+            text-wrap: nowrap;
         }
     }
 }
 
 .scroll-down {
-    @include dFlex(column);
-    gap: 3px;
+    @include dFlex($fd: column, $g: 3px);
 
     >span {
         display: inline-block;

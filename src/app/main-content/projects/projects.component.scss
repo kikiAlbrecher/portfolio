@@ -1,9 +1,4 @@
-@mixin dFlex($fd, $jc: center, $ai: center) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@import 'shared';
 
 .headline-projects {
     @include dFlex(row, flex-end, center);
