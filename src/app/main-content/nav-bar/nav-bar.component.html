@@ -1,19 +1,24 @@
 <header>
-    <div class="section-content">
-      <nav>
-        <img class="logo" src="" alt="Logo Christina Albrecher">
-        <div class="options">
-          <div class="forwarding">
-            <a href="#about-me">{{ 'NAV.ABOUT' | translate }}</a>
-            <a href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
-            <a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a>
-          </div>
-          <div class="languages">
-            <button (click)="switchLanguage('de')">DE</button>
-            <button (click)="switchLanguage('en')">EN</button>
-          </div>
+  <div class="section-content">
+    <nav>
+      <img class="logo" src="" alt="Logo Christina Albrecher">
+      <div class="options">
+        <div class="forwarding">
+          <a href="#about-me">{{ 'NAV.ABOUT' | translate }}</a>
+          <a href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
+          <a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a>
         </div>
-      </nav>
-    </div>
-  </header>
-  
+        <div class="languages">
+          <button class="lang-btn" [ngClass]="{ active: currentLang === 'en', inactive: currentLang !== 'en' }"
+            (click)="switchLanguage('en')">
+            EN
+          </button>
+          <button class="lang-btn" [ngClass]="{ active: currentLang === 'de', inactive: currentLang !== 'de' }"
+            (click)="switchLanguage('de')">
+            DE
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

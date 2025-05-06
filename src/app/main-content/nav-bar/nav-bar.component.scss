@@ -4,26 +4,27 @@ header {
     height: 109px;
     width: 100%;
     position: fixed;
-    @include dFlex(row);
-    padding: 37px 100px;
+    @include dFlex();
+    z-index: 30;
+    background: $blue-grey;
 }
 
 nav {
-    @include dFlex(row, space-between, center);
+    @include dFlex($jc: space-between);
+    padding: 37px 100px;
+
 
     >.logo {
         height: 27.9px;
     }
 
     >.options {
-        @include dFlex(row, space-between, center);
-        gap: 92px;
+        @include dFlex($jc: space-between, $g: 92px);
     }
 }
 
 .forwarding {
-    @include dFlex(row, space-between, center);
-    gap: 29px;
+    @include dFlex($jc: space-between, $g: 29px);
 
     >a {
         &:hover {
@@ -31,3 +32,31 @@ nav {
         }
     }
 }
+
+.languages {
+    @include dFlex($jc: space-between, $g: 14px);
+
+    .lang-btn {
+        padding: 5px 8px;
+        font-size: 18px;
+        box-shadow: none;
+    }
+  
+    button.active {
+      background-color: $green;
+      color: white;
+      font-weight: 700;
+    }
+  
+    button.inactive {
+      border: 1px solid $green;
+      background: $blue-grey;
+      color: white;
+
+      &:hover {
+        border: unset;
+        background: $violet;
+      }
+    }
+  }
+  

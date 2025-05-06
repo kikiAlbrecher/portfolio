@@ -16,5 +16,10 @@
         "TEXT2": "Brauchst du einen Frontend-Entwickler?",
         "PLEA": "Melde dich bei mir!",
         "FORM": "Kontaktformular"
+    }, 
+
+    "FOOTER": {
+        "IMPRINT": "Impressum"
     }
+
 }

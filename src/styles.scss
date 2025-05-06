@@ -22,7 +22,11 @@ $green: #70E61C;
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
+}
+
+body {
     background: $blue-grey;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -57,7 +61,7 @@ h3 {
     font-size: 32px;
 }
 
-button {
+button, .button {
     border: unset;
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -65,7 +69,6 @@ button {
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.2);
     }
 }
 
@@ -87,18 +90,31 @@ button {
     max-width: 1920px;
     width: 100%;
     @include dFlex($fd: column, $ai: space-between);
+    position: relative;
 }
+
+// .section-left {
+//     padding-right: 100px;
+// }
+
+// .section-right {
+//     padding-left: 100px;
+// }
 
 // .centered-text {
 //     align-items: center;
 // }
 
-.separator100px {
+.d-none {
+    display: none;
+}
+
+.short-separator {
     height: 4px;
     width: 100px;
     background: $violet;
 }
 
 .long-separator {
-    width: calc(100vw / 2 - 250px - 32px);
+    width: calc(50% - 250px - 32px);
 }

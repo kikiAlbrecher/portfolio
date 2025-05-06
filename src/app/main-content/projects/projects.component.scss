@@ -1,6 +1,5 @@
 @import 'shared';
 
 .headline-projects {
-    @include dFlex(row, flex-end, center);
-    gap: 32px;
+    @include dFlex($jc: flex-end, $g: 32px);
 }

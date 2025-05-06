@@ -15,5 +15,9 @@
         "TEXT2": "Need a frontend developer?",
         "PLEA": "Contact me!",
         "FORM": "Contact"
+    },
+
+    "FOOTER": {
+        "IMPRINT": "Legal Notice"
     }
 }

@@ -1,13 +1,12 @@
 @import 'shared';
 
 .skills {
-    @include dFlex(row, space-between, center);
-    gap: 105px;
+    @include dFlex($jc: space-between, $g: 105px);
 
     >.stack {
-        @include dFlex(row, flex-start, flex-start);
+        @include dFlex($jc: flex-start, $ai: flex-start, $g: 88px);
+        width: 50%;
         flex-wrap: wrap;
-        gap: 88px;
     }
 
     // >.skills-description {
@@ -16,9 +15,8 @@
 }
 
 .stack-component {
-    @include dFlex(column, space-between, center);
+    @include dFlex($fd: column, $jc: space-between, $g: 10px);
     padding-top: 12px;
-    gap: 10px;
 
     >.stack-icon {
         height: 60px;

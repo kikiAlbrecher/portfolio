@@ -4,12 +4,14 @@ footer {
     height: 291px;
     width: 100%;
     border-top: 4px solid $green;
-    @include dFlex(row);
+    @include dFlex();
     padding: 0 100px;
+    z-index: 20;
+    background: $blue-grey;
 }
 
 .logo-links {
-    @include dFlex(row, space-between, center);
+    @include dFlex($jc: space-between);
 
     >img {
         height: 40.14px;
@@ -17,7 +19,7 @@ footer {
 
     // import from hero-section
     >.media-links {
-        @include dFlex(row, space-between, center);
+        @include dFlex($jc: space-between);
         width: 174px;
         height: 40px;
 
@@ -29,5 +31,24 @@ footer {
                 cursor: pointer;
             }
         }
+    }
+}
+
+.imprint-link {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background-color: $green;
+        transform: scaleX(0);
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
     }
 }

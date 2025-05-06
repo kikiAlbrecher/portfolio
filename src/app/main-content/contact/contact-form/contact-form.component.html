@@ -1,0 +1,20 @@
+<form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name" required>
+    @if (!name.valid && name.touched && !name.disabled) {
+        <span>Please enter your name.</span>
+    }
+    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="Your email" required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+    <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
+        placeholder="Your message" minlength="4" style="height: 200px" required></textarea>
+    @if (!message.valid && message.touched && !message.disabled) {
+        <span>Please enter a message.</span>
+    }
+    <input #policy="ngModel" [(ngModel)]="contactData.policyAccepted" type="checkbox" name="policy" id="policy" required>I´ve read the
+    <a href="">privacy policy</a> and agree to the processing of my data as outlined.
+    @if (!policy.valid && policy.touched) {
+        <span>Please accept the Privacy Policy.</span>
+    }
+    <input type="submit" value="Send message :)" class="button button-green">
+    <span *ngIf="successMessage">{{ successMessage }}</span>
+</form>

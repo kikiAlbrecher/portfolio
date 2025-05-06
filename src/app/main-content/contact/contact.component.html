@@ -1,7 +1,7 @@
 <section class="general-main-section">
     <div class="section-content">
         <div class="headline">
-            <div class="separator100px long-separator"></div>
+            <div class="short-separator long-separator"></div>
             <h1>{{ 'CONTACT.HEADLINE' | translate }}</h1>
         </div>
         <div class="contact-section">
@@ -14,9 +14,15 @@
                     </p>
                 </div>
             </div>
-            <div class="contact-form">
-                Kontakt
+
+            <div class="form-container">
+                <app-contact-form></app-contact-form>
             </div>
+        </div>
+        <div class="arrow">
+            <a href="#hero">
+                <img class="arrow-up" src="assets/icons/arrow-up.svg" alt="go up button">
+            </a>
         </div>
     </div>
 </section>

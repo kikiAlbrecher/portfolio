@@ -5,7 +5,7 @@
 }
 
 .contact-section {
-    @include dFlex($fd: row, $jc: flex-start, $ai: space-between);
+    @include dFlex($jc: flex-start, $ai: space-between);
 
     >.invitation {
         width: 50%;
@@ -21,7 +21,19 @@
         }
     }
 
-    >.contact-form {
+    >.form-container {
         width: 50%;
+        display: flex;
     }
+}
+
+.arrow {
+    @include dFlex($jc: flex-end);
+    transition: all 200ms ease-in-out;
+    padding-top: 32px;
+}
+
+.arrow-up {
+    width: 39px;
+    aspect-ratio: 1 / 1;
 }

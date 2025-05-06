@@ -11,7 +11,7 @@
     @include dFlex($jc: space-between);
 
     >.photo-space {
-        width: 40%;
+        width: 50%;
         aspect-ratio: 1 / 1.2;
         background-image: url('/assets/img/photo-shadow.svg');
         background-position: center;
@@ -33,12 +33,10 @@
         .start-introduction {
             font-size: 64px;
             transform: rotate(270deg);
-            text-wrap: nowrap;
         }
 
         .name-profession {
             @include dFlex($fd: column);
-            text-wrap: nowrap;
         }
     }
 }
@@ -60,8 +58,7 @@
 }
 
 .references {
-    @include dFlex(row, flex-start, center);
-    gap: 32px;
+    @include dFlex($jc: flex-start, $g: 32px);
 
     >.link-icon {
         height: 30px;

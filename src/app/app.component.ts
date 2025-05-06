@@ -4,14 +4,27 @@ import { RouterOutlet } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MainContentComponent, FooterComponent, ImprintComponent],
+  imports: [CommonModule, RouterOutlet, TranslateModule, MainContentComponent, FooterComponent, ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio';
+  currentLang = 'en';
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang(this.currentLang);
+    this.translate.use(this.currentLang);
+  }
+
+  switchLanguage(lang: string) {
+    this.currentLang = lang;
+    this.translate.use(lang);
+  }
+
 }
