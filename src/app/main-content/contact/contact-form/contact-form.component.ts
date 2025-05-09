@@ -12,8 +12,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
-http = inject(HttpClient);
-successMessage = '';
+  http = inject(HttpClient);
+  successMessage = '';
 
   contactData = {
     name: '',
@@ -28,14 +28,14 @@ successMessage = '';
     options: {
       headers: {
         'Content-Type': 'text/plain',
-        responseType: 'text',
       },
+      responseType: 'text' as const
     },
   };
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: () => {
             this.successMessage = 'Your message has been sent.';
@@ -46,9 +46,9 @@ successMessage = '';
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid) {
-
-      ngForm.resetForm();
+    } else if (ngForm.submitted && !ngForm.form.valid) {
+      // && this.mailTest, else-if-Teil vielleicht ganz weglassen
+      // ngForm.resetForm();
     }
   }
 }

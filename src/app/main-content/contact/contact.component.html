@@ -4,25 +4,29 @@
             <div class="short-separator long-separator"></div>
             <h1>{{ 'CONTACT.HEADLINE' | translate }}</h1>
         </div>
-        <div class="contact-section">
-            <div class="invitation">
-                <h3>{{ 'CONTACT.SUBHEADLINE' | translate }}</h3>
-                <div class="invitation-text">
-                    <p class="fs-small">{{ 'CONTACT.TEXT1' | translate }}</p>
-                    <p class="fs-small">{{ 'CONTACT.TEXT2' | translate }}
-                        <span class="contact-plea fs-small">{{ 'CONTACT.PLEA' | translate }}</span>
-                    </p>
+        <div class="contact-columns padding-right padding-left">
+            <div class="contact-text-column">
+                <div class="invitation">
+                    <h3>{{ 'CONTACT.SUBHEADLINE' | translate }}</h3>
+                    <div class="invitation-text">
+                        <p class="fs-small">{{ 'CONTACT.TEXT1' | translate }}
+                        </p>
+                        <div class="appeal">
+                            <p class="fs-small">{{ 'CONTACT.TEXT2' | translate }}</p>
+                            <span class="contact-plea fs-small">{{ 'CONTACT.PLEA' | translate }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-column">
+                    <app-contact-form></app-contact-form>
                 </div>
             </div>
-
-            <div class="form-container">
-                <app-contact-form></app-contact-form>
+            <div class="arrow">
+                <a href="#hero">
+                    <img class="arrow-up" src="assets/icons/arrow-up.svg" alt="go up button">
+                </a>
             </div>
-        </div>
-        <div class="arrow">
-            <a href="#hero">
-                <img class="arrow-up" src="assets/icons/arrow-up.svg" alt="go up button">
-            </a>
         </div>
     </div>
 </section>

@@ -35,6 +35,7 @@ nav {
 
 .languages {
     @include dFlex($jc: space-between, $g: 14px);
+    width: 92px;
 
     .lang-btn {
         padding: 5px 8px;
@@ -55,7 +56,7 @@ nav {
 
       &:hover {
         border: unset;
-        background: $violet;
+        background: $purple;
       }
     }
   }

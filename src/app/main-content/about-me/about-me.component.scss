@@ -1,1 +1,31 @@
 @import 'shared';
+
+
+.about-me {
+    @include dFlex($jc: space-between);
+    width: 100%;
+
+    >.about-me-text {
+        width: 50%;
+    }
+
+    .about-me-photo {
+        width: 50%;
+        @include dFlex($jc: flex-end);
+    
+        >.close-up {
+            width: 60%;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            border: 3px solid $green;
+    
+        }
+
+        >.separator-about-me{
+            background: $green;
+            width: 40%;
+        }
+    }
+}
+
+

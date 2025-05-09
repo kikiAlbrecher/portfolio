@@ -4,7 +4,13 @@
     @include dFlex($jc: flex-start, $g: 32px);
 }
 
-.contact-section {
+.contact-columns {
+    @include dFlex($fd: column, $ai: flex-end);
+    width: 100%;
+    padding-top: 40px;
+}
+
+.contact-text-column {
     @include dFlex($jc: flex-start, $ai: space-between);
 
     >.invitation {
@@ -15,13 +21,17 @@
             @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
             padding-right: 32px;
 
-            >.contact-plea {
-                font-weight: 700;
+            >.appeal {
+                @include dFlex($jc: flex-start, $g: 8px);
+
+                >.contact-plea {
+                    font-weight: 700;
+                }
             }
         }
     }
 
-    >.form-container {
+    >.contact-form-column {
         width: 50%;
         display: flex;
     }

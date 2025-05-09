@@ -1,10 +1,9 @@
 @import 'shared';
 
 .hero {
-    min-height: 100vh;
+    height: calc(100vh - 109px);
     width: 100%;
-    @include dFlex();
-    padding: 0 100px 0 0;
+    @include dFlex($ai: flex-start);
 }
 
 .introduction-with-image {
@@ -26,27 +25,37 @@
 .introduce-myself {
     @include dFlex($fd: column, $g: 44px);
 
-    .introduction {
+    >.introduction {
         @include dFlex($jc: flex-end, $g: 35px);
         padding-top: 188px;
 
-        .start-introduction {
+        >.start-introduction {
             font-size: 64px;
             transform: rotate(270deg);
+            min-width: 400px;
         }
 
-        .name-profession {
-            @include dFlex($fd: column);
+        >.name-profession {
+            @include dFlex($fd: column, $ai: flex-end);
         }
     }
 }
 
+.button-hero {
+    transition: transform 0.2s ease-in-out;
+    transform-origin: top;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .scroll-down {
-    @include dFlex($fd: column, $g: 3px);
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-end, $g: 3px);
 
     >span {
         display: inline-block;
-        transform: rotate(90deg);
+        transform: translateX(-24px) rotate(90deg);
         transform-origin: right bottom;
         white-space: nowrap;
     }

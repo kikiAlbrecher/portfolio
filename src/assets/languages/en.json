@@ -13,10 +13,20 @@
         "SUBHEADLINE": "Got a problem to solve?",
         "TEXT1": "Encourage people to contact you and describe what role you are interested in.",
         "TEXT2": "Need a frontend developer?",
-        "PLEA": "Contact me!",
-        "FORM": "Contact"
+        "PLEA": "Contact me!"
     },
-
+    "FORM": {
+        "PLACEHOLDER_NAME": "Your name",
+        "NAME": "Your name is required.",
+        "PLACEHOLDER_EMAIL": "Your email",
+        "EMAIL": "Your email is required.",
+        "PLACEHOLDER_MESSAGE": "Your message",
+        "MESSAGE": "Your message is empty.",
+        "READ": "I´ve read the",
+        "PRIVACY_POLICY": "privacy policy",
+        "AGREEMENT": "and agree to the processing of my data as outlined.",
+        "POLICY": "Please accept the privacy policy."
+    },
     "FOOTER": {
         "IMPRINT": "Legal Notice"
     }

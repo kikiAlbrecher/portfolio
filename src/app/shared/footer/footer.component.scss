@@ -5,7 +5,6 @@ footer {
     width: 100%;
     border-top: 4px solid $green;
     @include dFlex();
-    padding: 0 100px;
     z-index: 20;
     background: $blue-grey;
 }
@@ -15,22 +14,6 @@ footer {
 
     >img {
         height: 40.14px;
-    }
-
-    // import from hero-section
-    >.media-links {
-        @include dFlex($jc: space-between);
-        width: 174px;
-        height: 40px;
-
-        >.link-icon {
-            height: 30px;
-            aspect-ratio: 1 / 1;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
     }
 }
 

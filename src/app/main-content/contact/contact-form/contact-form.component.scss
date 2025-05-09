@@ -1,20 +1,77 @@
 @import 'shared';
 
-.contact-form {
-    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+$red: #E61C40;
+
+.fs-ultra-small {
+    font-size: 14px;
 }
 
-input[type=text],
-[type=email],
-textarea {
+.contact-form {
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+}
+
+.field {
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
     width: 100%;
-    color: white;
+}
+
+.input-field {
+    width: 100%;
     background: $blue-grey;
-    padding: 12px;
-    border: 1px solid $violet;
+    padding: 15px 25px;
+    border: 1px solid $purple;
     border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
+    @include dFlex($jc: space-between);
+    transition: border-color 0.15s ease-in-out;
+
+    &:focus-within {
+        border-color: $green;
+    }
+
+    input {
+        border: unset;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        background: inherit;
+    }
+
+    img {
+        width: 16px;
+        aspect-ratio: 1 / 1;
+    }
+
+    &.valid {
+        border-color: $green;
+    }
+
+    &.invalid {
+        border-color: $red;
+    }
+}
+
+.validation-fail {
+    color: $red;
+}
+
+.policy-container {
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+}
+
+.policy-wrapper {
+    @include dFlex($jc: flex-start, $g: 8px);
+
+    >.policy-link {
+        color: $purple;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+input[type=submit].disabled {
+    background: grey;
+    cursor: default;
 }

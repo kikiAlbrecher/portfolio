@@ -1,7 +1,7 @@
 {
     "NAV": {
         "ABOUT": "Über mich",
-        "SKILLS": "Fähigkeiten",
+        "SKILLS": "Fertigkeiten",
         "PROJECTS": "Projekte",
         "CONTACT": "Kontakt"
     },
@@ -11,12 +11,24 @@
 
     "CONTACT": {
         "HEADLINE": "Kontakt",
-        "SUBHEADLINE": "Hast du ein Problem zu lösen?",
+        "SUBHEADLINE": "Sind Sie auf der Suche nach Lösungen?",
         "TEXT1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert.",
         "TEXT2": "Brauchst du einen Frontend-Entwickler?",
-        "PLEA": "Melde dich bei mir!",
-        "FORM": "Kontaktformular"
+        "PLEA": "Melden Sie sich bei mir!"
     }, 
+
+    "FORM": {
+        "PLACEHOLDER_NAME": "Ihr Name",
+        "NAME": "Ihr Name ist erforderlich.",
+        "PLACEHOLDER_EMAIL": "Ihre E-Mail-Adresse",
+        "EMAIL": "Ihre Mail-Adresse ist erforderlich.",
+        "PLACEHOLDER_MESSAGE": "Ihre Nachricht",
+        "MESSAGE": "Was ist Ihr Anliegen?",
+        "READ": "Ich habe die",
+        "PRIVACY_POLICY": "Datenschutzerklärung",
+        "AGREEMENT": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
+        "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung."
+    },
 
     "FOOTER": {
         "IMPRINT": "Impressum"

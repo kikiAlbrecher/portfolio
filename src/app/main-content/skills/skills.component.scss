@@ -9,9 +9,40 @@
         flex-wrap: wrap;
     }
 
-    // >.skills-description {
+    >.skills-description {
+        @include dFlex($fd: column, $ai: flex-end, $g: 40px);
+        width: 50%;
 
-    // }
+        >.skills-headline {
+            @include dFlex($jc: flex-end, $ai: center, $g: 32px);
+
+            >.separator-skills {
+                width: 68px;
+            }
+        }
+
+        >.search {
+            @include dFlex($fd: column, $ai: flex-end, $g: 24px);
+
+            .p-skills {
+                text-align: right;
+            }
+
+            .skills-question {
+                font-weight: 700;
+                font-size: 32px;
+            }
+
+            a {
+                transition: transform 0.2s ease-in-out;
+                transform-origin: top right;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
 }
 
 .stack-component {
@@ -20,6 +51,7 @@
 
     >.stack-icon {
         height: 60px;
+
         &:hover {
             transform: translateY(-16px);
         }
@@ -31,6 +63,6 @@
     }
 }
 
-.violet-font {
-    color: $violet;
+.purple-font {
+    color: $purple;
 }
