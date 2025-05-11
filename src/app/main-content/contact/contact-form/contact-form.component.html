@@ -39,26 +39,47 @@
         </div>
     </div>
 
-    <div>
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
-            [placeholder]="'FORM.PLACEHOLDER_MESSAGE' | translate" minlength="1" style="height: 200px"
-            required></textarea>
-        @if (!message.valid && message.touched && !message.disabled) {
-        <span class="validation-fail fs-ultra-small">{{ 'FORM.MESSAGE' | translate }}</span>
-        }
-    </div>
-    <div class="policy-container">
-        <div class="policy-wrapper">
-            <input #policy="ngModel" [(ngModel)]="contactData.policyAccepted" type="checkbox" name="policy" id="policy"
-                required><span class="fs-ultra-small">{{ 'FORM.READ' | translate }}</span>
-            <a class="policy-link fs-ultra-small" href="privacyPolicy">{{ 'FORM.PRIVACY_POLICY' | translate }}</a>
-            <span class="fs-ultra-small">{{ 'FORM.AGREEMENT' | translate }}</span>
+    <div class="message-policy">
+        <div class="field">
+            <div class="input-field" [ngClass]="{
+            'valid': message.valid && message.touched && !message.disabled,
+            'invalid': !message.valid && message.touched && !message.disabled
+            }">
+                <textarea #messageTextarea #message="ngModel" [(ngModel)]="contactData.message" name="message"
+                    id="message" [placeholder]="'FORM.PLACEHOLDER_MESSAGE' | translate" minlength="1"
+                    style="height: 200px;" required></textarea>
+                <img class="resize-icon" src="assets/icons/resize-textarea.svg" alt="resize icon">
+                <img *ngIf="message.valid && message.touched && !message.disabled"
+                    src="assets/icons/validation-fine.svg" alt="input is valid">
+                <img *ngIf="!message.valid && message.touched && !message.disabled"
+                    src="assets/icons/validation-error.svg" alt="input is invalid">
+            </div>
+            <div>
+                @if (!message.valid && message.touched && !message.disabled) {
+                <span class="validation-fail fs-ultra-small">{{ 'FORM.MESSAGE' | translate }}</span>
+                }
+            </div>
         </div>
-        @if (contactData.policyAccepted == false) {
-        <span class="validation-fail fs-ultra-small"> {{ 'FORM.POLICY' | translate }}</span>
-        }
+
+        <div class="policy-container">
+            <div class="policy-validation">
+                <div class="accept-policy">
+                    <input #policy="ngModel" [(ngModel)]="contactData.policyAccepted" type="checkbox" name="policy"
+                        id="policy" required><span class="fs-ultra-small">{{ 'FORM.READ' | translate }}</span>
+                    <a class="policy-link fs-ultra-small" href="privacyPolicy">{{ 'FORM.PRIVACY_POLICY' | translate
+                        }}</a>
+                    <span class="fs-ultra-small">{{ 'FORM.AGREEMENT' | translate }}</span>
+                </div>
+                @if (contactData.policyAccepted == false && name.valid && email.valid && message.valid) {
+                <span class="validation-fail fs-ultra-small"> {{ 'FORM.POLICY' | translate }}</span>
+                }
+            </div>
+
+            <input type="submit" value="Send message :)" class="button" [disabled]="!contactForm.form.valid"
+                [ngClass]="!contactForm.form.valid ? 'button-disabled': 'button-abled'">
+        </div>
+
+        <span *ngIf="successMessage">{{ successMessage }}</span>
     </div>
-    <input type="submit" value="Send message :)" class="button" [disabled]="!contactForm.form.valid"
-        [ngClass]="!contactForm.form.valid ? 'button-disabled': 'button-green'">
-    <span *ngIf="successMessage">{{ successMessage }}</span>
+
 </form>

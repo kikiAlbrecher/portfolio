@@ -5,7 +5,7 @@
 }
 
 .contact-columns {
-    @include dFlex($fd: column, $ai: flex-end);
+    @include dFlex($fd: column, $ai: space-between);
     width: 100%;
     padding-top: 40px;
 }
@@ -22,7 +22,8 @@
             padding-right: 32px;
 
             >.appeal {
-                @include dFlex($jc: flex-start, $g: 8px);
+                @include dFlex($jc: flex-start, $ai: baseline, $g: 8px);
+                flex-wrap: wrap;
 
                 >.contact-plea {
                     font-weight: 700;

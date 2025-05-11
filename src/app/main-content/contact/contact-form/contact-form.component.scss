@@ -4,10 +4,11 @@ $red: #E61C40;
 
 .fs-ultra-small {
     font-size: 14px;
+    text-wrap: wrap;
 }
 
 .contact-form {
-    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+    @include dFlex($fd: column, $jc: flex-start, $g: 32px);
 }
 
 .field {
@@ -24,17 +25,59 @@ $red: #E61C40;
     resize: vertical;
     @include dFlex($jc: space-between);
     transition: border-color 0.15s ease-in-out;
+    position: relative;
 
     &:focus-within {
         border-color: $green;
     }
 
-    input {
+    input,
+    textarea {
         border: unset;
         outline: none;
         width: 100%;
         font-size: 16px;
-        background: inherit;
+        background: $blue-grey;
+    }
+
+    textarea {
+        min-height: 200px;
+        max-height: 1200px;
+        resize: none;
+        // height: 200px;
+    }
+
+    input:-webkit-autofill,
+    textarea:-webkit-autofill {
+        background-color: $blue-grey !important;
+        -webkit-box-shadow: 0 0 0px 1000px $blue-grey inset;
+        -webkit-text-fill-color: white !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: white;
+        opacity: 1;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: white;
+    }
+
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+        color: white;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: white;
+    }
+
+    input:-moz-placeholder textarea:-moz-placeholder {
+        color: white;
     }
 
     img {
@@ -49,20 +92,60 @@ $red: #E61C40;
     &.invalid {
         border-color: $red;
     }
+
+    .resize-icon {
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        width: 13px;
+        height: 13px;
+        cursor: se-resize;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    textarea.resizing {
+        cursor: ns-resize;
+    }
 }
 
 .validation-fail {
     color: $red;
 }
 
-.policy-container {
-    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+.message-policy {
+    width: 100%;
+    gap: 16px;
 }
 
-.policy-wrapper {
-    @include dFlex($jc: flex-start, $g: 8px);
+.policy-container {
+    @include dFlex($fd: column, $jc: flex-start, $g: 16px);
 
-    >.policy-link {
+    >.policy-validation {
+        @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+        width: 100%;
+    }
+}
+
+.accept-policy {
+    display: inline;
+
+    input[type="checkbox"] {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    span,
+    .policy-link {
+        display: inline;
+        white-space: normal;
+    }
+
+    .policy-link {
         color: $purple;
 
         &:hover {
@@ -71,7 +154,22 @@ $red: #E61C40;
     }
 }
 
-input[type=submit].disabled {
-    background: grey;
-    cursor: default;
+.button-abled {
+    background: $green;
+    padding: 15px 30px;
+
+    &:hover {
+        background: $purple;
+        cursor: pointer;
+    }
+}
+
+.button-disabled {
+    background: #B6B6B6;
+    padding: 15px 30px;
+
+    &:hover {
+        background: #B6B6B6;
+        cursor: default;
+    }
 }
