@@ -1,0 +1,50 @@
+@import 'shared';
+
+.project-container {
+    @include dFlex($jc: space-between, $g: 35px);
+
+    >.project-photo {
+        @include dFlex();
+        width: calc(60% - (35px / 2));
+        height: 339px;
+        padding: 24px;
+
+        >img {
+            object-fit: contain;
+            height: 291px;
+        }
+    }
+
+    >.project-description {
+        width: calc(40% - (35px / 2));
+    }
+}
+
+
+
+
+.watch {
+    @include dFlex($jc: flex-start, $g: 86px);
+
+    .live-test-btn {
+        background: $purple;
+        padding: 15px 30px;
+        box-shadow: none;
+
+        &:hover {
+            background: $green;
+        }
+    }
+
+    .github-btn {
+        border: 1px solid $green;
+        background: none;
+        padding: 15px 30px;
+        box-shadow: none;
+
+        &:hover {
+            border: unset;
+            background: $green;
+        }
+    }
+}

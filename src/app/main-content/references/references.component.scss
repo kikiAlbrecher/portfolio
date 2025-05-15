@@ -1,15 +1,10 @@
 @import 'shared';
 
-.padding-left-extra {
-    padding-left: 164px;
-
-}
-
 .quote {
     width: 96.9px;
     height: 68.1px;
     z-index: 99;
-    transform: translate(-64px, 34px);
+    transform: translateY(34px);
 }
 
 .references {

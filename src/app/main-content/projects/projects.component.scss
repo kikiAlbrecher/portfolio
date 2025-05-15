@@ -1,5 +1,9 @@
 @import 'shared';
 
+.left-padding-extra {
+    padding-left: 136px;
+}
+
 .headline-projects {
     @include dFlex($jc: flex-end, $g: 32px);
 }

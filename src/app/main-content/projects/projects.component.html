@@ -1,5 +1,5 @@
 <section class="general-main-section">
-    <div class="section-content">
+    <div class="section-content left-padding-extra">
         <div class="headline-projects">
             <div class="short-separator"></div>
             <h1 class="centered-text">Portfolio</h1>
@@ -9,6 +9,8 @@
             <span class="fs-small">Explore a selection of my work here - Interact with projects to see my skills
                 in action.</span>
         </div>
-
+        <app-project-item [projectPhotoUrl]="projects[projectIndex].projectPhotoUrl"
+            [liveTestUrl]="projects[projectIndex].liveTestUrl" [githubUrl]="projects[projectIndex].githubUrl">
+        </app-project-item>
     </div>
 </section>
