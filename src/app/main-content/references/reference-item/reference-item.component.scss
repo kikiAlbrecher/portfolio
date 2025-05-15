@@ -1,0 +1,58 @@
+@import 'shared';
+
+.reference-container {
+    @include dFlex($jc: space-between, $g: 48px);
+}
+
+.reference-text {
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start, $g: 44px);
+    padding: 48px 96px;
+    border: 4px solid $green;
+    border-radius: 32px;
+    width: 100%;
+
+    >.ref-text-height {
+        min-height: 112px;
+
+        >span {
+            font-family: 'Montserrat';
+            font-size: 20px;
+        }
+    }
+
+    >.recommender {
+        @include dFlex($jc: space-between, $g: 16px);
+        width: 100%;
+
+        >.horizontal-line {
+            flex-grow: 1;
+            border: none;
+            border-radius: 32px;
+            height: 2px;
+            background: $purple;
+        }
+
+        >.recommender-name {
+            font-family: 'Montserrat';
+            font-size: 18px;
+            white-space: nowrap;
+        }
+    }
+}
+
+.reference-img {
+    @include dFlex($jc: flex-end);
+
+    >img {
+        width: 272px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid $purple;
+    }
+
+    >.separator-references {
+        width: 104px;
+        transform: rotate(0.55deg);
+    }
+}

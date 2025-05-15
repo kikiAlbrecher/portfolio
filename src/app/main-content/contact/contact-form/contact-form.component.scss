@@ -137,6 +137,17 @@ $red: #E61C40;
     input[type="checkbox"] {
         vertical-align: middle;
         margin-right: 8px;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .checkbox {
+        vertical-align: middle;
+        width: 24px;
+        aspect-ratio: 1 / 1;
+        margin-right: 8px;
+        cursor: pointer;
     }
 
     span,

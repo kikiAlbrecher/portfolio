@@ -8,15 +8,13 @@
     "BUTTON": {
         "SUBMIT": "Absenden"
     },
-
     "CONTACT": {
         "HEADLINE": "Kontakt",
         "SUBHEADLINE": "Sind Sie auf der Suche nach Lösungen?",
         "TEXT1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert.",
         "TEXT2": "Brauchst du einen Frontend-Entwickler?",
         "PLEA": "Melden Sie sich bei mir!"
-    }, 
-
+    },
     "FORM": {
         "PLACEHOLDER_NAME": "Ihr Name",
         "NAME": "Ihr Name ist erforderlich.",
@@ -29,9 +27,14 @@
         "AGREEMENT": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
         "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung."
     },
-
+    "REFERENCES": {
+        "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
+        "RECOMMENDER_BASTIAN": "B. Geppert",
+        "TEAM_PARTNER": "Team-Partner",
+        "CITATION_GEORGE": "Kommt in Kürze!",
+        "RECOMMENDER_GEORGE": "G. Cubas"
+    },
     "FOOTER": {
         "IMPRINT": "Impressum"
     }
-
 }

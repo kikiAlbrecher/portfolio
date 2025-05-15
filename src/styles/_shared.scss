@@ -11,3 +11,8 @@ $blue-grey: #141D2F;
 $purple: #9747FF;
 
 $green: #70E61C;
+
+.policy-section {
+    min-height: calc(100vh - 291px);
+    padding: 100px;
+}

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { SharkyComponent } from './sharky/sharky.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [TranslateModule, SharkyComponent],
+  imports: [TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

@@ -27,6 +27,13 @@
         "AGREEMENT": "and agree to the processing of my data as outlined.",
         "POLICY": "Please accept the privacy policy."
     },
+    "REFERENCES": {
+        "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
+        "RECOMMENDER_BASTIAN": "B. Geppert",
+        "TEAM_PARTNER": "Team Partner",
+        "CITATION_GEORGE": "Coming soon",
+        "RECOMMENDER_GEORGE": "G. Cubas"
+    },
     "FOOTER": {
         "IMPRINT": "Legal Notice"
     }

@@ -1,7 +1,20 @@
 <section class="general-main-section">
-    <div class="section-content">
+    <div class="section-content padding-left-extra">
+        <img class="quote" src="assets/img/quote.svg" alt="double quote">
+        <div class="references">
+            <app-reference-item [citation]="references[currentIndex].citation | translate"
+                [recommender]="references[currentIndex].recommender | translate"
+                [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl">
+            </app-reference-item>
+            <div class="slider">
+                <img class="arrow" src="assets/icons/back.svg" alt="arrow left" (click)="prevReference()" />
 
+                <div *ngFor="let item of references; let i = index" class="point"
+                    [ngClass]="{ active: i === currentIndex, inactive: i !== currentIndex }">
+                </div>
 
-
+                <img class="arrow" src="assets/icons/forward.svg" alt="arrow right" (click)="nextReference()" />
+            </div>
+        </div>
     </div>
 </section>

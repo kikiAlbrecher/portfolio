@@ -1,0 +1,19 @@
+<div class="reference-container">
+    <div class="reference-text">
+        <div class="ref-text-height">
+            <span>
+                {{ citation }}
+            </span>
+        </div>
+        <div class="recommender">
+            <hr class="horizontal-line">
+            <span class="recommender-name">
+                {{ recommender }} - {{ role }}
+            </span>
+        </div>
+    </div>
+    <div class="reference-img">
+        <img [src]="imageUrl" [alt]="recommender" />
+        <div class="short-separator separator-references"></div>
+    </div>
+</div>

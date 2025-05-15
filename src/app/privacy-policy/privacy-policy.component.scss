@@ -1,0 +1,9 @@
+@import 'shared';
+
+a {
+    color: $purple;
+
+    &:hover {
+        color: $green;
+    }
+}
