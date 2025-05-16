@@ -7,3 +7,12 @@
 .headline-projects {
     @include dFlex($jc: flex-end, $g: 32px);
 }
+
+.subheadline {
+    padding-top: 40px;
+    @include dFlex();
+}
+
+.project-div {
+    padding-right: 136px;
+}

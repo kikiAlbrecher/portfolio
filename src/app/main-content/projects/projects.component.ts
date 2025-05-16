@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectItemComponent } from './project-item/project-item.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [TranslateModule, ProjectItemComponent],
+  imports: [CommonModule, TranslateModule, ProjectItemComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -15,10 +16,27 @@ export class ProjectsComponent {
   projects = [
     {
       projectPhotoUrl: 'assets/img/pokedex.png',
-
-
-      liveTestUrl: 'https://sharky.christina-albrecher.at',
+      projectTitle: 'Join',
+      projectStack: 'JavaScript | HTML | CSS | Firebase',
+      projectDescription: 'PROJECTS.DESCRIPTION_JOIN',
+      liveTestUrl: 'https://join.christina-albrecher.at',
+      githubUrl: 'https://github.com/kikiAlbrecher/join',
+    },
+    {
+      projectPhotoUrl: 'assets/img/pokedex.png',
+      projectTitle: 'Pokédex',
+      projectStack: 'JavaScript | HTML | CSS | API',
+      projectDescription: 'PROJECTS.DESCRIPTION_POKEDEX',
+      liveTestUrl: 'https://pokedex.christina-albrecher.at',
       githubUrl: 'https://github.com/kikiAlbrecher/pokedex',
+    },
+    {
+      projectPhotoUrl: 'assets/img/pokedex.png',
+      projectTitle: 'Sharky',
+      projectStack: 'JavaScript | HTML | CSS',
+      projectDescription: 'PROJECTS.DESCRIPTION_SHARKY',
+      liveTestUrl: 'https://sharky.christina-albrecher.at',
+      githubUrl: 'https://github.com/kikiAlbrecher/sharky',
     }
   ];
 }

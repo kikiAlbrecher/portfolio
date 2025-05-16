@@ -6,7 +6,7 @@
     >.project-photo {
         @include dFlex();
         width: calc(60% - (35px / 2));
-        height: 339px;
+        // height: 339px;
         padding: 24px;
 
         >img {
@@ -15,13 +15,42 @@
         }
     }
 
-    >.project-description {
+    >.project-teaser {
+        @include dFlex($fd: column, $ai: flex-start, $g: 35px);
         width: calc(40% - (35px / 2));
     }
 }
 
+.project-specification {
+    @include dFlex($fd: column, $ai: flex-start, $g: 15px);
 
+    >.project-title {
+        font-weight: 700;
+        font-size: 32px;
+        color: $purple;
+        padding-top: 82px;
+    }
 
+    >.project-stack {
+        color: $green;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+
+    >.project-teaser {
+        align-items: flex-end;
+
+        >.project-specification {
+            align-items: flex-end;
+
+            >.fs-small {
+                text-align: right;
+            }
+        }
+    }
+}
 
 .watch {
     @include dFlex($jc: flex-start, $g: 86px);

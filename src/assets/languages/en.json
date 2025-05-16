@@ -27,6 +27,11 @@
         "AGREEMENT": "and agree to the processing of my data as outlined.",
         "POLICY": "Please accept the privacy policy."
     },
+    "PROJECTS": {
+        "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
+        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information.",
+        "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies."
+    },
     "REFERENCES": {
         "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
         "RECOMMENDER_BASTIAN": "B. Geppert",

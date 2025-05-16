@@ -27,6 +27,11 @@
         "AGREEMENT": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
         "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung."
     },
+    "PROJECTS": {
+        "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Kontakte und Kategorien zu.",
+        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+        "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen."
+    },
     "REFERENCES": {
         "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
         "RECOMMENDER_BASTIAN": "B. Geppert",

@@ -10,6 +10,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectItemComponent {
   @Input() projectPhotoUrl!: string;
+  @Input() projectTitle!: string;
+  @Input() projectStack!: string;
+  @Input() projectDescription!: string;
   @Input() liveTestUrl!: string;
   @Input() githubUrl!: string;
+  @Input() isReversed: boolean = false;
 }

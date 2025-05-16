@@ -5,12 +5,15 @@
             <h1 class="centered-text">Portfolio</h1>
             <div class="short-separator long-separator"></div>
         </div>
-        <div>
+        <div class="subheadline">
             <span class="fs-small">Explore a selection of my work here - Interact with projects to see my skills
                 in action.</span>
         </div>
-        <app-project-item [projectPhotoUrl]="projects[projectIndex].projectPhotoUrl"
-            [liveTestUrl]="projects[projectIndex].liveTestUrl" [githubUrl]="projects[projectIndex].githubUrl">
-        </app-project-item>
+        <div *ngFor="let item of projects; let i = index;" class="project-div">
+            <app-project-item [projectPhotoUrl]="item.projectPhotoUrl" [projectTitle]="item.projectTitle"
+                [projectStack]="item.projectStack" [projectDescription]="item.projectDescription | translate"
+                [liveTestUrl]="item.liveTestUrl" [githubUrl]="item.githubUrl" [isReversed]="i % 2 === 1">
+            </app-project-item>
+        </div>
     </div>
 </section>

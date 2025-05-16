@@ -1,17 +1,22 @@
-<div class="project-container">
+<div class="project-container" [ngClass]="{ 'reverse': isReversed }">
     <div class="project-photo">
         <img [src]="projectPhotoUrl" [alt]="projectPhotoUrl">
     </div>
-    <div class="project-description">
-        <div>
-
+    <div class="project-teaser">
+        <div class="project-specification">
+            <span class="project-title">
+                {{ projectTitle }}
+            </span>
+            <span class="project-stack">
+                {{ projectStack }}
+            </span>
+            <span class="fs-small">
+                {{ projectDescription }}
+            </span>
         </div>
         <div class="watch">
             <a [href]="liveTestUrl"><button class="live-test-btn">Live test</button></a>
             <a [href]="githubUrl"><button class="github-btn">Github</button></a>
-
         </div>
-
     </div>
-
 </div>
