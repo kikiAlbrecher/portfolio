@@ -5,6 +5,40 @@
         "PROJECTS": "Projekte",
         "CONTACT": "Kontakt"
     },
+    "HERO": {
+        "I_AM": "Ich bin",
+        "PROFESSION": "FRONTEND-ENTWICKLERIN",
+        "TALK_APPEAL": "Let´s talk!"
+    },
+    "ABOUT": {
+        "HEADER": "Über mich",
+        "PASSION": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+        "LOCATION": "Wien, Graz oder anderswo. Ich bin auch offen hinsichtlich der Arbeitsweise: vor Ort, remote, hybrid.",
+        "MINDSET": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+        "FIND_SOLUTIONS": "A brief description of your problem-solving approach. Do you learn from each challenge as yout search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+    },
+    "SKILLS": {
+        "HEADLINE": "Meine Skills",
+        "DESCRIPTION": "In meinen Projekten - Vorgeschmack weiter unten - kommt eine Vielfalt von Frontend-Technologien zur Anwendung.",
+        "QUESTION_START": "",
+        "QUESTION_END": "Andere Fertigkeit gewünscht",
+        "AMBITION": "Kein Problem! Ich lerne gerne Neues.",
+        "APPEAL": "Get in touch!"
+    },
+    "PROJECTS": {
+        "SUBHEADLINE": "Entdecken Sie eine Auswahl meiner Arbeiten und erleben Sie meine Programmierkenntnisse in Aktion.",
+        "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Kontakte und Kategorien zu.",
+        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+        "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen.",
+        "LIVE_TEST": "Live-Test"
+    },
+    "REFERENCES": {
+        "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
+        "RECOMMENDER_BASTIAN": "B. Geppert",
+        "TEAM_PARTNER": "Team-Partner",
+        "CITATION_GEORGE": "Kommt in Kürze!",
+        "RECOMMENDER_GEORGE": "G. Cubas"
+    },
     "BUTTON": {
         "SUBMIT": "Absenden"
     },
@@ -25,19 +59,8 @@
         "READ": "Ich habe die",
         "PRIVACY_POLICY": " Datenschutzerklärung ",
         "AGREEMENT": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
-        "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung."
-    },
-    "PROJECTS": {
-        "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Kontakte und Kategorien zu.",
-        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
-        "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen."
-    },
-    "REFERENCES": {
-        "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
-        "RECOMMENDER_BASTIAN": "B. Geppert",
-        "TEAM_PARTNER": "Team-Partner",
-        "CITATION_GEORGE": "Kommt in Kürze!",
-        "RECOMMENDER_GEORGE": "G. Cubas"
+        "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        "SEND": "Nachricht senden :)"
     },
     "FOOTER": {
         "IMPRINT": "Impressum"

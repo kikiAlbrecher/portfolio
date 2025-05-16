@@ -80,7 +80,7 @@
                 }
             </div>
 
-            <input type="submit" value="Send message :)" class="button" [disabled]="!contactForm.form.valid"
+            <input type="submit" [value]="'FORM.SEND' | translate" class="button" [disabled]="!contactForm.form.valid"
                 [ngClass]="!contactForm.form.valid ? 'button-disabled': 'button-abled'">
         </div>
 

@@ -6,8 +6,7 @@
             <div class="short-separator long-separator"></div>
         </div>
         <div class="subheadline">
-            <span class="fs-small">Explore a selection of my work here - Interact with projects to see my skills
-                in action.</span>
+            <span class="fs-small">{{ 'PROJECTS.SUBHEADLINE' | translate }}</span>
         </div>
         <div *ngFor="let item of projects; let i = index;" class="project-div">
             <app-project-item [projectPhotoUrl]="item.projectPhotoUrl" [projectTitle]="item.projectTitle"

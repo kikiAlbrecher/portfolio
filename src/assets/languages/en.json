@@ -5,6 +5,40 @@
         "PROJECTS": "Projects",
         "CONTACT": "Contact"
     },
+    "HERO": {
+        "I_AM": "I am",
+        "PROFESSION": "FRONTEND DEVELOPER",
+        "TALK_APPEAL": "Let´s talk!"
+    },
+    "ABOUT": {
+        "HEADER": "About me",
+        "PASSION": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+        "LOCATION": "Where are you located? Are you open to different ways of working, such as working remotely or even relocated?",
+        "MINDSET": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+        "FIND_SOLUTIONS": "A brief description of your problem-solving approach. Do you learn from each challenge as yout search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+    },
+    "SKILLS": {
+        "HEADLINE": "My skills",
+        "DESCRIPTION": "Show that you have used a variety of front-end technologies in your projects.",
+        "QUESTION_START": "Looking for ",
+        "QUESTION_END": "another skill",
+        "AMBITION": "Reveal enthusiasm for learning new technologies and frameworks.",
+        "APPEAL": "Get in touch!"
+    },
+    "PROJECTS": {
+        "SUBHEADLINE": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
+        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information.",
+        "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",
+        "LIVE_TEST": "Live test"
+    },
+    "REFERENCES": {
+        "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
+        "RECOMMENDER_BASTIAN": "B. Geppert",
+        "TEAM_PARTNER": "Team Partner",
+        "CITATION_GEORGE": "Coming soon",
+        "RECOMMENDER_GEORGE": "G. Cubas"
+    },
     "BUTTON": {
         "SUBMIT": "Submit"
     },
@@ -25,19 +59,8 @@
         "READ": "I´ve read the",
         "PRIVACY_POLICY": " privacy policy ",
         "AGREEMENT": "and agree to the processing of my data as outlined.",
-        "POLICY": "Please accept the privacy policy."
-    },
-    "PROJECTS": {
-        "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
-        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information.",
-        "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies."
-    },
-    "REFERENCES": {
-        "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
-        "RECOMMENDER_BASTIAN": "B. Geppert",
-        "TEAM_PARTNER": "Team Partner",
-        "CITATION_GEORGE": "Coming soon",
-        "RECOMMENDER_GEORGE": "G. Cubas"
+        "POLICY": "Please accept the privacy policy.",
+        "SEND": "Send message :)"
     },
     "FOOTER": {
         "IMPRINT": "Legal Notice"

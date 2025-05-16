@@ -37,6 +37,10 @@
 
         >.name-profession {
             @include dFlex($fd: column, $ai: flex-end);
+
+            >.profession {
+                text-transform: uppercase;
+            }
         }
     }
 }
