@@ -2,50 +2,9 @@
     <div class="section-content padding-left">
         <div class="skills">
             <div class="stack">
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/HTML.svg" alt="HTML icon">
-                    <p class="stack-name">HTML</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/CSS.svg" alt="CSS icon">
-                    <p class="stack-name">CSS</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/javaScript.svg" alt="JavaScript icon">
-                    <p class="stack-name">JavaScript</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/typeScript.svg" alt="TypeScript icon">
-                    <p class="stack-name">TypeScript</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/angular.svg" alt="Angular icon">
-                    <p class="stack-name">Angular</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/firebase.svg" alt="Firebase icon">
-                    <p class="stack-name">Firebase</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/git.svg" alt="Git icon">
-                    <p class="stack-name">Git</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/API.svg" alt="Rest API icon">
-                    <p class="stack-name">Rest API</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/scrum.svg" alt="scrum icon">
-                    <p class="stack-name">Scrum</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon" src="assets/icons/material-design.svg" alt="Material Design icon">
-                    <p class="stack-name">Material Design</p>
-                </div>
-                <div class="stack-component">
-                    <img class="stack-icon purple-icon" src="assets/icons/learning-ambition.svg"
-                        alt="continually learning icon">
-                    <p class="stack-name purple-font">Continually learning</p>
+                <div *ngFor="let item of stack; let i = index;">
+                    <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName">
+                    </app-skill-item>
                 </div>
             </div>
             <div class="skills-description">

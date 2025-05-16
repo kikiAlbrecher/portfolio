@@ -45,24 +45,6 @@
     }
 }
 
-.stack-component {
-    @include dFlex($fd: column, $jc: space-between, $g: 10px);
-    padding-top: 12px;
-
-    >.stack-icon {
-        height: 60px;
-
-        &:hover {
-            transform: translateY(-16px);
-        }
-    }
-
-    >.stack-name {
-        font-weight: 700;
-        font-size: 16px;
-    }
-}
-
 .purple-font {
     color: $purple;
 
