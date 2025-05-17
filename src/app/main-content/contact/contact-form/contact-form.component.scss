@@ -14,6 +14,10 @@ $red: #E61C40;
 .field {
     @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
     width: 100%;
+
+    .input-item {
+        width: 100%;
+    }
 }
 
 .input-field {
@@ -44,7 +48,6 @@ $red: #E61C40;
         min-height: 200px;
         max-height: 1200px;
         resize: none;
-        // height: 200px;
     }
 
     input:-webkit-autofill,

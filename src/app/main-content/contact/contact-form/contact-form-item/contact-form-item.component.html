@@ -1,0 +1,15 @@
+<div class="input-field" [ngClass]="{
+  'valid': ngModel?.valid && ngModel?.touched && !ngModel?.disabled,
+  'invalid': !ngModel?.valid && ngModel?.touched && !ngModel?.disabled
+}">
+    <input [(ngModel)]="model" #ngModel="ngModel" [type]="type" [name]="name" [id]="name"
+        [placeholder]="placeholder | translate" [required]="required" [pattern]="pattern" [value]="value"
+        (input)="handleInput($event)" (blur)="markTouched()" [disabled]="disabled" />
+    <img *ngIf="ngModel.valid && ngModel.touched && !ngModel.disabled" src="assets/icons/validation-fine.svg"
+        alt="input is valid" />
+    <img *ngIf="!ngModel.valid && ngModel.touched && !ngModel.disabled" src="assets/icons/validation-error.svg"
+        alt="input is invalid" />
+</div>
+<div *ngIf="!ngModel.valid && ngModel.touched && !ngModel.disabled">
+    <span class="validation-fail fs-ultra-small">{{ labelKey }}</span>
+</div>

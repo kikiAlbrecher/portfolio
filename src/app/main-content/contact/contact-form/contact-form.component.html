@@ -1,42 +1,17 @@
 <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contact-form">
     <div class="field">
-        <div class="input-field" [ngClass]="{
-        'valid': name.valid && name.touched && !name.disabled,
-        'invalid': !name.valid && name.touched && !name.disabled
-        }">
-            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                [placeholder]="'FORM.PLACEHOLDER_NAME' | translate" required
-                onkeydown="return /[A-ZÄÖÜa-zäöüß ]/i.test(event.key)">
-            <img *ngIf="name.valid && name.touched && !name.disabled" src="assets/icons/validation-fine.svg"
-                alt="input is valid">
-            <img *ngIf="!name.valid && name.touched && !name.disabled" src="assets/icons/validation-error.svg"
-                alt="input is invalid">
-        </div>
-        <div>
-            @if (!name.valid && name.touched && !name.disabled) {
-            <span class="validation-fail fs-ultra-small">{{ 'FORM.NAME' | translate }}</span>
-            }
-        </div>
+        <app-contact-form-item class="input-item" #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name"
+            id="name" [placeholder]="'FORM.PLACEHOLDER_NAME' | translate" [required]="true"
+            [labelKey]="'FORM.NAME' | translate" onkeydown="return /[A-ZÄÖÜa-zäöüß ]/i.test(event.key)">
+        </app-contact-form-item>
     </div>
 
     <div class="field">
-        <div class="input-field" [ngClass]="{
-            'valid': email.valid && email.touched && !email.disabled,
-            'invalid': !email.valid && email.touched && !email.disabled
-            }">
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" id="email"
-                [placeholder]="'FORM.PLACEHOLDER_EMAIL' | translate" required
-                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            <img *ngIf="email.valid && email.touched && !email.disabled" src="assets/icons/validation-fine.svg"
-                alt="input is valid">
-            <img *ngIf="!email.valid && email.touched && !email.disabled" src="assets/icons/validation-error.svg"
-                alt="input is invalid">
-        </div>
-        <div>
-            @if (!email.valid && email.touched && !email.disabled) {
-            <span class="validation-fail fs-ultra-small">{{ 'FORM.EMAIL' | translate }}</span>
-            }
-        </div>
+        <app-contact-form-item class="input-item" #email="ngModel" [(ngModel)]="contactData.email" type="email"
+            name="email" id="email" [placeholder]="'FORM.PLACEHOLDER_EMAIL' | translate"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [required]="true"
+            [labelKey]="'FORM.EMAIL' | translate">
+        </app-contact-form-item>
     </div>
 
     <div class="message-policy">
@@ -75,7 +50,7 @@
                         }}</a>
                     <span class="fs-ultra-small">{{ 'FORM.AGREEMENT' | translate }}</span>
                 </div>
-                @if (contactData.policyAccepted == false && name.valid && email.valid && message.valid) {
+                @if (contactData.policyAccepted === false && name.valid && email.valid && message.valid) {
                 <span class="validation-fail fs-ultra-small"> {{ 'FORM.POLICY' | translate }}</span>
                 }
             </div>

@@ -11,8 +11,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  projectIndex = 0;
-
   projects = [
     {
       projectPhotoUrl: 'assets/img/pokedex.png',

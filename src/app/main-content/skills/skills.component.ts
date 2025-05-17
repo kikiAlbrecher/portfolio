@@ -11,8 +11,6 @@ import { SkillItemComponent } from './skill-item/skill-item.component';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  i = 0;
-
   stack = [
     {
       stackIconUrl: 'assets/icons/HTML.svg',
