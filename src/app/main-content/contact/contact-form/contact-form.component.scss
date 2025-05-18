@@ -187,3 +187,18 @@ $red: #E61C40;
         cursor: default;
     }
 }
+
+.transmission-confirmation {
+    z-index: 99;
+    font-size: 16px;
+
+    >.successMessage {
+        background: $green;
+        color: $purple;
+    }
+
+    >.errorMessage {
+        background: $blue-grey;
+        color: $red;
+    }
+}

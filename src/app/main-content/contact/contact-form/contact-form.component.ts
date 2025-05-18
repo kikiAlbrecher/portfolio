@@ -15,6 +15,7 @@ import { ContactFormItemComponent } from './contact-form-item/contact-form-item.
 export class ContactFormComponent {
   http = inject(HttpClient);
   successMessage = '';
+  errorMessage = '';
 
   contactData = {
     name: '',
@@ -44,12 +45,10 @@ export class ContactFormComponent {
           },
           error: (error) => {
             console.error(error);
+            this.errorMessage = 'Your message has not been sent. Please try again';
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && !ngForm.form.valid) {
-      // && this.mailTest, else-if-Teil vielleicht ganz weglassen
-      // ngForm.resetForm();
     }
   }
 

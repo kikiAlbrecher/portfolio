@@ -8,7 +8,7 @@
 }
 
 .references {
-    @include dFlex($fd: column, $ai: space-between, $g: 32px);
+    @include dFlex($fd: column, $ai: stretch, $g: 32px);
 
     >.slider {
         @include dFlex($g: 20px);

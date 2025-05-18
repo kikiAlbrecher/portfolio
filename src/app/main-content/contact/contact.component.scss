@@ -5,13 +5,13 @@
 }
 
 .contact-columns {
-    @include dFlex($fd: column, $ai: space-between);
+    @include dFlex($fd: column, $ai: stretch);
     width: 100%;
     padding-top: 40px;
 }
 
 .contact-text-column {
-    @include dFlex($jc: flex-start, $ai: space-between);
+    @include dFlex($jc: flex-start, $ai: stretch);
 
     >.invitation {
         width: 50%;

@@ -102,7 +102,7 @@ html::-webkit-scrollbar-thumb:hover {
 .section-content {
     max-width: 1920px;
     width: 100%;
-    @include dFlex($fd: column, $ai: space-between);
+    @include dFlex($fd: column, $ai: stretch);
     position: relative;
 }
 

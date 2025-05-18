@@ -3,82 +3,118 @@
 .hero {
     height: calc(100vh - 109px);
     width: 100%;
+    position: relative;
     @include dFlex($ai: flex-start);
+
+    @media (min-height: 1400px) {
+        height: unset;
+    }
+
+    >.hero-content {
+        position: relative;
+        justify-content: space-between;
+        flex: 1;
+    }
 }
 
 .introduction-with-image {
     @include dFlex($jc: space-between);
 
     >.photo-space {
-        width: 50%;
-        aspect-ratio: 1 / 1.2;
+        @include dFlex();
+        width: 40%;
+        height: calc(100vh - 209px);
+        max-height: calc(1400px - 209px);
         background-image: url('/assets/img/photo-shadow.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        // >.body-photo {
+        z-index: -99;
 
-        // }
+        >img {
+            width: 80%;
+            z-index: -99;
+        }
     }
 }
 
 .introduce-myself {
     @include dFlex($fd: column, $g: 44px);
+    max-width: 60%;
 
     >.introduction {
-        @include dFlex($jc: flex-end, $g: 35px);
-        padding-top: 188px;
+        @include dFlex($jc: flex-end, $ai: center, $g: 35px);
+        position: relative;
 
         >.start-introduction {
             font-size: 64px;
-            transform: rotate(270deg);
-            min-width: 400px;
+            white-space: nowrap;
+            transform: translateY(50%) rotate(-90deg);
+            transform-origin: top;
+            display: inline-block;
         }
 
         >.name-profession {
-            @include dFlex($fd: column, $ai: flex-end);
+            @include dFlex($fd: column);
+            text-align: justify;
+
+            >.name,
+            >.profession {
+                width: 100%;
+            }
 
             >.profession {
                 text-transform: uppercase;
+                text-align: center;
             }
         }
     }
 }
 
 .button-hero {
-    transition: transform 0.2s ease-in-out;
     transform-origin: top;
+    z-index: 99;
 
     &:hover {
         transform: scale(1.1);
     }
 }
 
-.scroll-down {
-    @include dFlex($fd: column, $jc: space-between, $ai: flex-end, $g: 3px);
+.hero-bottom {
+    @include dFlex($jc: space-between);
 
-    >span {
-        display: inline-block;
-        transform: translateX(-24px) rotate(90deg);
-        transform-origin: right bottom;
-        white-space: nowrap;
+    >.references {
+        @include dFlex($jc: flex-start, $g: 32px);
     }
 
-    >img {
-        height: 24px;
-        aspect-ratio: 1 / 1;
-    }
-}
+    >.scroll-down {
+        @include dFlex($fd: column, $jc: space-between, $ai: flex-end, $g: 8px);
 
-.references {
-    @include dFlex($jc: flex-start, $g: 32px);
+        >span {
+            display: inline-block;
+            transform: translateX(-24px) rotate(90deg);
+            transform-origin: right bottom;
+            white-space: nowrap;
+        }
 
-    >.link-icon {
-        height: 30px;
-        aspect-ratio: 1 / 1;
-
-        &:hover {
-            cursor: pointer;
+        >img {
+            height: 24px;
+            aspect-ratio: 1 / 1;
         }
     }
 }
+
+// .background {
+//     width: 100%;
+//     height: 383px;
+//     z-index: -40;
+//     background-image: url('/assets/img/quartercircle.svg');
+//     background-position: bottom left;
+//     background-size: 100% auto;
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 490px;
+//     right: 0;
+//     bottom: -100px;
+//     left: 0;
+// }

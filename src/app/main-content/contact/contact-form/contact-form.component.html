@@ -58,8 +58,11 @@
             <input type="submit" [value]="'FORM.SEND' | translate" class="button" [disabled]="!contactForm.form.valid"
                 [ngClass]="!contactForm.form.valid ? 'button-disabled': 'button-abled'">
         </div>
+    </div>
 
-        <span *ngIf="successMessage">{{ successMessage }}</span>
+    <div class="transmission-confirmation">
+        <span class="successMessage" *ngIf="successMessage">{{ successMessage }}</span>
+        <span class="errorMessage" *ngIf="errorMessage">{{ errorMessage }}</span>
     </div>
 
 </form>
