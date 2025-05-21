@@ -81,7 +81,7 @@
 }
 
 .hero-bottom {
-    @include dFlex($jc: space-between);
+    @include dFlex($jc: space-between, $ai: flex-end);
 
     >.references {
         @include dFlex($jc: flex-start, $g: 32px);

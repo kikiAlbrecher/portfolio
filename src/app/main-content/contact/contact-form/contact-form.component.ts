@@ -45,7 +45,7 @@ export class ContactFormComponent {
           },
           error: (error) => {
             console.error(error);
-            this.errorMessage = 'Your message has not been sent. Please try again';
+            this.errorMessage = 'Your message has not been sent. Please try again later.';
           },
           complete: () => console.info('send post complete'),
         });
