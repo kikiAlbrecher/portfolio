@@ -42,22 +42,21 @@ nav {
         font-size: 18px;
         box-shadow: none;
     }
-  
-    button.active {
-      background-color: $green;
-      color: white;
-      font-weight: 700;
-    }
-  
-    button.inactive {
-      border: 1px solid $green;
-      background: $blue-grey;
-      color: white;
 
-      &:hover {
-        border: unset;
-        background: $purple;
-      }
+    button.active {
+        background-color: $green;
+        color: white;
+        font-weight: 700;
     }
-  }
-  
+
+    button.inactive {
+        border: 1px solid $green;
+        background: $blue-grey;
+        color: white;
+
+        &:hover {
+            border: unset;
+            background: $purple;
+        }
+    }
+}

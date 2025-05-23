@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'app-header',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
-export class NavBarComponent {
-currentLang = 'en';
+export class HeaderComponent {
+  currentLang = 'en';
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang(this.currentLang);

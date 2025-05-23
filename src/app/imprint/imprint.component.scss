@@ -1,13 +1,6 @@
 @import 'shared';
 
-.address {
-    padding-bottom: 100px;
-}
-
-a {
-    color: $purple;
-
-    &:hover {
-        color: $green;
-    }
+.imprint-content {
+    @include dFlex($fd: column, $jc: stretch, $ai: flex-start, $g: 40px);
+    width: 100%;
 }

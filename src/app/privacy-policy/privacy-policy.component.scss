@@ -1,5 +1,11 @@
 @import 'shared';
 
+.policy-section {
+    min-height: calc(100vh - 291px);
+    width: 100%;
+    padding: 100px;
+}
+
 a {
     color: $purple;
 
