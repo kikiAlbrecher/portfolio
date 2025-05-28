@@ -2,6 +2,18 @@
 
 .left-padding-extra {
     padding-left: 136px;
+
+    @media (max-width: 1150px) {
+        padding-left: 75px;
+    }
+
+    @media (max-width: 800px) {
+        padding-left: 50px;
+    }
+
+    @media (max-width: 400px) {
+        padding-left: 25px;
+    }
 }
 
 .headline-projects {
@@ -11,8 +23,18 @@
 .subheadline {
     padding-top: 40px;
     @include dFlex();
+
+    // >span {
+    //     @media (mx-width: 1150px) {
+    //     text-align: center;
+    //     }
+    // }
 }
 
 .project-div {
     padding-right: 136px;
+
+    @media (max-width: 1150px) {
+        padding-right: 0;
+    }
 }

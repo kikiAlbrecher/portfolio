@@ -9,10 +9,22 @@ header {
     background: $blue-grey;
 }
 
-nav {
+.header-menu {
     @include dFlex($jc: space-between);
     padding: 37px 100px;
+    position: relative;
 
+    @media (max-width: 1150px) {
+        padding: 37px 75px;
+    }
+
+    @media (max-width: 800px) {
+        padding: 37px 50px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 37px 25px;
+    }
 
     >.logo {
         height: 27.9px;
@@ -20,16 +32,70 @@ nav {
 
     >.options {
         @include dFlex($jc: space-between, $g: 92px);
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    >.menu-icon {
+        height: 35px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+
+        @media (min-width: 900px) {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            display: flex;
+        }
+    }
+
+    >.resp-menu-box {
+        @include dFlex($fd: column, $g: 29px);
+        background: rgba(20, 29, 47, 0.8);
+        width: 100%;
+        height: calc(100vh - 109px);
+        position: absolute;
+        top: 109px;
+        right: 0;
+        transform: translateX(0);
+        transition: transform 0.25s ease-in-out;
+
+        &.resp-menu-closed {
+            transform: translateX(100%);
+            visibility: hidden;
+        }
+    }
+}
+
+.resp-menu-link {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: $purple;
+        transform: scaleX(0);
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
     }
 }
 
 .forwarding {
     @include dFlex($jc: space-between, $g: 29px);
+}
 
-    >a {
-        &:hover {
-            color: $green;
-        }
+a {
+    &:hover {
+        color: $green;
     }
 }
 
@@ -43,13 +109,13 @@ nav {
         box-shadow: none;
     }
 
-    button.active {
+    .lang-btn.active {
         background-color: $green;
         color: white;
         font-weight: 700;
     }
 
-    button.inactive {
+    .lang-btn.inactive {
         border: 1px solid $green;
         background: $blue-grey;
         color: white;
@@ -57,6 +123,27 @@ nav {
         &:hover {
             border: unset;
             background: $purple;
+        }
+    }
+}
+
+.languages-resp {
+    @include dFlex($jc: flex-start);
+
+    .lang-btn-resp {
+        border: unset;
+        background: unset;
+        box-shadow: none;
+    }
+
+    .lang-btn-resp.active {
+        color: $green;
+        font-weight: 600;
+    }
+
+    .lang-btn-resp.inactive {
+        &:hover {
+            color: $green;
         }
     }
 }

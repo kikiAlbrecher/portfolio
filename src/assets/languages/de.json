@@ -2,6 +2,7 @@
     "NAV": {
         "ABOUT": "Über mich",
         "SKILLS": "Fertigkeiten",
+        "SKILLS_RESP": "Meine Skills",
         "PROJECTS": "Projekte",
         "CONTACT": "Kontakt"
     },
@@ -34,8 +35,8 @@
     },
     "REFERENCES": {
         "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
-        "RECOMMENDER_BASTIAN": "B. Geppert",
-        "TEAM_PARTNER": "Team-Partner",
+        "RECOMMENDER_BASTIAN": "B. Geppert ",
+        "TEAM_PARTNER": " Team-Partner",
         "CITATION_GEORGE": "Kommt in Kürze!",
         "RECOMMENDER_GEORGE": "G. Cubas"
     },

@@ -1,20 +1,55 @@
 <header>
     <div class="section-content">
-        <nav>
-            <a href="index.html"><img class="logo" src="" alt="Logo Christina Albrecher"></a>
+        <nav class="header-menu" aria-label="main navigation">
+            <a href="index.html" aria-label="main page"><img class="logo" src="" alt="Logo"></a>
             <div class="options">
-                <div class="forwarding">
-                    <a href="#about-me">{{ 'NAV.ABOUT' | translate }}</a>
-                    <a href="#skills">{{ 'NAV.SKILLS' | translate }}</a>
-                    <a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a>
+                <div class="forwarding" aria-label="primary links">
+                    <a href="#about-me" aria-label="about me section">{{ 'NAV.ABOUT' | translate }}</a>
+                    <a href="#skills" aria-label="skills section">{{ 'NAV.SKILLS' | translate }}</a>
+                    <a href="#projects" aria-label="projects section">{{ 'NAV.PROJECTS' | translate }}</a>
                 </div>
-                <div class="languages">
-                    <button class="lang-btn"
+                <div class="languages" aria-label="language selection">
+                    <button class="lang-btn" [attr.aria-pressed]="currentLang === 'en'"
+                        aria-label="switch language to English"
                         [ngClass]="{ active: currentLang === 'en', inactive: currentLang !== 'en' }"
                         (click)="switchLanguage('en')">
                         EN
                     </button>
-                    <button class="lang-btn"
+                    <button class="lang-btn" [attr.aria-pressed]="currentLang === 'de'"
+                        aria-label="switch language to German"
+                        [ngClass]="{ active: currentLang === 'de', inactive: currentLang !== 'de' }"
+                        (click)="switchLanguage('de')">
+                        DE
+                    </button>
+                </div>
+            </div>
+            <img class="menu-icon" *ngIf="iconState === 'menu'" src="assets/icons/menu-icon.svg" alt="open menu"
+                aria-label="open menu" role="button" tabindex="0" (click)="toggleMenu()">
+            <img class="menu-icon" *ngIf="iconState === 'menu-transition'" src="assets/icons/menu-transition.svg"
+                alt="opening menu" aria-label="opening menu" role="button" tabindex="-1">
+            <img class="menu-icon" *ngIf="iconState === 'close-transition'" src="assets/icons/close-transition.svg"
+                alt="closing menu" aria-label="closing menu" role="button" tabindex="-1">
+            <img class="menu-icon" *ngIf="iconState === 'close'" src="assets/icons/close.svg" alt="close menu"
+                aria-label="close menu" role="button" tabindex="0" (click)="toggleMenu()">
+            <div class="resp-menu-box" [class.resp-menu-closed]="isMenuClosed" aria-label="mobile menu">
+                <a class="resp-menu-link" href="#about-me" (click)="toggleMenu()" aria-label="about me section">{{
+                    'NAV.ABOUT' | translate }}</a>
+                <a class="resp-menu-link" href="#skills" (click)="toggleMenu()" aria-label="skills section">{{
+                    'NAV.SKILLS_RESP' | translate }}</a>
+                <a class="resp-menu-link" href="#projects" (click)="toggleMenu()" aria-label="projects section">{{
+                    'NAV.PROJECTS' | translate }}</a>
+                <a class="resp-menu-link" href="#contact" (click)="toggleMenu()" aria-label="contact section">{{
+                    'NAV.CONTACT' | translate }}</a>
+                <div class="languages-resp" aria-label="language selection">
+                    <button class="lang-btn-resp" [attr.aria-pressed]="currentLang === 'en'"
+                        aria-label="switch language to English"
+                        [ngClass]="{ active: currentLang === 'en', inactive: currentLang !== 'en' }"
+                        (click)="switchLanguage('en')">
+                        EN
+                    </button>
+                    <p>/</p>
+                    <button class="lang-btn-resp" [attr.aria-pressed]="currentLang === 'de'"
+                        aria-label="switch language to German"
                         [ngClass]="{ active: currentLang === 'de', inactive: currentLang !== 'de' }"
                         (click)="switchLanguage('de')">
                         DE

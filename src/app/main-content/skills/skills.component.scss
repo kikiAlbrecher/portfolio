@@ -7,11 +7,20 @@
         @include dFlex($jc: flex-start, $ai: flex-start, $g: 88px);
         width: 50%;
         flex-wrap: wrap;
+
+        @media (max-width: 1150px) {
+            display: none;
+        }
     }
 
     >.skills-description {
         @include dFlex($fd: column, $ai: flex-end, $g: 40px);
         width: 50%;
+
+        @media (max-width: 1150px) {
+            width: 100%;
+            gap: 32px;
+        }
 
         >.skills-headline {
             @include dFlex($jc: flex-end, $ai: center, $g: 32px);
@@ -28,17 +37,35 @@
                 text-align: right;
             }
 
+            >.stack-mobile {
+                display: none;
+
+                @media (max-width: 1150px) {
+                    @include dFlex($jc: center, $ai: flex-start, $g: 32px);
+                    flex-wrap: wrap;
+                }
+            }
+
             .skills-question {
                 font-weight: 700;
                 font-size: 32px;
             }
 
-            a {
-                transition: transform 0.2s ease-in-out;
-                transform-origin: top right;
+            .skills-btn {
+                @include dFlex($jc: flex-end);
 
-                &:hover {
-                    transform: scale(1.1);
+                @media (max-width: 1150px) {
+                    @include dFlex($jc: center);
+                    width: 100%;
+
+                    a {
+                        transition: transform 0.2s ease-in-out;
+                        transform-origin: top right;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
                 }
             }
         }

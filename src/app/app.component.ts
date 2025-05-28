@@ -28,5 +28,4 @@ export class AppComponent {
     this.currentLang = lang;
     this.translate.use(lang);
   }
-
 }

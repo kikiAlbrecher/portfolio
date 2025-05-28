@@ -1,7 +1,7 @@
 @import 'shared';
 
 .hero {
-    height: calc(100vh - 109px);
+    min-height: calc(100vh - 109px);
     width: 100%;
     position: relative;
     @include dFlex($ai: flex-start);
@@ -14,11 +14,16 @@
         position: relative;
         justify-content: space-between;
         flex: 1;
+        padding-top: 109px;
     }
 }
 
 .introduction-with-image {
     @include dFlex($jc: space-between);
+
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column, $jc: flex-start);
+    }
 
     >.photo-space {
         @include dFlex();
@@ -31,6 +36,21 @@
         background-repeat: no-repeat;
         z-index: -99;
 
+        @media (max-width: 1150px) {
+            width: auto;
+            margin-left: 75px;
+        }
+
+        @media (max-width: 800px) {
+            margin-left: 50px;
+        }
+
+        @media (max-left: 400px) {
+            margin-left: 25px;
+            width: auto;
+            height: calc(100vh - 109px - 580px);
+        }
+
         >img {
             width: 80%;
             z-index: -99;
@@ -42,9 +62,17 @@
     @include dFlex($fd: column, $g: 44px);
     max-width: 60%;
 
+    @media (max-width: 1150px) {
+        max-width: 100%;
+    }
+
     >.introduction {
         @include dFlex($jc: flex-end, $ai: center, $g: 35px);
         position: relative;
+
+        @media (max-width: 400px) {
+            gap: 4px;
+        }
 
         >.start-introduction {
             font-size: 64px;
@@ -52,20 +80,33 @@
             transform: translateY(50%) rotate(-90deg);
             transform-origin: top;
             display: inline-block;
+
+            @media (max-width: 800px) {
+                font-size: 40px;
+                line-height: 100%;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 32px;
+            }
         }
 
         >.name-profession {
             @include dFlex($fd: column);
             text-align: justify;
 
-            >.name,
-            >.profession {
-                width: 100%;
-            }
-
             >.profession {
                 text-transform: uppercase;
                 text-align: center;
+            }
+
+            >.name,
+            >.profession {
+                width: 100%;
+
+                @media (max-width: 400px) {
+                    text-align: left;
+                }
             }
         }
     }
@@ -78,17 +119,47 @@
     &:hover {
         transform: scale(1.1);
     }
+
+    @media (max-width: 1150px) {
+        margin-left: 75px;
+    }
+
+    @media (max-width: 800px) {
+        margin-left: 50px;
+    }
+
+    @media (max-left: 400px) {
+        margin-left: 25px;
+    }
 }
 
 .hero-bottom {
     @include dFlex($jc: space-between, $ai: flex-end);
+    padding-top: 44px;
 
     >.references {
         @include dFlex($jc: flex-start, $g: 32px);
+        width: 100%;
+
+        @media (max-width: 824px) {
+            gap: 16px;
+
+            >.short-separator {
+                width: calc(50% - 174px/2 - 16px + 50px);
+            }
+
+            >.email-address {
+                display: none;
+            }
+        }
     }
 
     >.scroll-down {
         @include dFlex($fd: column, $jc: space-between, $ai: flex-end, $g: 8px);
+
+        @media (max-width: 1150px) {
+            display: none;
+        }
 
         >span {
             display: inline-block;

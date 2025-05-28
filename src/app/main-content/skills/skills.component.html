@@ -14,12 +14,20 @@
                 </div>
                 <div class="search padding-right">
                     <p class="fs-small p-skills">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+                    <div class="stack-mobile">
+                        <div *ngFor="let item of stack; let i = index;">
+                            <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName">
+                            </app-skill-item>
+                        </div>
+                    </div>
                     <span class="skills-question">{{ 'SKILLS.QUESTION_START' | translate }}<span
                             class="skills-question purple-font">{{ 'SKILLS.QUESTION_END' | translate
                             }}</span>?</span>
                     <p class="fs-small p-skills">{{ 'SKILLS.AMBITION' | translate }}</p>
-                    <a href="#contact"><button class="button-green">{{ 'SKILLS.APPEAL' | translate
-                            }}</button></a>
+                    <div class="skills-btn">
+                        <a href="#contact"><button class="button-green">{{ 'SKILLS.APPEAL' | translate
+                                }}</button></a>
+                    </div>
                 </div>
             </div>
         </div>

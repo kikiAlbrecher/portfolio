@@ -2,6 +2,10 @@
 
 .reference-container {
     @include dFlex($jc: space-between, $g: 48px);
+
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column-reverse, $jc: center, $g: 32px);
+    }
 }
 
 .reference-text {
@@ -12,12 +16,44 @@
     width: 100%;
     margin-left: 64px;
 
+    @media (max-width: 1150px) {
+        margin-left: 75px;
+        margin-right: 75px;
+        padding: 40px 72px;
+        gap: 40px;
+        width: auto;
+    }
+
+    @media (max-width: 800px) {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 28px 40px;
+        gap: 32px;
+    }
+
+    @media (max-width: 400px) {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 16px;
+        gap: 24px;
+    }
+
     >.ref-text-height {
         min-height: 112px;
+
+        @media (max-width: 400px) {
+            min-height: 189px;
+        }
 
         >span {
             font-family: 'Montserrat';
             font-size: 20px;
+
+
+            @media (max-width: 400px) {
+                font-family: 'Poppins';
+                font-size: 16px;
+            }
         }
     }
 
@@ -25,18 +61,44 @@
         @include dFlex($jc: space-between, $g: 16px);
         width: 100%;
 
+        @media (max-width: 500px) {
+            @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+        }
+
         >.horizontal-line {
             flex-grow: 1;
             border: none;
             border-radius: 32px;
             height: 2px;
             background: $purple;
+
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        >.short-separator {
+            display: none;
+
+            @media (max-width: 500px) {
+                display: block;
+                width: 55px;
+                border: none;
+                border-radius: 32px;
+                height: 2px;
+            }
         }
 
         >.recommender-name {
             font-family: 'Montserrat';
             font-size: 18px;
             white-space: nowrap;
+
+            @media (max-width: 400px) {
+                font-family: 'Poppins';
+                font-size: 16px;
+                white-space: unset;
+            }
         }
     }
 }
@@ -44,16 +106,44 @@
 .reference-img {
     @include dFlex($jc: flex-end);
 
+    @media (max-width: 1150px) {
+        @include dFlex($jc: center);
+        position: relative;
+        width: 100%;
+    }
+
     >img {
         width: 272px;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
         border: 4px solid $purple;
+
+        @media (max-width: 1150px) {
+            width: 228px;
+        }
+
+        @media (max-width: 800px) {
+            width: 186px;
+        }
+
+        @media (max-width: 400px) {
+            width: 144px;
+        }
     }
 
     >.separator-references {
+        height: 4px;
         width: 104px;
+        background: $purple;
         transform: rotate(0.55deg);
+
+        @media (max-width: 1150px) {
+            position: absolute;
+            left: 50%;
+            right: 0;
+            width: 50%;
+            z-index: -99;
+        }
     }
 }

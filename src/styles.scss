@@ -9,6 +9,14 @@
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
+
+    @media (max-width: 800px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -25,11 +33,11 @@ body {
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
 }
 
 .fs-small {
@@ -44,11 +52,27 @@ h1 {
     font-weight: 700;
     font-size: 90px;
     text-align: center;
+
+    @media (max-width: 800px) {
+        font-size: 64px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 45px;
+    }
 }
 
 h2 {
     font-size: 58px;
     color: $purple;
+
+    @media (max-width: 800px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 28px;
+    }
 }
 
 h3 {
@@ -82,7 +106,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: #1a253c;
+    background: #252c3c;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -108,10 +132,34 @@ html::-webkit-scrollbar-thumb:hover {
 
 .padding-right {
     padding-right: 100px;
+
+    @media (max-width: 1150px) {
+        padding-right: 75px;
+    }
+
+    @media (max-width: 800px) {
+        padding-right: 50px;
+    }
+
+    @media (max-width: 400px) {
+        padding-right: 25px;
+    }
 }
 
 .padding-left {
     padding-left: 100px;
+
+    @media (max-width: 1150px) {
+        padding-left: 75px;
+    }
+
+    @media (max-width: 800px) {
+        padding-left: 50px;
+    }
+
+    @media (max-left: 400px) {
+        padding-left: 25px;
+    }
 }
 
 // .centered-text {
@@ -122,10 +170,26 @@ html::-webkit-scrollbar-thumb:hover {
     display: none;
 }
 
+// .d-block {
+//     display: block;
+// }
+
 .short-separator {
     height: 4px;
     width: 100px;
     background: $purple;
+
+    @media (max-width: 1150px) {
+        width: calc(75px - 4px);
+    }
+
+    @media (max-width: 800px) {
+        width: calc(50px - 4px);
+    }
+
+    @media (max-width: 400px) {
+        width: calc(25px - 4px);
+    }
 }
 
 .long-separator {

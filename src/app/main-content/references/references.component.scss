@@ -5,6 +5,24 @@
     height: 68.1px;
     z-index: 99;
     transform: translateY(34px);
+
+    @media (max-width: 1150px) {
+        width: 87px;
+        height: 60px;
+        transform: translate(37.5px, 290px);
+    }
+
+    @media (max-width: 800px) {
+        width: 77px;
+        height: 54px;
+        transform: translate(25px, 245px);
+    }
+
+    @media (max-width: 400px) {
+        width: 68.3px;
+        height: 48px;
+        transform: translate(6px, 192px);
+    }
 }
 
 .references {
@@ -12,6 +30,11 @@
 
     >.slider {
         @include dFlex($g: 20px);
+        transform: translateX(-50px);
+
+        @media (max-width: 1150px) {
+            transform: translateX(0);
+        }
 
         >.arrow {
             width: 40px;
@@ -40,5 +63,11 @@
                 background: $green;
             }
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .padding-left {
+        padding-left: 0;
     }
 }

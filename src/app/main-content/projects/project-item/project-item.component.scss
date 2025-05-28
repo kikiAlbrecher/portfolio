@@ -3,10 +3,22 @@
 .project-container {
     @include dFlex($jc: space-between, $g: 35px);
 
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column, $jc: center);
+        padding-right: 75px;
+    }
+
+    @media (max-width: 800px) {
+        padding-right: 50px;
+    }
+
+    @media (max-width: 400px) {
+        padding-right: 25px;
+    }
+
     >.project-photo {
         @include dFlex();
         width: calc(60% - (35px / 2));
-        // height: 339px;
         padding: 24px;
 
         >img {
@@ -18,17 +30,37 @@
     >.project-teaser {
         @include dFlex($fd: column, $ai: flex-start, $g: 35px);
         width: calc(40% - (35px / 2));
+
+        @media (max-width: 1150px) {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    &.reverse {
+        @media (max-width: 1150px) {
+            padding-right: 0;
+        }
     }
 }
 
 .project-specification {
     @include dFlex($fd: column, $ai: flex-start, $g: 15px);
 
+    @media (max-width: 1150px) {
+        align-items: center;
+        text-align: center;
+    }
+
     >.project-title {
         font-weight: 700;
         font-size: 32px;
         color: $purple;
         padding-top: 82px;
+
+        @media (max-width: 1150px) {
+            padding-top: 0;
+        }
     }
 
     >.project-stack {
@@ -39,11 +71,24 @@
 .reverse {
     flex-direction: row-reverse;
 
+    @media (max-width: 1150px) {
+        flex-direction: column;
+    }
+
     >.project-teaser {
         align-items: flex-end;
 
+        @media (max-width: 1150px) {
+            align-items: center;
+        }
+
         >.project-specification {
             align-items: flex-end;
+
+            @media (max-width: 1150px) {
+                align-items: center;
+                text-align: center;
+            }
 
             >.fs-small {
                 text-align: right;
@@ -59,6 +104,7 @@
         background: $purple;
         padding: 15px 30px;
         box-shadow: none;
+        white-space: nowrap;
 
         &:hover {
             background: $green;

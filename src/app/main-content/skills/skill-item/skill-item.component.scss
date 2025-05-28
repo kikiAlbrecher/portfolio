@@ -2,6 +2,7 @@
 
 .stack-component {
     @include dFlex($fd: column, $jc: space-between, $g: 10px);
+    width: 88px;
     padding-top: 12px;
 
     >.stack-icon {
@@ -15,5 +16,10 @@
     >.stack-name {
         font-weight: 700;
         font-size: 16px;
+        text-align: center;
+
+        @media (max-width: 400px) {
+            font-size: 14px;
+        }
     }
 }

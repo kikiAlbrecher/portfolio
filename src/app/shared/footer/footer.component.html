@@ -1,12 +1,12 @@
 <footer>
     <div class="section-content padding-right padding-left">
         <div class="logo-links">
-            <a href="index.html"><img src="" alt="Logo Christina Albrecher"></a>
+            <a href="index.html"><img class="logo" src="" alt="Logo Christina Albrecher"></a>
             <span>© Christina Albrecher 2025</span>
             <app-media-links></app-media-links>
         </div>
         <div>
-            <a href="imprint" class="imprint-link">{{ 'FOOTER.IMPRINT' | translate}}</a>
+            <a [routerLink]="'/imprint'" class="imprint-link">{{ 'FOOTER.IMPRINT' | translate}}</a>
         </div>
     </div>
 </footer>

@@ -7,13 +7,26 @@ footer {
     @include dFlex();
     z-index: 20;
     background: $blue-grey;
+
+    @media (max-width: 1150px) {
+        text-align: center;
+    }
 }
 
 .logo-links {
     @include dFlex($jc: space-between);
 
-    >img {
-        height: 40.14px;
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column, $g: 24px);
+        padding-bottom: 24px;
+    }
+}
+
+.logo {
+    height: 40.14px;
+
+    @media (max-width: 1150px) {
+        padding-bottom: 16px;
     }
 }
 

@@ -1,7 +1,36 @@
 @import 'shared';
 
 .headline {
-    @include dFlex($jc: flex-start, $g: 32px);
+    @include dFlex($g: 32px);
+    position: relative;
+
+    @media (max-width: 800px) {
+        @include dFlex($jc: flex-start, $g: 16px);
+    }
+
+    >.headline-line {
+        position: absolute;
+        left: 0;
+        width: calc(50% - (366px / 2) - 32px);
+
+        @media (max-width: 800px) {
+            width: calc(50px - 4px);
+        }
+
+        @media (max-width: 800px) {
+            width: calc(25px - 4px);
+        }
+    }
+
+    >h1 {
+        @media (max-width: 800px) {
+            padding-left: 50px;
+        }
+
+        @media (max-width: 400px) {
+            padding-left: 25px;
+        }
+    }
 }
 
 .contact-columns {
@@ -13,9 +42,17 @@
 .contact-text-column {
     @include dFlex($jc: flex-start, $ai: stretch);
 
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column);
+    }
+
     >.invitation {
         width: 50%;
         @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+
+        @media (max-width: 1150px) {
+            width: 100%;
+        }
 
         >.invitation-text {
             @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
@@ -35,6 +72,10 @@
     >.contact-form-column {
         width: 50%;
         display: flex;
+
+        @media (max-width: 1150px) {
+            width: 100%;
+        }
     }
 }
 
