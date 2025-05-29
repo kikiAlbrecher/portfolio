@@ -2,11 +2,6 @@
 
 $red: #E61C40;
 
-.fs-ultra-small {
-    font-size: 14px;
-    text-wrap: wrap;
-}
-
 .contact-form {
     @include dFlex($fd: column, $jc: flex-start, $g: 32px);
     position: relative;
@@ -118,6 +113,11 @@ $red: #E61C40;
     }
 }
 
+.fs-ultra-small {
+    font-size: 14px;
+    text-wrap: wrap;
+}
+
 .validation-fail {
     color: $red;
 }
@@ -207,7 +207,6 @@ $red: #E61C40;
 
 .transmission-confirmation {
     z-index: 99;
-    font-size: 16px;
     width: 100%;
     height: 100%;
     background: rgba(20, 29, 47, 0.8);
@@ -221,31 +220,33 @@ $red: #E61C40;
 
     &.visible {
         transform: translateX(0);
-        // opacity: 1;
-        // visibility: visible;
         pointer-events: auto;
     }
 
     &.hidden {
         transform: translateX(100%);
-        // opacity: 0;
-        // visibility: hidden;
     }
 
     >.success-message,
     .error-message {
         width: 80%;
         padding: 32px 16px;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        border: unset;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     >.success-message {
         background: $green;
-        color: $purple;
+        color: $blue-grey;
+        box-shadow: 0 0 12px rgba(112, 230, 28, 0.8);
     }
 
     >.error-message {
         background: $blue-grey;
         color: $red;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     }
 }

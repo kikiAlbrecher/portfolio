@@ -1,14 +1,14 @@
 <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contact-form">
     <div class="field">
-        <app-contact-form-item class="input-item" #nameItem #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name"
-            id="name" [placeholder]="'FORM.PLACEHOLDER_NAME' | translate" [required]="true"
+        <app-contact-form-item class="input-item" #nameItem #name="ngModel" [(ngModel)]="contactData.name" type="text"
+            name="name" id="name" [placeholder]="'FORM.PLACEHOLDER_NAME' | translate" [required]="true"
             [labelKey]="'FORM.NAME' | translate" onkeydown="return /[A-ZÄÖÜa-zäöüß ]/i.test(event.key)">
         </app-contact-form-item>
     </div>
 
     <div class="field">
-        <app-contact-form-item class="input-item" #emailItem #email="ngModel" [(ngModel)]="contactData.email" type="email"
-            name="email" id="email" [placeholder]="'FORM.PLACEHOLDER_EMAIL' | translate"
+        <app-contact-form-item class="input-item" #emailItem #email="ngModel" [(ngModel)]="contactData.email"
+            type="email" name="email" id="email" [placeholder]="'FORM.PLACEHOLDER_EMAIL' | translate"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" [required]="true"
             [labelKey]="'FORM.EMAIL' | translate">
         </app-contact-form-item>
@@ -49,8 +49,8 @@
                         alt="checked checkbox">
                     <div class="policy-confirmation">
                         <span class="fs-ultra-small">{{ 'FORM.READ' | translate }}</span>
-                        <a class="policy-link fs-ultra-small" href="privacyPolicy">{{ 'FORM.PRIVACY_POLICY' | translate
-                            }}</a>
+                        <a class="policy-link fs-ultra-small" [routerLink]="'/privacyPolicy'">{{ 'FORM.PRIVACY_POLICY' |
+                            translate }}</a>
                         <span class="fs-ultra-small">{{ 'FORM.AGREEMENT' | translate }}</span>
                     </div>
                 </div>
