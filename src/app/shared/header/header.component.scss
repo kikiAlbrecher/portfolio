@@ -26,10 +26,6 @@ header {
         padding: 37px 25px;
     }
 
-    >.logo {
-        height: 27.9px;
-    }
-
     >.options {
         @include dFlex($jc: space-between, $g: 92px);
 
@@ -68,6 +64,10 @@ header {
             visibility: hidden;
         }
     }
+}
+
+.logo {
+    height: 27.9px;
 }
 
 .resp-menu-link {

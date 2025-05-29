@@ -1,4 +1,4 @@
-<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contact-form">
+<form #contactForm="ngForm" (ngSubmit)="onClickSubmit(contactForm)" class="contact-form">
     <div class="field">
         <app-contact-form-item class="input-item" #nameItem #name="ngModel" [(ngModel)]="contactData.name" type="text"
             name="name" id="name" [placeholder]="'FORM.PLACEHOLDER_NAME' | translate" [required]="true"
@@ -55,15 +55,18 @@
                     </div>
                 </div>
                 <div class="policy-validation-space">
-                    @if (contactData.policyAccepted === false && name.valid && email.valid && message.valid) {
+                    @if (contactData.policyAccepted === false && submitAttempted) {
                     <span class="validation-fail validation-fail-policy fs-ultra-small"> {{ 'FORM.POLICY' | translate
                         }}</span>
                     }
                 </div>
             </div>
 
-            <input type="submit" [value]="'FORM.SEND' | translate" class="button" [disabled]="!contactForm.form.valid"
-                [ngClass]="!contactForm.form.valid ? 'button-disabled': 'button-abled'">
+            <button type="button" class="button"
+                [ngClass]="!contactForm.form.valid ? 'button-disabled' : 'button-abled'"
+                (click)="onClickSubmit(contactForm)">
+                {{ 'FORM.SEND' | translate }}
+            </button>
         </div>
     </div>
 

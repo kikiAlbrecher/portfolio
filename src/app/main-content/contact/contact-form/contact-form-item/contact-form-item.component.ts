@@ -26,9 +26,10 @@ export class ContactFormItemComponent implements ControlValueAccessor {
   @Input() labelKey!: string;
   @Input() pattern?: string | any;
 
+  @ViewChild('ngModel', { static: true }) ngModel!: NgModel;
+
   value: string = '';
-  touched = false;
-  disabled = false;
+  disabled: boolean = false;
 
   onChange = (value: string) => { };
   onTouched = () => { };
@@ -51,18 +52,14 @@ export class ContactFormItemComponent implements ControlValueAccessor {
 
   handleInput(event: Event) {
     const target = event.target as HTMLInputElement;
+
     this.value = target.value;
     this.onChange(this.value);
   }
 
-  markTouched() {
-    if (!this.touched) {
-      this.onTouched();
-      this.touched = true;
-    }
+  markAsTouched() {
+    if (this.ngModel?.control) this.ngModel.control.markAsTouched();
   }
-
-  @ViewChild('ngModel', { static: true }) ngModel!: NgModel;
 
   reset() {
     this.ngModel.reset();

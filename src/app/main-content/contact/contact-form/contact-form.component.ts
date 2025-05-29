@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
-import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ContactFormItemComponent } from './contact-form-item/contact-form-item.component';
 import { RouterModule } from '@angular/router';
@@ -15,12 +15,14 @@ import { RouterModule } from '@angular/router';
 })
 export class ContactFormComponent {
   http = inject(HttpClient);
+  submitAttempted = false;
   successMessage = '';
   errorMessage = '';
   showMessage = false;
 
-  @ViewChild('nameItem') nameItem!: any;
-  @ViewChild('emailItem') emailItem!: any;
+  @ViewChild('messageTextarea', { static: true }) messageTextarea!: ElementRef<HTMLTextAreaElement>;
+  @ViewChild('nameItem') nameItem!: ContactFormItemComponent;
+  @ViewChild('emailItem') emailItem!: ContactFormItemComponent;
   // @ViewChild('message') message!: NgModel;
   // @ViewChild('policy') policy!: NgModel;
 
@@ -29,7 +31,7 @@ export class ContactFormComponent {
     email: '',
     message: '',
     policyAccepted: false
-  }
+  };
 
   post = {
     endPoint: 'https://christina-albrecher.at/sendMail.php',
@@ -56,53 +58,61 @@ export class ContactFormComponent {
     }, 2500);
   }
 
-  onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
+  onClickSubmit(ngForm: NgForm) {
+    this.submitAttempted = true;
+
+    if (!ngForm.valid) {
+      Object.values(ngForm.controls).forEach(control => control.markAsTouched());
+      this.markChildInputFields();
+    } else {
       this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: () => {
             this.showTemporaryMessage('success', 'Your message has been sent.');
             ngForm.resetForm();
-            this.nameItem.reset();
-            this.emailItem.reset();
-            this.contactData.policyAccepted = false;
+            this.resetAll();
           },
-          error: (error) => {
-            console.error(error);
-            this.showTemporaryMessage('error', 'Your message has not been sent. Please try again later.');
-          },
+          error: () => this.showTemporaryMessage('error', 'Your message has not been sent. Please try again later.'),
           complete: () => console.info('send post complete'),
         });
     }
   }
 
-  @ViewChild('messageTextarea', { static: true }) messageTextarea!: ElementRef<HTMLTextAreaElement>;
+  markChildInputFields() {
+    this.nameItem?.markAsTouched();
+    this.emailItem?.markAsTouched();
+    return;
+  }
+
+  resetAll() {
+    this.nameItem.reset();
+    this.emailItem.reset();
+    this.contactData.policyAccepted = false;
+    this.submitAttempted = false;
+  }
 
   ngAfterViewInit() {
     const icon = document.querySelector('.resize-icon') as HTMLElement;
     const textarea = this.messageTextarea.nativeElement;
 
-    if (!icon || !textarea) {
-      return;
-    }
+    if (!icon || !textarea) return;
 
+    this.setupResizeHandlers(icon, textarea);
+  }
+
+  private setupResizeHandlers(icon: HTMLElement, textarea: HTMLTextAreaElement) {
     let isResizing = false;
     let startY = 0;
     let startHeight = 0;
 
-    const startResize = (y: number) => {
+    const startResize = (y: number) => this.startResizing(textarea, y, () => {
       isResizing = true;
       startY = y;
       startHeight = textarea.offsetHeight;
-      textarea.classList.add('resizing');
-    };
+    });
 
     const doResize = (y: number) => {
-      if (!isResizing) return;
-      const deltaY = y - startY;
-      let newHeight = startHeight + deltaY;
-      newHeight = Math.max(200, Math.min(1200, newHeight));
-      textarea.style.height = `${newHeight}px`;
+      if (isResizing) this.performResize(textarea, y - startY, startHeight);
     };
 
     const stopResize = () => {
@@ -110,6 +120,22 @@ export class ContactFormComponent {
       textarea.classList.remove('resizing');
     };
 
+    this.registerResizeEvents(icon, textarea, startResize, doResize, stopResize);
+  }
+
+  private startResizing(textarea: HTMLTextAreaElement, y: number, onStart: () => void) {
+    onStart();
+    textarea.classList.add('resizing');
+  }
+
+  private performResize(textarea: HTMLTextAreaElement, deltaY: number, startHeight: number) {
+    let newHeight = startHeight + deltaY;
+    newHeight = Math.max(200, Math.min(1200, newHeight));
+    textarea.style.height = `${newHeight}px`;
+  }
+
+  private registerResizeEvents(icon: HTMLElement, textarea: HTMLTextAreaElement, startResize: (y: number) => void,
+    doResize: (y: number) => void, stopResize: () => void) {
     icon.addEventListener('mousedown', (e) => {
       e.preventDefault();
       startResize(e.clientY);
@@ -126,9 +152,7 @@ export class ContactFormComponent {
     });
 
     window.addEventListener('touchmove', (e) => {
-      if (e.touches.length === 1) {
-        doResize(e.touches[0].clientY);
-      }
+      if (e.touches.length === 1) doResize(e.touches[0].clientY);
     });
 
     window.addEventListener('touchend', stopResize);

@@ -15,6 +15,11 @@
         justify-content: space-between;
         flex: 1;
         padding-top: 109px;
+
+        @media (max-width: 1150px) {
+            @include dFlex($fd: column, $jc: space-between);
+            height: 100vh;
+        }
     }
 }
 
@@ -27,9 +32,9 @@
 
     >.photo-space {
         @include dFlex();
-        width: 40%;
-        height: calc(100vh - 209px);
-        max-height: calc(1400px - 209px);
+        width: 60%;
+        // height: calc(100vh - 209px);
+        // max-height: calc(1400px - 209px);
         background-image: url('/assets/img/photo-shadow.svg');
         background-position: center;
         background-size: contain;
@@ -51,9 +56,13 @@
             height: calc(100vh - 109px - 580px);
         }
 
-        >img {
-            width: 80%;
+        >.hero-photo {
+            max-height: calc(100vh - 109px - 104px);
             z-index: -99;
+
+            @media (max-width: 1150px) {
+                max-height: calc(100vh - 109px - 388px - 84px);
+            }
         }
     }
 }
@@ -69,6 +78,10 @@
     >.introduction {
         @include dFlex($jc: flex-end, $ai: center, $g: 35px);
         position: relative;
+
+        @media (max-width: 1150px) {
+            padding-top: 44px;
+        }
 
         @media (max-width: 400px) {
             gap: 4px;
