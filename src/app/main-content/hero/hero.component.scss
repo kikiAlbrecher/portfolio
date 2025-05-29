@@ -45,7 +45,7 @@
             margin-left: 50px;
         }
 
-        @media (max-left: 400px) {
+        @media (max-width: 400px) {
             margin-left: 25px;
             width: auto;
             height: calc(100vh - 109px - 580px);
@@ -128,7 +128,7 @@
         margin-left: 50px;
     }
 
-    @media (max-left: 400px) {
+    @media (max-width: 400px) {
         margin-left: 25px;
     }
 }

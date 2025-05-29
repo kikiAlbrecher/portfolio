@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ContactFormItemComponent } from './contact-form-item/contact-form-item.component';
 
@@ -16,6 +16,12 @@ export class ContactFormComponent {
   http = inject(HttpClient);
   successMessage = '';
   errorMessage = '';
+  showMessage = false;
+
+  @ViewChild('nameItem') nameItem!: any;
+  @ViewChild('emailItem') emailItem!: any;
+  // @ViewChild('message') message!: NgModel;
+  // @ViewChild('policy') policy!: NgModel;
 
   contactData = {
     name: '',
@@ -35,17 +41,34 @@ export class ContactFormComponent {
     },
   };
 
+  private showTemporaryMessage(type: 'success' | 'error', message: string) {
+    this.successMessage = type === 'success' ? message : '';
+    this.errorMessage = type === 'error' ? message : '';
+    this.showMessage = true;
+
+    setTimeout(() => {
+      this.showMessage = false;
+      setTimeout(() => {
+        this.successMessage = '';
+        this.errorMessage = '';
+      }, 250);
+    }, 2500);
+  }
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: () => {
-            this.successMessage = 'Your message has been sent.';
+            this.showTemporaryMessage('success', 'Your message has been sent.');
             ngForm.resetForm();
+            this.nameItem.reset();
+            this.emailItem.reset();
+            this.contactData.policyAccepted = false;
           },
           error: (error) => {
             console.error(error);
-            this.errorMessage = 'Your message has not been sent. Please try again later.';
+            this.showTemporaryMessage('error', 'Your message has not been sent. Please try again later.');
           },
           complete: () => console.info('send post complete'),
         });

@@ -25,6 +25,14 @@
         >.skills-headline {
             @include dFlex($jc: flex-end, $ai: center, $g: 32px);
 
+            @media (max-width: 1150px) {
+                gap: 16px;
+            }
+
+            @media (max-width: 800px) {
+                gap: 8px;
+            }
+
             >.separator-skills {
                 width: 68px;
             }
@@ -49,6 +57,7 @@
             .skills-question {
                 font-weight: 700;
                 font-size: 32px;
+                text-align: right;
             }
 
             .skills-btn {

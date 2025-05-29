@@ -157,7 +157,7 @@ html::-webkit-scrollbar-thumb:hover {
         padding-left: 50px;
     }
 
-    @media (max-left: 400px) {
+    @media (max-width: 400px) {
         padding-left: 25px;
     }
 }

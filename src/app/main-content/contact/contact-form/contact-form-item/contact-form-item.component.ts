@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, forwardRef, Input } from '@angular/core';
-import { FormsModule, NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+import { Component, forwardRef, Input, ViewChild } from '@angular/core';
+import { FormsModule, NG_VALUE_ACCESSOR, ControlValueAccessor, NgModel } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -60,5 +60,11 @@ export class ContactFormItemComponent implements ControlValueAccessor {
       this.onTouched();
       this.touched = true;
     }
+  }
+
+  @ViewChild('ngModel', { static: true }) ngModel!: NgModel;
+
+  reset() {
+    this.ngModel.reset();
   }
 }
