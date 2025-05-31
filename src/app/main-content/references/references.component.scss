@@ -4,29 +4,36 @@
     width: 96.9px;
     height: 68.1px;
     z-index: 40;
-    transform: translateY(34px);
+    position: absolute;
+    top: 0;
 
     @media (max-width: 1150px) {
+        top: -34px;
         width: 87px;
         height: 60px;
-        transform: translate(37.5px, 290px);
+        transform: translate(37.5px, 266px);
     }
 
     @media (max-width: 800px) {
         width: 77px;
         height: 54px;
-        transform: translate(25px, 245px);
+        transform: translate(25px, 224px);
     }
 
     @media (max-width: 400px) {
         width: 68.3px;
         height: 48px;
-        transform: translate(6px, 192px);
+        transform: translate(6px, 176px);
     }
 }
 
 .references {
     @include dFlex($fd: column, $ai: stretch, $g: 32px);
+    padding-top: 34px;
+
+    @media (max-width: 1150px) {
+        padding-top: 0;
+    }
 
     >.slider {
         @include dFlex($g: 20px);

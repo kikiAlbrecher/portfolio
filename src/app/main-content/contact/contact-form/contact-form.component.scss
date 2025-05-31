@@ -185,9 +185,17 @@ $red: #E61C40;
     }
 }
 
+.button-abled,
+.button-disabled {
+    padding: 15px 30px;
+
+    @media (max-width: 344px) {
+        padding: 10px 20px;
+    }
+}
+
 .button-abled {
     background: $green;
-    padding: 15px 30px;
 
     &:hover {
         background: $purple;
@@ -197,7 +205,6 @@ $red: #E61C40;
 
 .button-disabled {
     background: #B6B6B6;
-    padding: 15px 30px;
 
     &:hover {
         background: #B6B6B6;

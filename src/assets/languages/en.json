@@ -14,8 +14,8 @@
     "ABOUT": {
         "HEADER": "About me",
         "PASSION": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-        "LOCATION": "Vienna, Graz or somewhere else. I am also open to all different ways of working, remotely, in an office or hybrid.",
-        "MINDSET": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+        "LOCATION": "Vienna, Graz or somewhere else. I am also open to all different ways of working, remotely, on site,  hybrid ...",
+        "MINDSET": "I am looking forward to new challenges and continually strive to improve my skills in modern technologies.",
         "FIND_SOLUTIONS": "A brief description of your problem-solving approach. Do you learn from each challenge as yout search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
     },
     "SKILLS": {
@@ -27,7 +27,7 @@
         "APPEAL": "Get in touch!"
     },
     "PROJECTS": {
-        "SUBHEADLINE": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "SUBHEADLINE": "Explore a selection of my work here. Interact with projects to see my skills in action.",
         "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
         "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information.",
         "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",

@@ -1,18 +1,20 @@
 <section class="general-main-section">
-    <div class="section-content left-padding-extra">
+    <div class="section-content">
         <div class="headline-projects">
-            <div class="short-separator"></div>
-            <h1 class="centered-text">Portfolio</h1>
+            <div class="short-separator before-h1"></div>
+            <h1>Portfolio</h1>
             <div class="short-separator long-separator"></div>
         </div>
-        <div class="subheadline">
+        <div class="subheadline padding-right padding-left">
             <span class="fs-small">{{ 'PROJECTS.SUBHEADLINE' | translate }}</span>
         </div>
-        <div *ngFor="let item of projects; let i = index;" class="project-div">
-            <app-project-item [projectPhotoUrl]="item.projectPhotoUrl" [projectTitle]="item.projectTitle"
-                [projectStack]="item.projectStack" [projectDescription]="item.projectDescription | translate"
-                [liveTestUrl]="item.liveTestUrl" [githubUrl]="item.githubUrl" [isReversed]="i % 2 === 1">
-            </app-project-item>
+        <div class="projects">
+            <div *ngFor="let item of projects; let i = index;" class="padding-projects">
+                <app-project-item [projectPhotoUrl]="item.projectPhotoUrl" [projectTitle]="item.projectTitle"
+                    [projectStack]="item.projectStack" [projectDescription]="item.projectDescription | translate"
+                    [liveTestUrl]="item.liveTestUrl" [githubUrl]="item.githubUrl" [isReversed]="i % 2 === 1">
+                </app-project-item>
+            </div>
         </div>
     </div>
 </section>

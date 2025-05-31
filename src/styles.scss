@@ -96,6 +96,10 @@ button,
     background: $green;
     padding: 15px 30px;
 
+    @media (max-width: 344px) {
+        padding: 10px 20px;
+    }
+
     &:hover {
         background: $purple;
     }
@@ -162,29 +166,21 @@ html::-webkit-scrollbar-thumb:hover {
     }
 }
 
-// .centered-text {
-//     align-items: center;
-// }
-
 .d-none {
     display: none;
 }
 
-// .d-block {
-//     display: block;
-// }
-
 .short-separator {
     height: 4px;
-    width: 100px;
+    width: calc(100px - 32px);
     background: $purple;
 
     @media (max-width: 1150px) {
-        width: calc(75px - 4px);
+        width: calc(75px - 16px);
     }
 
     @media (max-width: 800px) {
-        width: calc(50px - 4px);
+        width: calc(50px - 8px);
     }
 
     @media (max-width: 400px) {
@@ -192,7 +188,7 @@ html::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.long-separator {
-    width: calc(50% - 250px - 32px);
-    // flex-grow: 1;
-}
+// .long-separator {
+//     width: calc(50% - 250px - 32px);
+//     // flex-grow: 1;
+// }

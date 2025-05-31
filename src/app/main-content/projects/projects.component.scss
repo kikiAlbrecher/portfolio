@@ -1,40 +1,97 @@
 @import 'shared';
 
-.left-padding-extra {
-    padding-left: 136px;
+.headline-projects {
+    @include dFlex($jc: center, $g: 32px);
+    position: relative;
 
     @media (max-width: 1150px) {
-        padding-left: 75px;
+        gap: 16px;
     }
 
     @media (max-width: 800px) {
-        padding-left: 50px;
+        gap: 8px;
     }
 
     @media (max-width: 400px) {
-        padding-left: 25px;
+        gap: 4px;
     }
-}
 
-.headline-projects {
-    @include dFlex($jc: flex-end, $g: 32px);
+    >.before-h1 {
+        position: absolute;
+        left: calc(50% - (365px / 2) - 100px);
+
+        @media (max-width: 1150px) {
+            left: calc(50% - (365px / 2) - 75px);
+        }
+
+        @media (max-width: 800px) {
+            left: calc(50% - (260px / 2) - 50px);
+        }
+
+        @media (max-width: 400px) {
+            left: calc(50% - (183px / 2) - 25px);
+        }
+    }
+
+    >h1 {
+        text-align: center;
+    }
+
+    >.long-separator {
+        position: absolute;
+        right: 0;
+        width: calc(50% - (365px / 2) - 32px);
+
+        @media (max-width: 1150px) {
+            width: calc(50% - (365px / 2) - 16px);
+        }
+
+        @media (max-width: 800px) {
+            width: calc(50% - (260px / 2) - 8px);
+        }
+
+        @media (max-width: 400px) {
+            width: calc(50% - (183px / 2) - 4px);
+        }
+    }
 }
 
 .subheadline {
     padding-top: 40px;
+    padding-bottom: 40px;
     @include dFlex();
 
-    // >span {
-    //     @media (mx-width: 1150px) {
-    //     text-align: center;
-    //     }
-    // }
+    >span {
+        @media (max-width: 1150px) {
+            text-align: center;
+        }
+    }
 }
 
-.project-div {
-    padding-right: 136px;
+.projects {
+    @include dFlex($fd: column, $g: 80px);
 
     @media (max-width: 1150px) {
-        padding-right: 0;
+        width: 100%;
+    }
+
+    >.padding-projects {
+        padding-left: 136px;
+        padding-right: 136px;
+
+        @media (max-width: 1150px) {
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+
+        @media (max-width: 800px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media (max-width: 400px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     }
 }

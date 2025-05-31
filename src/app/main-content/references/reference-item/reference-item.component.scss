@@ -61,7 +61,7 @@
         @include dFlex($jc: space-between, $g: 16px);
         width: 100%;
 
-        @media (max-width: 500px) {
+        @media (max-width: 504px) {
             @include dFlex($fd: column, $ai: flex-start, $g: 8px);
         }
 
@@ -72,7 +72,7 @@
             height: 2px;
             background: $purple;
 
-            @media (max-width: 500px) {
+            @media (max-width: 504px) {
                 display: none;
             }
         }
@@ -80,7 +80,7 @@
         >.short-separator {
             display: none;
 
-            @media (max-width: 500px) {
+            @media (max-width: 504px) {
                 display: block;
                 width: 55px;
                 border: none;
