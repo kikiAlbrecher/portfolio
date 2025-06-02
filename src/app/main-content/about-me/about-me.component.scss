@@ -1,12 +1,30 @@
 @import 'shared';
 
+.about-splash {
+    background-image: url('/assets/img/purple-about.svg');
+    width: 572.03px;
+    height: 608px;
+    top: -50%;
+    right: 0;
+    transform: translateX(60%) rotate(-8deg);
+    z-index: -10;
+
+    @media (max-width: 1350px) {
+        top: -45%;
+    }
+}
+
 .about-me {
     @include dFlex($jc: space-between);
     width: 100%;
 
     >.about-me-text {
-        width: 45%;
+        width: 40%;
         @include dFlex($fd: column, $ai: flex-start, $g: 40px);
+
+        @media (max-width: 1250px) {
+            width: 45%;
+        }
 
         @media (max-width: 1150px) {
             width: 100%;
@@ -28,7 +46,7 @@
     }
 
     .about-me-photo {
-        width: 45%;
+        width: 50%;
         @include dFlex($jc: flex-end);
 
         @media (max-width: 1150px) {
@@ -41,8 +59,12 @@
             border-radius: 50%;
             border: 4px solid $green;
             object-fit: contain;
-            object-position: top;
+            object-position: center;
+            background: $blue-grey;
 
+            @media (max-width: 1250px) {
+                width: 400px;
+            }
         }
 
         >.separator-about-me {

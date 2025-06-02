@@ -18,20 +18,20 @@ export class ReferencesComponent {
       citation: 'REFERENCES.CITATION_BASTIAN',
       recommender: 'REFERENCES.RECOMMENDER_BASTIAN',
       role: 'REFERENCES.TEAM_PARTNER',
-      imageUrl: 'assets/img/Bastian.JPEG',
+      imageUrl: 'assets/img/Geppert.JPEG',
     },
     {
       citation: 'REFERENCES.CITATION_GEORGE',
       recommender: 'REFERENCES.RECOMMENDER_GEORGE',
       role: 'REFERENCES.TEAM_PARTNER',
-      imageUrl: 'assets/img/George.png',
+      imageUrl: 'assets/img/Cubas.jpg',
     },
-    {
-      citation: 'REFERENCES.CITATION_PIA',
-      recommender: 'REFERENCES.RECOMMENDER_PIA',
-      role: 'REFERENCES.TEAM_PARTNER',
-      imageUrl: 'assets/img/Pia.png',
-    }
+    // {
+    //   citation: 'REFERENCES.CITATION_PIA',
+    //   recommender: 'REFERENCES.RECOMMENDER_PIA',
+    //   role: 'REFERENCES.TEAM_PARTNER',
+    //   imageUrl: 'assets/img/Pia.png',
+    // }
   ];
 
   nextReference() {

@@ -13,6 +13,8 @@ header {
     @include dFlex($jc: space-between);
     padding: 37px 100px;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
 
     @media (max-width: 1150px) {
         padding: 37px 75px;
@@ -26,17 +28,29 @@ header {
         padding: 37px 25px;
     }
 
-    >.options {
+    >.logo-position {
+        @include dFlex();
+
+        >.logo {
+            height: 35.03px;
+        }
+    }
+
+    >.desktop-nav {
         @include dFlex($jc: space-between, $g: 92px);
 
         @media (max-width: 900px) {
             display: none;
         }
+
+        >.forwarding {
+            @include dFlex($jc: space-between, $g: 29px);
+        }
     }
 
     >.menu-icon {
-        height: 35px;
-        aspect-ratio: 1 / 1;
+        width: 30px;
+        height: 27.72px;
         cursor: pointer;
 
         @media (min-width: 900px) {
@@ -47,50 +61,6 @@ header {
             display: flex;
         }
     }
-
-    >.resp-menu-box {
-        @include dFlex($fd: column, $g: 29px);
-        background: rgba(20, 29, 47, 0.8);
-        width: 100%;
-        height: calc(100vh - 109px);
-        position: absolute;
-        top: 109px;
-        right: 0;
-        transform: translateX(0);
-        transition: transform 0.25s ease-in-out;
-
-        &.resp-menu-closed {
-            transform: translateX(100%);
-            visibility: hidden;
-        }
-    }
-}
-
-.logo {
-    height: 27.9px;
-}
-
-.resp-menu-link {
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background-color: $purple;
-        transform: scaleX(0);
-    }
-
-    &:hover::after {
-        transform: scaleX(1);
-    }
-}
-
-.forwarding {
-    @include dFlex($jc: space-between, $g: 29px);
 }
 
 a {
@@ -123,6 +93,45 @@ a {
         &:hover {
             border: unset;
             background: $purple;
+        }
+    }
+}
+
+.resp-menu-box {
+    @include dFlex($fd: column, $g: 29px);
+    background: rgba(20, 29, 47, 0.8);
+    width: 100%;
+    height: calc(100vh - 109px);
+    position: fixed;
+    top: 109px;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 0.25s ease-in-out;
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+
+    &.resp-menu-closed {
+        transform: translateX(100%);
+    }
+
+    >.resp-menu-link {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: $purple;
+            transform: scaleX(0);
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
         }
     }
 }

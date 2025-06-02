@@ -29,7 +29,7 @@
     "PROJECTS": {
         "SUBHEADLINE": "Entdecken Sie eine Auswahl meiner Arbeiten und erleben Sie meine Programmierkenntnisse in Aktion.",
         "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Kontakte und Kategorien zu.",
-        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI: eine Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert. Suche in über 1300 Pokémons der API.",
         "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen.",
         "LIVE_TEST": "Live-Test"
     },
@@ -37,7 +37,7 @@
         "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
         "RECOMMENDER_BASTIAN": "B. Geppert ",
         "TEAM_PARTNER": " Team-Partner",
-        "CITATION_GEORGE": "Kommt in Kürze!",
+        "CITATION_GEORGE": "Ich habe gemeinsam mit Christina an dem Projekt Kochwelt gearbeitet. Von Anfang an war sie äußerst engagiert, zuverlässig und motiviert. Christina hat ihre Aufgaben stets termingerecht und mit großer Sorgfalt erledigt. Dank ihrer strukturierten Arbeitsweise und ihrer Teamfähigkeit konnten wir alle Deadlines einhalten und das Projekt erfolgreich abschließen. Die Zusammenarbeit mit ihr war stets angenehm und produktiv – ich kann sie uneingeschränkt weiterempfehlen.",
         "RECOMMENDER_GEORGE": "G. Cubas"
     },
     "BUTTON": {

@@ -5,11 +5,20 @@ footer {
     width: 100%;
     border-top: 4px solid $green;
     @include dFlex();
-    z-index: 20;
+    z-index: 100;
     background: $blue-grey;
+    position: relative;
 
     @media (max-width: 1150px) {
         text-align: center;
+    }
+
+    >.footer-content {
+        gap: 16px;
+
+        @media (max-width: 1150px) {
+            gap: 0;
+        }
     }
 }
 
@@ -20,18 +29,23 @@ footer {
         @include dFlex($fd: column, $g: 24px);
         padding-bottom: 24px;
     }
-}
 
-.logo {
-    height: 40.14px;
+    >.logo-position {
+        @include dFlex();
 
-    @media (max-width: 1150px) {
-        padding-bottom: 16px;
+        @media (max-width: 1150px) {
+            padding-bottom: 16px;
+        }
+
+        >.logo {
+            height: 40.14px;
+        }
     }
 }
 
 .imprint-link {
     position: relative;
+    padding: 5px 0;
 
     &::after {
         content: "";

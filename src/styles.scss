@@ -21,6 +21,10 @@
 
 body {
     background: $blue-grey;
+}
+
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -170,6 +174,16 @@ html::-webkit-scrollbar-thumb:hover {
     display: none;
 }
 
+.splashes {
+    z-index: -99;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    transform-origin: center center;
+    pointer-events: none;
+    overflow-x: hidden;
+}
+
 .short-separator {
     height: 4px;
     width: calc(100px - 32px);
@@ -187,8 +201,3 @@ html::-webkit-scrollbar-thumb:hover {
         width: calc(25px - 4px);
     }
 }
-
-// .long-separator {
-//     width: calc(50% - 250px - 32px);
-//     // flex-grow: 1;
-// }

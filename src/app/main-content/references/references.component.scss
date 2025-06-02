@@ -1,5 +1,33 @@
 @import 'shared';
 
+.references-splash {
+    background-image: url('/assets/img/green-references.svg');
+    width: 428.59px;
+    height: 951.44px;
+    top: -400px;
+    right: 250px;
+    transform: translateX(50%) rotate(80deg);
+    z-index: -99;
+
+    @media (max-width: 1400px) {
+        top: -350px;
+    }
+
+    @media (max-width: 1150px) {
+        top: -370px;
+        right: 250px;
+    }
+
+    @media (max-width: 800px) {
+        top: -400px;
+        right: 200px;
+    }
+
+    @media (max-width: 400px) {
+        top: -430px;
+    }
+}
+
 .quote {
     width: 96.9px;
     height: 68.1px;

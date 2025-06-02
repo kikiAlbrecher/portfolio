@@ -1,5 +1,37 @@
 @import 'shared';
 
+.skills-splash {
+    background-image: url('/assets/img/green-skills.svg');
+    width: 428.59px;
+    height: 951.44px;
+    top: 360px;
+    left: -221.49px;
+    z-index: -10;
+
+    @media (max-width: 800px) {
+        top: 440px;
+        left: -221.49px;
+    }
+
+    @media (max-width: 560px) {
+        top: 600px;
+        left: -221.49px;
+    }
+
+    @media (max-width: 438px) {
+        top: 800px;
+        left: -300px;
+    }
+
+    @media (max-width: 400px) {
+        top: 600px;
+    }
+
+    @media (max-width: 390px) {
+        top: 800px;
+    }
+}
+
 .skills {
     @include dFlex($jc: space-between, $g: 105px);
 
@@ -33,7 +65,7 @@
                 gap: 8px;
             }
 
-            @media (max-width: 800px) {
+            @media (max-width: 400px) {
                 gap: 4px;
             }
         }

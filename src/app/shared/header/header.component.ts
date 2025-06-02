@@ -46,7 +46,7 @@ export class HeaderComponent {
 
   closeMenu(): void {
     this.iconState = 'close-transition';
-    
+
     setTimeout(() => {
       this.iconState = 'menu';
       this.isMenuClosed = true;

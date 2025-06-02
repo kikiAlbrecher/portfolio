@@ -29,7 +29,7 @@
     "PROJECTS": {
         "SUBHEADLINE": "Explore a selection of my work here. Interact with projects to see my skills in action.",
         "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
-        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information.",
+        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information. Search in more than 1300 pokémons of the API.",
         "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",
         "LIVE_TEST": "Live test"
     },
@@ -37,7 +37,7 @@
         "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
         "RECOMMENDER_BASTIAN": "B. Geppert ",
         "TEAM_PARTNER": " Team Partner",
-        "CITATION_GEORGE": "Coming soon",
+        "CITATION_GEORGE": "I worked together with Christina on the Kochwelt project. From the very beginning, she was extremely dedicated, reliable, and motivated. Christina consistently completed her tasks on time and with great attention to detail. Thanks to her structured approach and strong team spirit, we were able to meet all deadlines and successfully complete the project. Working with her was always pleasant and productive – I can recommend her without reservation.",
         "RECOMMENDER_GEORGE": "G. Cubas"
     },
     "BUTTON": {
