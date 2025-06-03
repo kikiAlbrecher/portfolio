@@ -130,7 +130,7 @@ $red: #E61C40;
     width: 100%;
     @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         gap: 12px;
     }
 }
@@ -190,6 +190,10 @@ $red: #E61C40;
     padding: 15px 30px;
 
     @media (max-width: 344px) {
+        padding: 10px 20px;
+    }
+
+    @media (max-height: 376px) {
         padding: 10px 20px;
     }
 }

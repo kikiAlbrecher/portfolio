@@ -14,7 +14,7 @@
         font-size: 20px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         font-size: 16px;
     }
 }
@@ -61,7 +61,7 @@ h1 {
         font-size: 64px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         font-size: 45px;
     }
 }
@@ -74,7 +74,7 @@ h2 {
         font-size: 40px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         font-size: 28px;
     }
 }
@@ -101,6 +101,10 @@ button,
     padding: 15px 30px;
 
     @media (max-width: 344px) {
+        padding: 10px 20px;
+    }
+
+    @media (max-height: 376px) {
         padding: 10px 20px;
     }
 
@@ -149,7 +153,7 @@ html::-webkit-scrollbar-thumb:hover {
         padding-right: 50px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         padding-right: 25px;
     }
 }
@@ -165,7 +169,7 @@ html::-webkit-scrollbar-thumb:hover {
         padding-left: 50px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         padding-left: 25px;
     }
 }
@@ -175,7 +179,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .splashes {
-    z-index: -99;
+    // z-index: -99;
+    //kontrollieren, ob doppelt
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -197,7 +202,7 @@ html::-webkit-scrollbar-thumb:hover {
         width: calc(50px - 8px);
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         width: calc(25px - 4px);
     }
 }

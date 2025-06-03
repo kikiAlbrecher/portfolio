@@ -31,7 +31,7 @@
         gap: 32px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         margin-left: 25px;
         margin-right: 25px;
         padding: 16px;
@@ -41,7 +41,7 @@
     >.ref-text-height {
         min-height: 112px;
 
-        @media (max-width: 400px) {
+        @media (max-width: 432px) {
             min-height: 189px;
         }
 
@@ -50,7 +50,7 @@
             font-size: 20px;
 
 
-            @media (max-width: 400px) {
+            @media (max-width: 432px) {
                 font-family: 'Poppins';
                 font-size: 16px;
             }
@@ -94,7 +94,7 @@
             font-size: 18px;
             white-space: nowrap;
 
-            @media (max-width: 400px) {
+            @media (max-width: 432px) {
                 font-family: 'Poppins';
                 font-size: 16px;
                 white-space: unset;
@@ -128,7 +128,7 @@
             width: 186px;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 432px) {
             width: 144px;
         }
     }

@@ -143,6 +143,10 @@
             padding: 10px 20px;
         }
 
+        @media (max-height: 376px) {
+            padding: 10px 20px;
+        }
+
         &:hover {
             background: $green;
         }

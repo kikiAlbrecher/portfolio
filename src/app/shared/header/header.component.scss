@@ -1,7 +1,6 @@
 @import 'shared';
 
 header {
-    height: 109px;
     width: 100%;
     position: fixed;
     @include dFlex();
@@ -24,8 +23,13 @@ header {
         padding: 37px 50px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 432px) {
         padding: 37px 25px;
+    }
+
+    @media (max-height: 600px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     >.logo-position {
@@ -101,9 +105,9 @@ a {
     @include dFlex($fd: column, $g: 29px);
     background: rgba(20, 29, 47, 0.8);
     width: 100%;
-    height: calc(100vh - 109px);
+    height: calc(100vh - 110.33px);
     position: fixed;
-    top: 109px;
+    top: 110.33px;
     right: 0;
     transform: translateX(0);
     transition: transform 0.25s ease-in-out;
