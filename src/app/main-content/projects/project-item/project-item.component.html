@@ -1,4 +1,5 @@
-<div class="project-container" [ngClass]="{ 'reverse': isReversed }">
+<div class="project-container"
+    [ngClass]="[isReversed ? 'reverse fade-in-bottom-left' : 'fade-in-bottom-right']" #fadeTarget>
     <div class="project-photo">
         <img [src]="projectPhotoUrl" [alt]="projectPhotoUrl">
     </div>

@@ -45,8 +45,9 @@
     }
 
     .about-me-photo {
-        width: 50%;
+        width: 48%;
         @include dFlex($jc: flex-start);
+        position: relative;
 
         @media (max-width: 1150px) {
             display: none;
@@ -68,9 +69,10 @@
 
         >.separator-about-me {
             background: $green;
-            z-index: -40;
             width: 100vw;
-            right: calc(-100vw + 60% - 453px);
+            left: 0;
+            z-index: -40;
+            right: 0;
         }
     }
 }

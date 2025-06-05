@@ -152,6 +152,11 @@ $red: #E61C40;
 .accept-policy {
     @include dFlex($jc: flex-start, $ai: flex-start, $g: 8px);
 
+    &:hover .checkbox {
+        background-color: #183771;
+        border-radius: 50%;
+    }
+
     >input[type="checkbox"] {
         margin-right: 8px;
         opacity: 0;
@@ -253,7 +258,6 @@ $red: #E61C40;
     >.success-message {
         background: $green;
         color: $blue-grey;
-        // box-shadow: 0 0 12px rgba(112, 230, 28, 0.8);
     }
 
     >.error-message {

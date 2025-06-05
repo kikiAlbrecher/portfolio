@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { CommonModule } from '@angular/common';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +11,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  ngOnInit() {
+    AOS.init({ duration: 1000, once: false });
+  }
+
   projects = [
     {
       projectPhotoUrl: 'assets/img/pokedex.png',
