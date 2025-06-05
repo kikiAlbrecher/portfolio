@@ -77,7 +77,7 @@
             }
         }
 
-        >.short-separator {
+        >.separator-general {
             display: none;
 
             @media (max-width: 504px) {
@@ -105,11 +105,13 @@
 
 .reference-img {
     @include dFlex($jc: flex-end);
+    padding-right: 100px;
 
     @media (max-width: 1150px) {
         @include dFlex($jc: center);
         position: relative;
         width: 100%;
+        padding-right: 0;
     }
 
     >img {
@@ -134,17 +136,15 @@
     }
 
     >.separator-references {
-        height: 4px;
-        width: 104px;
-        background: $purple;
         transform: rotate(0.55deg);
+        width: 100vw;
+        top: 47%;
+        right: calc(-100vw + 104px);
+        z-index: -40;
 
         @media (max-width: 1150px) {
-            position: absolute;
-            left: 50%;
-            right: 0;
-            width: 50%;
-            z-index: -99;
+            top: 50%;
+            right: calc(-100vw + 50%);
         }
     }
 }

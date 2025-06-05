@@ -6,7 +6,6 @@
     height: 951.44px;
     top: 360px;
     left: -221.49px;
-    z-index: -10;
 
     @media (max-width: 800px) {
         top: 440px;
@@ -68,6 +67,23 @@
             @media (max-width: 432px) {
                 gap: 4px;
             }
+
+            >.separator-general {
+                right: calc(-100vw + 100px - 32px);
+                width: 100vw;
+
+                @media (max-width: 1150px) {
+                    right: calc(-100vw + 75px - 16px);
+                }
+
+                @media (max-width: 800px) {
+                    right: calc(-100vw + 50px - 8px);
+                }
+
+                @media (max-width: 432px) {
+                    right: calc(-100vw + 25px - 4px);
+                }
+            }
         }
 
         >.search {
@@ -98,14 +114,14 @@
                 @media (max-width: 1150px) {
                     @include dFlex($jc: center);
                     width: 100%;
+                }
 
-                    a {
-                        transition: transform 0.2s ease-in-out;
-                        transform-origin: top right;
+                a {
+                    transition: transform 0.2s ease-in-out;
+                    transform-origin: top right;
 
-                        &:hover {
-                            transform: scale(1.1);
-                        }
+                    &:hover {
+                        transform: scale(1.1);
                     }
                 }
             }

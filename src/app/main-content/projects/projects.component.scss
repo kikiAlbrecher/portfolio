@@ -7,7 +7,6 @@
     top: 0;
     left: -200px;
     transform: translateY(50%);
-    z-index: -10;
 
     @media (max-width: 1150px) {
         width: 466.63px;
@@ -67,7 +66,6 @@
     }
 
     >.long-separator {
-        position: absolute;
         right: calc(-100vw + (50% - (365px / 2) - 32px));
         width: 100vw;
 

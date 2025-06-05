@@ -11,4 +11,5 @@ import { Component, Input } from '@angular/core';
 export class SkillItemComponent {
   @Input() stackIconUrl!: string;
   @Input() stackName!: string;
+  @Input() isLearning: boolean = false;
 }

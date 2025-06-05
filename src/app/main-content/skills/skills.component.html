@@ -1,23 +1,25 @@
 <section class="general-main-section">
-    <div class="section-content padding-left">
+    <div class="section-content padding-left padding-right">
         <div class="splashes skills-splash"></div>
         <div class="skills">
             <div class="stack">
-                <div *ngFor="let item of stack; let i = index;">
-                    <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName">
+                <div *ngFor="let item of stack; let i = index; let isLast = last;">
+                    <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName"
+                        [isLearning]="i === stack.length - 1">
                     </app-skill-item>
                 </div>
             </div>
             <div class="skills-description">
                 <div class="skills-headline">
                     <h1>{{ 'SKILLS.HEADLINE' | translate }}</h1>
-                    <div class="short-separator"></div>
+                    <div class="separator-general"></div>
                 </div>
-                <div class="search padding-right">
+                <div class="search">
                     <p class="fs-small p-skills">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
                     <div class="stack-mobile">
-                        <div *ngFor="let item of stack; let i = index;">
-                            <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName">
+                        <div *ngFor="let item of stack; let i = index; let isLast= last;">
+                            <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName"
+                                [isLearning]="i === stack.length - 1">
                             </app-skill-item>
                         </div>
                     </div>

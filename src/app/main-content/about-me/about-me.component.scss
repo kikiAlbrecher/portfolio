@@ -7,7 +7,6 @@
     top: -50%;
     right: 0;
     transform: translateX(60%) rotate(-8deg);
-    z-index: -10;
 
     @media (max-width: 1350px) {
         top: -45%;
@@ -47,7 +46,7 @@
 
     .about-me-photo {
         width: 50%;
-        @include dFlex($jc: flex-end);
+        @include dFlex($jc: flex-start);
 
         @media (max-width: 1150px) {
             display: none;
@@ -69,7 +68,9 @@
 
         >.separator-about-me {
             background: $green;
-            width: calc(100% - 453px);
+            z-index: -40;
+            width: 100vw;
+            right: calc(-100vw + 60% - 453px);
         }
     }
 }
@@ -84,9 +85,13 @@
     >.category {
         @include dFlex($jc: flex-start, $ai: flex-start, $g: 16px);
 
-        >img {
+        >.category-icon {
             width: 48px;
             aspect-ratio: 1 / 1;
+
+            &:hover {
+                transform: scale(1.4);
+            }
         }
     }
 }

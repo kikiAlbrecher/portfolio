@@ -1,4 +1,7 @@
-<div class="stack-component">
+<div class="stack-component" [ngClass]="{ 'learning': isLearning }">
+  <div class="icon-wrapper">
     <img class="stack-icon" [src]="stackIconUrl" [alt]="stackIconUrl">
-    <p class="stack-name">{{ stackName }}</p>
+    <img class="interests-icon" *ngIf="isLearning" src="assets/img/special-interests.png" alt="special interests">
+  </div>
+  <p class="stack-name">{{ stackName }}</p>
 </div>

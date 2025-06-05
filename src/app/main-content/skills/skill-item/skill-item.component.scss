@@ -4,22 +4,82 @@
     @include dFlex($fd: column, $jc: space-between, $g: 10px);
     width: 88px;
     padding-top: 12px;
+    position: relative;
 
-    >.stack-icon {
-        height: 60px;
+    @media (max-width: 1150px) {
+        width: 85px;
+    }
 
-        &:hover {
-            transform: translateY(-16px);
+    .icon-wrapper {
+        position: relative;
+
+        .stack-icon {
+            height: 60px;
+
+            @media (max-width: 1150px) {
+                height: 48px;
+            }
+        }
+
+        .interests-icon {
+            position: absolute;
+            bottom: 48px;
+            left: -18px;
+            width: 188px;
+            height: 120px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+
+            @media (max-width: 1150px) {
+                left: -20px;
+                width: 169px;
+                height: 129px;
+            }
         }
     }
 
-    >.stack-name {
+    .stack-name {
         font-weight: 700;
         font-size: 16px;
         text-align: center;
 
-        @media (max-width: 432px) {
+        @media (max-width: 1150px) {
             font-size: 14px;
         }
+    }
+
+    &:not(.learning):hover .stack-icon {
+        animation: bounceBack 800ms ease-out forwards;
+    }
+
+    &.learning {
+        .stack-name {
+            color: $purple;
+        }
+
+        &:hover {
+            .stack-name {
+                color: white;
+            }
+
+            .stack-icon {
+                filter: brightness(0) invert(1);
+            }
+
+            .interests-icon {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@keyframes bounceBack {
+    0% {
+        transform: translateY(-16px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

@@ -179,8 +179,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .splashes {
-    // z-index: -99;
-    //kontrollieren, ob doppelt
+    z-index: -99;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -189,20 +188,8 @@ html::-webkit-scrollbar-thumb:hover {
     overflow-x: hidden;
 }
 
-.short-separator {
+.separator-general {
+    position: absolute;
     height: 4px;
-    width: calc(100px - 32px);
     background: $purple;
-
-    @media (max-width: 1150px) {
-        width: calc(75px - 16px);
-    }
-
-    @media (max-width: 800px) {
-        width: calc(50px - 8px);
-    }
-
-    @media (max-width: 432px) {
-        width: calc(25px - 4px);
-    }
 }
