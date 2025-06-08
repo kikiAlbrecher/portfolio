@@ -1,13 +1,13 @@
 <section class="general-main-section overflow-y">
     <div class="section-content">
         <div class="splashes contact-splash"></div>
-        <div class="headline">
+        <div class="headline scroll-anim-slide-in-left" appScrollAnimation>
             <div class="separator-general headline-line"></div>
             <h1 class="padding-right padding-left">{{ 'CONTACT.HEADLINE' | translate }}</h1>
         </div>
         <div class="contact-columns padding-right padding-left">
             <div class="contact-text-column">
-                <div class="invitation">
+                <div class="invitation scroll-anim-slide-in-left" appScrollAnimation>
                     <h3>{{ 'CONTACT.SUBHEADLINE' | translate }}</h3>
                     <div class="invitation-text">
                         <p class="fs-small">{{ 'CONTACT.TEXT1' | translate }}
@@ -19,7 +19,7 @@
                     </div>
                 </div>
 
-                <div class="contact-form-column">
+                <div class="contact-form-column scroll-anim-zoom-in" appScrollAnimation>
                     <app-contact-form style="width: 100%;"></app-contact-form>
                 </div>
             </div>

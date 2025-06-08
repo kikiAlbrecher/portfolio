@@ -3,7 +3,8 @@
         <div class="splashes skills-splash"></div>
         <div class="skills">
             <div class="stack">
-                <div *ngFor="let item of stack; let i = index; let isLast = last;">
+                <div *ngFor="let item of stack; let i = index; let isLast = last;" class="scroll-anim-zoom-in"
+                    appScrollAnimation>
                     <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName"
                         [isLearning]="i === stack.length - 1">
                     </app-skill-item>
@@ -17,7 +18,8 @@
                 <div class="search">
                     <p class="fs-small p-skills">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
                     <div class="stack-mobile">
-                        <div *ngFor="let item of stack; let i = index; let isLast= last;">
+                        <div *ngFor="let item of stack; let i = index; let isLast= last;" class="scroll-anim-zoom-in"
+                            appScrollAnimation>
                             <app-skill-item [stackIconUrl]="item.stackIconUrl" [stackName]="item.stackName"
                                 [isLearning]="i === stack.length - 1">
                             </app-skill-item>

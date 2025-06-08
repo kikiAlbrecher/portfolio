@@ -1,16 +1,14 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import AOS from 'aos';
+import { ScrollAnimationDirective } from '../../shared/scroll-animation.directive';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollAnimationDirective],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
-export class AboutMeComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
-    AOS.refresh();
-  }
+export class AboutMeComponent {
 }

@@ -1,12 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { SkillItemComponent } from './skill-item/skill-item.component';
+import { ScrollAnimationDirective } from '../../shared/scroll-animation.directive';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, TranslateModule, SkillItemComponent],
+  imports: [CommonModule, TranslateModule, SkillItemComponent, ScrollAnimationDirective],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })

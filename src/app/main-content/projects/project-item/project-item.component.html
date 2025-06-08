@@ -1,5 +1,6 @@
 <div class="project-container"
-    [ngClass]="[isReversed ? 'reverse fade-in-bottom-left' : 'fade-in-bottom-right']" #fadeTarget>
+    [ngClass]="[isReversed ? 'reverse scroll-anim-slide-in-bottom-left' : 'scroll-anim-slide-in-bottom-right']"
+    appScrollAnimation>
     <div class="project-photo">
         <img [src]="projectPhotoUrl" [alt]="projectPhotoUrl">
     </div>

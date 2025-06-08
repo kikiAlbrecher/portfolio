@@ -1,17 +1,19 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReferenceItemComponent } from './reference-item/reference-item.component';
+import { ScrollAnimationDirective } from '../../shared/scroll-animation.directive';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [CommonModule, TranslateModule, ReferenceItemComponent],
+  imports: [CommonModule, TranslateModule, ReferenceItemComponent, ScrollAnimationDirective],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })
 export class ReferencesComponent {
   currentIndex = 0;
+  showReference = true;
 
   references = [
     {
@@ -35,10 +37,21 @@ export class ReferencesComponent {
   ];
 
   nextReference() {
-    this.currentIndex = (this.currentIndex + 1) % this.references.length;
+    this.showReference = false;
+
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.references.length;
+      this.showReference = true;
+    }, 0);
   }
 
   prevReference() {
-    this.currentIndex = (this.currentIndex - 1 + this.references.length) % this.references.length;
+    this.showReference = false;
+
+    setTimeout(() => {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.references.length) % this.references.length;
+      this.showReference = true;
+    }, 0);
   }
 }
