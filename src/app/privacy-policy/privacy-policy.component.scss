@@ -3,7 +3,12 @@
 .policy-section {
     min-height: calc(100vh - 291px);
     width: 100%;
-    padding: 100px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    @media (max-width: 1150px) {
+        padding-bottom: 40px;
+    }
 }
 
 a {
@@ -14,24 +19,100 @@ a {
     }
 }
 
+.policy-h1 {
+    font-size: 64px;
+
+    @media (max-width: 1150px) {
+        font-size: 56px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 32px;
+    }
+}
+
 .policy-h2 {
     font-size: 40px;
     padding: 30px 0 12px 0;
     color: $green;
+
+    @media (max-width: 1150px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 24px;
+    }
 }
 
 .policy-h3 {
     font-weight: 500;
     color: $purple;
     padding-bottom: 12px;
+
+    @media (max-width: 1150px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 20px;
+    }
 }
 
 .policy-h4 {
     font-size: 28px;
     color: $purple;
     padding-bottom: 8px;
+
+    @media (max-width: 1150px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 18px;
+    }
 }
 
 .policy-p {
     padding-bottom: 8px;
+    text-align: justify;
+
+    @media (max-width: 800px) {
+        text-align: left;
+    }
+}
+
+.em-link {
+    @media (max-width: 1650px) {
+        color: $green;
+    }
+
+    &:hover {
+        color: rgb(0, 187, 0);
+    }
+}
+
+.privacy-purple-splash {
+    background-image: url('/assets/img/purple-about.svg');
+    width: 572.03px;
+    height: 608px;
+    top: 8%;
+    right: 0;
+    transform: translateX(60%) rotate(-8deg);
 }

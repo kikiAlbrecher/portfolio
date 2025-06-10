@@ -1,6 +1,25 @@
 @import 'shared';
 
+.imprint-green-splash {
+    background-image: url('/assets/img/green-references.svg');
+    width: 428.59px;
+    height: 951.44px;
+    top: calc(50% - 109px - 291px);
+    right: -200px;
+    transform: translateY(-25%) rotate(180deg);
+}
+
 .imprint-content {
-    @include dFlex($fd: column, $jc: stretch, $ai: flex-start, $g: 40px);
-    width: 100%;
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start, $g: 40px);
+    min-height: calc(100vh - 291px - 160px - 4px);
+
+    >.imprint-text {
+        @include dFlex($fd: column);
+        width: 100%;
+
+        >.address {
+            @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+            width: 100%;
+        }
+    }
 }

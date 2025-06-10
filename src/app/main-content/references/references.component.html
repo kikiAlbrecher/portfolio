@@ -6,7 +6,7 @@
             <app-reference-item *ngIf="showReference" [citation]="references[currentIndex].citation | translate"
                 [recommender]="references[currentIndex].recommender | translate"
                 [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl"
-                class="scroll-anim-fade-in fade-in" appScrollAnimation>
+                class="fade-in scroll-anim-fade-in" appScrollAnimation>
             </app-reference-item>
             <div class="slider scroll-anim-fade-in" appScrollAnimation>
                 <img class="arrow" src="assets/icons/back.svg" alt="arrow left" (click)="prevReference()">
