@@ -104,8 +104,12 @@ a {
     }
 
     &:hover {
-        color: rgb(0, 187, 0);
+        color: #62ce14;
     }
+}
+
+.overflow-x {
+    overflow-x: hidden;
 }
 
 .privacy-purple-splash {
