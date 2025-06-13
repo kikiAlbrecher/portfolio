@@ -9,27 +9,28 @@
     "HERO": {
         "I_AM": "I bin",
         "PROFESSION": "FRONTEND-ENTWICKLERIN",
-        "TALK_APPEAL": "Let´s talk!"
+        "TALK_APPEAL": "Lass uns reden!",
+        "SCROLL": "scrolle hinunter "
     },
     "ABOUT": {
         "HEADER": "Über mich",
-        "PASSION": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-        "LOCATION": "Wien, Graz oder anderswo. Ich bin auch offen hinsichtlich der Arbeitsweise: vor Ort, remote, hybrid.",
-        "MINDSET": "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-        "FIND_SOLUTIONS": "A brief description of your problem-solving approach. Do you learn from each challenge as yout search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+        "PASSION": "Mein Ziel ist es, aktiv zur Entwicklung nutzerfreundlicher, skalierbarer Webanwendungen beizutragen. Ich liebe es, Projekte zum Wachsen zu bringen, komplexe Anforderungen zu durchdringen und durch sauberen Code robuste Lösungen zu entwickeln.",
+        "LOCATION": "Wien, Graz oder anderswo. Ich bin auch offen hinsichtlich der Arbeitsweise: remote, vor Ort, hybrid ...",
+        "MINDSET": "Ich lerne mit Begeisterung, sei es durch neue Technologien, Teamarbeit oder Herausforderungen im Projektalltag. Offenheit, Neugierde und Weiterdenken gehören für mich zum Berufsbild.",
+        "FIND_SOLUTIONS": "Mein interdisziplinärer Hintergrund erlaubt es mir, Herausforderungen sowohl analytisch als auch kreativ zu bewältigen. Ich schätze bewährte Ansätze, bin aber offen für unkonventionelle Wege. Dabei suche ich nicht nach komplizierten Lösungen, sondern nach den passenden, und das gerne gemeinsam im Team."
     },
     "SKILLS": {
         "HEADLINE": "Meine Skills",
-        "DESCRIPTION": "In meinen Projekten - Vorgeschmack weiter unten - kommt eine Vielfalt von Frontend-Technologien zur Anwendung.",
-        "QUESTION_START": "",
-        "QUESTION_END": "Andere Fertigkeit gewünscht",
-        "AMBITION": "Kein Problem! Ich lerne gerne Neues.",
-        "APPEAL": "Get in touch!"
+        "DESCRIPTION": "In meinen Projekten – einen Vorgeschmack gibt es weiter unten – kommen viele verschiedene Frontend-Technologien zur Anwendung.",
+        "QUESTION_START": "Suchst du eine ",
+        "QUESTION_END": "andere Fertigkeit",
+        "AMBITION": "Gerne! Ich eigne mir neue Skills mit Begeisterung an.",
+        "APPEAL": "Lass uns ins Gespräch kommen!"
     },
     "PROJECTS": {
-        "SUBHEADLINE": "Entdecken Sie eine Auswahl meiner Arbeiten und erleben Sie meine Programmierkenntnisse in Aktion.",
-        "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, weisen Sie Kontakte und Kategorien zu.",
-        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI: eine Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert. Suche in über 1300 Pokémons der API.",
+        "SUBHEADLINE": "Entdecken eine Auswahl meiner Arbeiten und erlebe meine Programmierkenntnisse in Aktion.",
+        "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System: Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Kontakte und Kategorien zu.",
+        "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI: eine Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert. Suche in über 1300 Pokémons.",
         "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen.",
         "LIVE_TEST": "Live-Test"
     },
@@ -45,22 +46,22 @@
     },
     "CONTACT": {
         "HEADLINE": "Kontakt",
-        "SUBHEADLINE": "Sind Sie auf der Suche nach Lösungen?",
-        "TEXT1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert.",
-        "TEXT2": "Brauchst du einen Frontend-Entwickler?",
-        "PLEA": "Melden Sie sich bei mir!"
+        "SUBHEADLINE": "Du hast eine Vision?",
+        "TEXT1": "Zur Umsetzung benötigst du aber noch Unterstützung im Frontend? Dann nehme Kontakt zu mir auf! Ich bin ausgebildete Web-Entwicklerin mit einem starken Fokus auf JavaScript, TypeScript, Angular & Co und dem Anspruch, echten Mehrwert zu schaffen.",
+        "TEXT2": "Gemeinsam finden wir den passenden Weg, deine Vision zu realisieren.",
+        "PLEA": "Melde dich bei mir!"
     },
     "FORM": {
-        "PLACEHOLDER_NAME": "Ihr Name",
-        "NAME": "Ihr Name ist erforderlich.",
-        "PLACEHOLDER_EMAIL": "Ihre E-Mail-Adresse",
-        "EMAIL": "Ihre Mail-Adresse ist erforderlich.",
-        "PLACEHOLDER_MESSAGE": "Ihre Nachricht",
-        "MESSAGE": "Was ist Ihr Anliegen?",
+        "PLACEHOLDER_NAME": "Dein Name",
+        "NAME": "Dein Name ist erforderlich.",
+        "PLACEHOLDER_EMAIL": "Deine E-Mail-Adresse",
+        "EMAIL": "Deine gültige Mail-Adresse ist erforderlich, z. B. steven.miller@gmail.com.",
+        "PLACEHOLDER_MESSAGE": "Deine Nachricht",
+        "MESSAGE": "Was ist dein Anliegen?",
         "READ": "Ich habe die",
         "PRIVACY_POLICY": " Datenschutzerklärung ",
         "AGREEMENT": "gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
-        "POLICY": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+        "POLICY": "Bitte akzeptiere die Datenschutzerklärung.",
         "SEND": "Nachricht senden :)"
     },
     "FOOTER": {
@@ -78,6 +79,10 @@
         "HEADER": "Datenschutz-Erklärung",
         "RESPONSIBLE_TITLE": "Verantwortliche",
         "RESPONSIBLE_TEXT": "Verantwortliche im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutz-Grundverordnung (DSGVO), ist: ",
+        "HOSTING_TITLE": "Hosting",
+        "HOSTING_TEXT1": "Ich hoste die Inhalte meiner Website bei folgendem Anbieter: ",
+        "HOSTING_TEXT2": "Anbieter ist die ALL-INKL.COM – Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerklärung von All-Inkl: ",
+        "HOSTING_TEXT3": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Ich habe ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung meiner Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.",
         "RIGHTS_TITLE": "Ihre Betroffenenrechte",
         "RIGHTS_TEXT1": "Unter den angegebenen Kontaktdaten können Sie gemäß EU-Datenschutz-Grundverordnung (DSGVO) jederzeit folgende Rechte ausüben:",
         "RIGHTS_LIST1": "Auskunft über Ihre bei mir gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),",
@@ -106,7 +111,7 @@
         "PROVISION_TEXT": "Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit meiner Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein.",
         "OBJECTION_TITLE": "Widerspruch",
         "OBJECTION_TEXT": "Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.",
-        "CONTACT_TITLE": "Kontaktaufnahme",
+        "CONTACT_TITLE": "Kontakt-Aufnahme",
         "CONTACT_SUBTITLE1": "Art und Zweck der Verarbeitung",
         "CONTACT_TEXT1": "Auf meiner Website ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an mich übermittelt und gespeichert.",
         "CONTACT_TEXT2": "Zum Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten gespeichert: URL, von der die Anfrage erfolgte.",

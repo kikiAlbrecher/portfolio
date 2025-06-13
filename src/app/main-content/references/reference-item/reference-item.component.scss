@@ -73,19 +73,8 @@
             background: $purple;
 
             @media (max-width: 504px) {
-                display: none;
-            }
-        }
-
-        >.separator-general {
-            display: none;
-
-            @media (max-width: 504px) {
-                display: block;
+                flex-grow: unset;
                 width: 55px;
-                border: none;
-                border-radius: 32px;
-                height: 2px;
             }
         }
 

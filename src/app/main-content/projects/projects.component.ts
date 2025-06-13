@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects = [
     {
-      projectPhotoUrl: 'assets/img/pokedex.png',
+      projectPhotoUrl: 'assets/img/join.png',
       projectTitle: 'Join',
       projectStack: 'JavaScript | HTML | CSS | Firebase',
       projectDescription: 'PROJECTS.DESCRIPTION_JOIN',
@@ -29,7 +29,7 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/kikiAlbrecher/pokedex',
     },
     {
-      projectPhotoUrl: 'assets/img/pokedex.png',
+      projectPhotoUrl: 'assets/img/sharky.png',
       projectTitle: 'Sharky',
       projectStack: 'JavaScript | HTML | CSS',
       projectDescription: 'PROJECTS.DESCRIPTION_SHARKY',

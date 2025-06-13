@@ -9,27 +9,28 @@
     "HERO": {
         "I_AM": "I am",
         "PROFESSION": "FRONTEND DEVELOPER",
-        "TALK_APPEAL": "Let´s talk!"
+        "TALK_APPEAL": "Let´s talk!",
+        "SCROLL": "scroll-down "
     },
     "ABOUT": {
         "HEADER": "About me",
-        "PASSION": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
-        "LOCATION": "Vienna, Graz or somewhere else. I am also open to all different ways of working, remotely, on site,  hybrid ...",
-        "MINDSET": "I am looking forward to new challenges and continually strive to improve my skills in modern technologies.",
-        "FIND_SOLUTIONS": "A brief description of your problem-solving approach. Do you learn from each challenge as yout search for the most efficient or elegant solution? You can include some keywords like: analytical thinking, creativity, persistence and collaboration."
+        "PASSION": "My goal is to actively contribute to the development of user-friendly, scalable web applications. I love helping projects grow, diving into complex requirements, and crafting robust solutions through clean, maintainable code.",
+        "LOCATION": "Vienna, Graz or somewhere else. I am also open to all different ways of working: remote, on-site, hybrid ...",
+        "MINDSET": "I am passionate about learning, whether it is through new technologies, teamwork, or challenges in day-to-day project work. Openness, curiosity, and forward thinking are essential parts of my professional mindset.",
+        "FIND_SOLUTIONS": "Thanks to my interdisciplinary background, I approach challenges both analytically and creatively. I value tried-and-tested methods but remain open to unconventional paths. I don´t aim for complicated solutions, but for the right ones – ideally in collaboration with others."
     },
     "SKILLS": {
         "HEADLINE": "My skills",
-        "DESCRIPTION": "Show that you have used a variety of front-end technologies in your projects.",
+        "DESCRIPTION": "My projects – a preview awaits below – showcase how I apply a variety of modern frontend technologies.",
         "QUESTION_START": "Looking for ",
         "QUESTION_END": "another skill",
-        "AMBITION": "Reveal enthusiasm for learning new technologies and frameworks.",
+        "AMBITION": "Not an issue. I'm always keen to grow and expand my skill set.",
         "APPEAL": "Get in touch!"
     },
     "PROJECTS": {
         "SUBHEADLINE": "Explore a selection of my work here. Interact with projects to see my skills in action.",
         "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
-        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information. Search in more than 1300 pokémons of the API.",
+        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information. Search in more than 1300 pokémons.",
         "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",
         "LIVE_TEST": "Live test"
     },
@@ -45,16 +46,16 @@
     },
     "CONTACT": {
         "HEADLINE": "Contact",
-        "SUBHEADLINE": "Got a problem to solve?",
-        "TEXT1": "Encourage people to contact you and describe what role you are interested in.",
-        "TEXT2": "Need a frontend developer?",
+        "SUBHEADLINE": "You´ve got a vision?",
+        "TEXT1": "But still need some frontend support to bring it to life? Then let us connect! I am a trained web developer with a strong focus on JavaScript, TypeScript, Angular & more – and a clear goal: to create real value.",
+        "TEXT2": "Together, we will find the best way to turn your vision into reality.",
         "PLEA": "Contact me!"
     },
     "FORM": {
         "PLACEHOLDER_NAME": "Your name",
         "NAME": "Your name is required.",
         "PLACEHOLDER_EMAIL": "Your email",
-        "EMAIL": "Your email is required.",
+        "EMAIL": "Your valid email is required, e.g. steven.miller@gmail.com.",
         "PLACEHOLDER_MESSAGE": "Your message",
         "MESSAGE": "Your message is empty.",
         "READ": "I´ve read the",
@@ -78,6 +79,10 @@
         "HEADER": "Privacy Policy",
         "RESPONSIBLE_TITLE": "Controller",
         "RESPONSIBLE_TEXT": "The controller within the meaning of data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:",
+        "HOSTING_TITLE": "Hosting",
+        "HOSTING_TEXT1": "I host the content of my website with the following provider: ",
+        "HOSTING_TEXT2": "The provider is ALL-INKL.COM – Neue Medien Münnich, Owner René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter referred to as All-Inkl). Please refer to All-Inkl's privacy policy for further details: ",
+        "HOSTING_TEXT3": "The use of All-Inkl is based on Art. 6(1)(f) GDPR. I have a legitimate interest in ensuring the most reliable presentation of my website possible. Where applicable consent has been obtained, processing is carried out solely on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information on the user's device (e.g., device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.",
         "RIGHTS_TITLE": "Your Data Subject Rights",
         "RIGHTS_TEXT1": "Using the contact details provided, you may exercise the following rights at any time in accordance with the EU General Data Protection Regulation (GDPR):",
         "RIGHTS_LIST1": "Access to the data stored about you and information about its processing (Art. 15 GDPR),",

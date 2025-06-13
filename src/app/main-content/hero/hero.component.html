@@ -1,27 +1,26 @@
 <section class="hero">
     <div class="splashes curve"></div>
     <div class="section-content hero-content padding-right">
-
         <div class="hero-top"></div>
-
         <div class="splashes hero-splash"></div>
-        <div class="splashes hero-photo"></div>
 
-        <div class="introduction-with-image">
+        <div class="introduction-with-image padding-left">
             <div class="photo-space">
                 <img class="photo" src="assets/img/hero.png" alt="photo">
             </div>
             <div class="introduce-myself">
                 <div class="introduction">
-                    <span class="start-introduction">{{ 'HERO.I_AM' | translate }}</span>
                     <div class="name-profession">
                         <h1 class="name">Christina Albrecher</h1>
                         <p class="name-short">Christina</p>
                         <h2 class="profession">{{ 'HERO.PROFESSION' | translate }}</h2>
+                        <span class="start-introduction">{{ 'HERO.I_AM' | translate }}</span>
                     </div>
                 </div>
-                <a href="#contact"><button class="button-green button-hero">{{ 'HERO.TALK_APPEAL' | translate
-                        }}</button></a>
+                <a class="contact-appeal" href="#contact">
+                    <button class="button-green button-hero">{{ 'HERO.TALK_APPEAL' | translate
+                        }}</button>
+                </a>
             </div>
         </div>
 
@@ -32,7 +31,7 @@
                 <a class="email-address" href="#contact">kontakt&#64;christina-albrecher.at</a>
             </div>
             <div class="scroll-down">
-                <span>scroll-down </span>
+                <span>{{ 'HERO.SCROLL' | translate }}</span>
                 <img src="assets/icons/arrow-down.svg" alt="direction arrow">
             </div>
         </div>
