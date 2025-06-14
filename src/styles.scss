@@ -44,10 +44,6 @@ body {
     src: url('assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
 }
 
-.fs-small {
-    font-size: 16px;
-}
-
 a {
     text-decoration: none;
 }
@@ -117,6 +113,10 @@ button,
     }
 }
 
+.fs-small {
+    font-size: 16px;
+}
+
 html::-webkit-scrollbar {
     width: 12px;
 }
@@ -137,6 +137,10 @@ html::-webkit-scrollbar-thumb:hover {
 .general-main-section {
     width: 100%;
     @include dFlex();
+}
+
+.scroll-margin-top {
+    scroll-margin-top: 110.33px;
 }
 
 .section-content {

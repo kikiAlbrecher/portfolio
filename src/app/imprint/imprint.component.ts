@@ -9,6 +9,4 @@ import { ScrollAnimationDirective } from '../shared/scroll-animation.directive';
   templateUrl: './imprint.component.html',
   styleUrls: ['./imprint.component.scss', '../privacy-policy/privacy-policy.component.scss']
 })
-export class ImprintComponent {
-
-}
+export class ImprintComponent { }

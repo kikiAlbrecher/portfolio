@@ -17,7 +17,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'portfolio';
-  currentLang = 'en';
+  currentLang = 'de';
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang(this.currentLang);

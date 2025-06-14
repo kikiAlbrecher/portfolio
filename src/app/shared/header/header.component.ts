@@ -10,7 +10,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  currentLang = 'en';
+  currentLang = 'de';
   isMenuClosed = true;
   isAnimating = false;
 

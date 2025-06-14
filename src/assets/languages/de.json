@@ -28,10 +28,10 @@
         "APPEAL": "Lass uns ins Gespräch kommen!"
     },
     "PROJECTS": {
-        "SUBHEADLINE": "Entdecken eine Auswahl meiner Arbeiten und erlebe meine Programmierkenntnisse in Aktion.",
+        "SUBHEADLINE": "Entdecke eine Auswahl meiner Arbeiten und erlebe meine Programmierkenntnisse in Aktion.",
         "DESCRIPTION_JOIN": "Aufgabenmanager inspiriert vom Kanban-System: Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Kontakte und Kategorien zu.",
         "DESCRIPTION_POKEDEX": "Basierend auf der PokéAPI: eine Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert. Suche in über 1300 Pokémons.",
-        "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen.",
+        "DESCRIPTION_SHARKY": "Ein 2D-Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz: Hilf Sharky, Münzen und Giftflaschen zu finden, um gegen den Killerwal und andere Gegner zu kämpfen.",
         "LIVE_TEST": "Live-Test"
     },
     "REFERENCES": {
