@@ -27,13 +27,7 @@ export class ReferencesComponent {
       recommender: 'REFERENCES.RECOMMENDER_GEORGE',
       role: 'REFERENCES.TEAM_PARTNER',
       imageUrl: 'assets/img/Cubas.jpg',
-    },
-    // {
-    //   citation: 'REFERENCES.CITATION_PIA',
-    //   recommender: 'REFERENCES.RECOMMENDER_PIA',
-    //   role: 'REFERENCES.TEAM_PARTNER',
-    //   imageUrl: 'assets/img/Pia.png',
-    // }
+    }
   ];
 
   nextReference() {

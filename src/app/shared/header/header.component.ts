@@ -13,7 +13,6 @@ export class HeaderComponent {
   currentLang = 'de';
   isMenuClosed = true;
   isAnimating = false;
-
   iconState: 'menu' | 'menu-transition' | 'close-transition' | 'close' = 'menu';
 
   constructor(private translate: TranslateService) {

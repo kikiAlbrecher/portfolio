@@ -11,5 +11,4 @@ import { ScrollAnimationDirective } from '../../shared/scroll-animation.directiv
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-}
+export class ContactComponent { }

@@ -23,8 +23,6 @@ export class ContactFormComponent {
   @ViewChild('messageTextarea', { static: true }) messageTextarea!: ElementRef<HTMLTextAreaElement>;
   @ViewChild('nameItem') nameItem!: ContactFormItemComponent;
   @ViewChild('emailItem') emailItem!: ContactFormItemComponent;
-  // @ViewChild('message') message!: NgModel;
-  // @ViewChild('policy') policy!: NgModel;
 
   contactData = {
     name: '',
