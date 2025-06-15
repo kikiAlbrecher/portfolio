@@ -10,5 +10,4 @@ import { ScrollAnimationDirective } from '../../shared/scroll-animation.directiv
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
-export class AboutMeComponent {
-}
+export class AboutMeComponent { }

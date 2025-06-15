@@ -1,7 +1,6 @@
 <div class="input-field" [ngClass]="{
   'valid': ngModel?.valid && ngModel?.touched && !ngModel?.disabled,
-  'invalid': !ngModel?.valid && ngModel?.touched && !ngModel?.disabled
-}">
+  'invalid': !ngModel?.valid && ngModel?.touched && !ngModel?.disabled }">
     <input [(ngModel)]="model" #ngModel="ngModel" [type]="type" [name]="name" [id]="name"
         [placeholder]="placeholder | translate" [required]="required" [pattern]="pattern" [value]="value"
         (input)="handleInput($event)" (blur)="markAsTouched()" [disabled]="disabled">

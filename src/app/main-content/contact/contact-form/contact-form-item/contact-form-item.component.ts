@@ -25,7 +25,6 @@ export class ContactFormItemComponent implements ControlValueAccessor {
   @Input() required: boolean = false;
   @Input() labelKey!: string;
   @Input() pattern?: string | any;
-
   @ViewChild('ngModel', { static: true }) ngModel!: NgModel;
 
   value: string = '';

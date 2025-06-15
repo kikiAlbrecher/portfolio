@@ -18,7 +18,7 @@ export class ProjectsComponent {
       projectStack: 'JavaScript | HTML | CSS | Firebase',
       projectDescription: 'PROJECTS.DESCRIPTION_JOIN',
       liveTestUrl: 'https://join.christina-albrecher.at',
-      githubUrl: 'https://github.com/kikiAlbrecher/join',
+      githubUrl: 'https://github.com/kikiAlbrecher/join'
     },
     {
       projectPhotoUrl: 'assets/img/pokedex.png',
@@ -26,7 +26,7 @@ export class ProjectsComponent {
       projectStack: 'JavaScript | HTML | CSS | API',
       projectDescription: 'PROJECTS.DESCRIPTION_POKEDEX',
       liveTestUrl: 'https://pokedex.christina-albrecher.at',
-      githubUrl: 'https://github.com/kikiAlbrecher/pokedex',
+      githubUrl: 'https://github.com/kikiAlbrecher/pokedex'
     },
     {
       projectPhotoUrl: 'assets/img/sharky.png',
@@ -34,7 +34,7 @@ export class ProjectsComponent {
       projectStack: 'JavaScript | HTML | CSS',
       projectDescription: 'PROJECTS.DESCRIPTION_SHARKY',
       liveTestUrl: 'https://sharky.christina-albrecher.at',
-      githubUrl: 'https://github.com/kikiAlbrecher/sharky',
+      githubUrl: 'https://github.com/kikiAlbrecher/sharky'
     }
   ];
 }
