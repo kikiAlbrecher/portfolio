@@ -8,6 +8,6 @@ import { MediaLinksComponent } from '../../media-links/media-links.component';
   standalone: true,
   imports: [CommonModule, TranslateModule, MediaLinksComponent],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss',
+  styleUrls: ['./hero.component.scss', './hero-continued.component.scss']
 })
 export class HeroComponent { }
