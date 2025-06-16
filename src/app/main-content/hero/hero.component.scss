@@ -48,8 +48,8 @@
             top: 24vh;
         }
 
-        @media (max-height: 360px) {
-            top: 32vh;
+        @media (max-height: 384px) {
+            top: 40vh;
         }
     }
 
@@ -177,8 +177,8 @@
             background-size: 100% auto;
             background-position: center;
 
-            @media (max-width: 2576px) {
-                height: 40vh;
+            @media (max-width: 2576px) and (max-height: 968px) {
+                height: 70vh;
             }
 
             @media (max-width: 2000px) and (max-height: 1000px) {
@@ -211,6 +211,10 @@
 
             @media (max-width: 568px) and (max-height: 432px) {
                 transform: translateY(8vh);
+            }
+
+            @media (max-height: 384px) {
+                height: 70vh;
             }
         }
     }

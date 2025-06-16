@@ -9,6 +9,8 @@
     <img *ngIf="!ngModel.valid && ngModel.touched && !ngModel.disabled" src="assets/icons/validation-error.svg"
         alt="input is invalid">
 </div>
-<div *ngIf="!ngModel.valid && ngModel.touched && !ngModel.disabled">
-    <span class="validation-fail fs-ultra-small">{{ labelKey }}</span>
+<div class="validation-space">
+    <div class="validation-space" *ngIf="!ngModel.valid && ngModel.touched && !ngModel.disabled">
+        <span class="validation-fail fs-ultra-small">{{ labelKey }}</span>
+    </div>
 </div>

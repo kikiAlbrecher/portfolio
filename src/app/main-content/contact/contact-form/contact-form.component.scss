@@ -3,7 +3,7 @@
 $red: #E61C40;
 
 .contact-form {
-    @include dFlex($fd: column, $jc: flex-start, $g: 32px);
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
     position: relative;
     overflow-x: hidden;
 }
@@ -115,15 +115,19 @@ $red: #E61C40;
 
 .fs-ultra-small {
     font-size: 14px;
+    line-height: 100%;
     text-wrap: wrap;
+}
+
+.validation-space {
+    height: 16px;
+    font-size: 14px;
+    line-height: 100%;
+    padding-top: 2px;
 }
 
 .validation-fail {
     color: $red;
-}
-
-.validation-fail-policy {
-    transform: translateY(-14px);
 }
 
 .message-policy {
@@ -142,10 +146,6 @@ $red: #E61C40;
     >.policy-validation {
         @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
         width: 100%;
-
-        >.policy-validation-space {
-            height: 20.27px;
-        }
     }
 }
 

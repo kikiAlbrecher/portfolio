@@ -29,7 +29,7 @@
                 <img *ngIf="!message.valid && message.touched && !message.disabled"
                     src="assets/icons/validation-error.svg" alt="input is invalid">
             </div>
-            <div>
+            <div class="validation-space">
                 @if (!message.valid && message.touched && !message.disabled) {
                 <span class="validation-fail fs-ultra-small">{{ 'FORM.MESSAGE' | translate }}</span>
                 }
@@ -54,9 +54,9 @@
                         <span class="fs-ultra-small">{{ 'FORM.AGREEMENT' | translate }}</span>
                     </div>
                 </div>
-                <div class="policy-validation-space">
+                <div class="validation-space">
                     @if (contactData.policyAccepted === false && submitAttempted) {
-                    <span class="validation-fail validation-fail-policy fs-ultra-small"> {{ 'FORM.POLICY' | translate
+                    <span class="validation-fail fs-ultra-small"> {{ 'FORM.POLICY' | translate
                         }}</span>
                     }
                 </div>

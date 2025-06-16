@@ -79,6 +79,7 @@
             &:hover {
                 border-radius: 50%;
                 border: 2px solid $green;
+                cursor: pointer;
             }
         }
 
@@ -103,19 +104,5 @@
 @media (max-width: 1150px) {
     .padding-left {
         padding-left: 0;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1.6s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
     }
 }

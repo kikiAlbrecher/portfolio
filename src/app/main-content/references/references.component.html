@@ -1,14 +1,13 @@
 <section class="general-main-section">
     <div class="section-content padding-left">
         <div class="splashes references-splash"></div>
-        <img class="quote scroll-anim-fade-in" appScrollAnimation src="assets/img/quote.svg" alt="double quote">
+        <img class="quote" src="assets/img/quote.svg" alt="double quote">
         <div class="references">
             <app-reference-item *ngIf="showReference" [citation]="references[currentIndex].citation | translate"
                 [recommender]="references[currentIndex].recommender | translate"
-                [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl"
-                class="fade-in scroll-anim-fade-in" appScrollAnimation>
+                [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl">
             </app-reference-item>
-            <div class="slider scroll-anim-fade-in" appScrollAnimation>
+            <div class="slider">
                 <img class="arrow" src="assets/icons/back.svg" alt="arrow left" (click)="prevReference()">
 
                 <div *ngFor="let item of references; let i = index" class="point"
