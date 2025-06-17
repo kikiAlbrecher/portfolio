@@ -35,10 +35,10 @@
         "LIVE_TEST": "Live test"
     },
     "REFERENCES": {
-        "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.",
+        "CITATION_BASTIAN": "Christina and I worked together on the 'Join' project. Her sense for clean code, design, and her attention to detail left a lasting impression on me. She is focused and noticeably strengthened our team with her solution-oriented drive. I would be happy to work with her on another project at any time.           ",
         "RECOMMENDER_BASTIAN": "B. Geppert ",
         "TEAM_PARTNER": " Team Partner",
-        "CITATION_GEORGE": "I worked together with Christina on the Kochwelt project. From the very beginning, she was extremely dedicated, reliable, and motivated. Christina consistently completed her tasks on time and with great attention to detail. Thanks to her structured approach and strong team spirit, we were able to meet all deadlines and successfully complete the project. Working with her was always pleasant and productive – I can recommend her without reservation.",
+        "CITATION_GEORGE": "Christina consistently completed her tasks on time and with great attention to detail. Thanks to her structured approach and strong team spirit, we were able to meet all deadlines and successfully complete the project. Working with her was always pleasant and productive – I can recommend her without reservation.",
         "RECOMMENDER_GEORGE": "G. Cubas"
     },
     "BUTTON": {
@@ -55,7 +55,7 @@
         "PLACEHOLDER_NAME": "Your name",
         "NAME": "Your name is required.",
         "PLACEHOLDER_EMAIL": "Your email",
-        "EMAIL": "Your valid email is required, e.g. steven.miller@gmail.com.",
+        "EMAIL": "Your valid email is required.",
         "PLACEHOLDER_MESSAGE": "Your message",
         "MESSAGE": "Your message is empty.",
         "READ": "I´ve read the",

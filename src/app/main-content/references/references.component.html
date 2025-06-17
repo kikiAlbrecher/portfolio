@@ -3,11 +3,11 @@
         <div class="splashes references-splash"></div>
         <img class="quote" src="assets/img/quote.svg" alt="double quote">
         <div class="references">
-            <app-reference-item *ngIf="showReference" [citation]="references[currentIndex].citation | translate"
+            <app-reference-item [citation]="references[currentIndex].citation | translate"
                 [recommender]="references[currentIndex].recommender | translate"
                 [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl">
             </app-reference-item>
-            <div class="slider fade-in">
+            <div class="slider">
                 <img class="arrow" src="assets/icons/back.svg" alt="arrow left" (click)="prevReference()">
 
                 <div *ngFor="let item of references; let i = index" class="point"

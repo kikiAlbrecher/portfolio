@@ -106,21 +106,3 @@
         padding-left: 0;
     }
 }
-
-.fade-in {
-    animation: fadeIn 10s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}

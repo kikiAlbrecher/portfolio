@@ -38,7 +38,7 @@
         "CITATION_BASTIAN": "Christina und ich haben gemeinsam am 'Join'-Projekt gearbeitet. Ihr Gespür für sauberen Code, Design und ihre Liebe zum Detail haben mich nachhaltig beeindruckt. Sie ist fokussiert und hat unser Team durch ihren lösungsorientierten Antrieb spürbar gestärkt. Ich würde mich jederzeit freuen, wieder mit ihr an einem Projekt zu arbeiten.",
         "RECOMMENDER_BASTIAN": "B. Geppert ",
         "TEAM_PARTNER": " Team-Partner",
-        "CITATION_GEORGE": "Ich habe gemeinsam mit Christina an dem Projekt Kochwelt gearbeitet. Von Anfang an war sie äußerst engagiert, zuverlässig und motiviert. Christina hat ihre Aufgaben stets termingerecht und mit großer Sorgfalt erledigt. Dank ihrer strukturierten Arbeitsweise und ihrer Teamfähigkeit konnten wir alle Deadlines einhalten und das Projekt erfolgreich abschließen. Die Zusammenarbeit mit ihr war stets angenehm und produktiv – ich kann sie uneingeschränkt weiterempfehlen.",
+        "CITATION_GEORGE": "Christina hat ihre Aufgaben stets termingerecht und mit großer Sorgfalt erledigt. Dank ihrer strukturierten Arbeitsweise und ihrer Teamfähigkeit konnten wir alle Deadlines einhalten und das Projekt erfolgreich abschließen. Die Zusammenarbeit mit ihr war stets angenehm und produktiv – ich kann sie uneingeschränkt weiterempfehlen.      ",
         "RECOMMENDER_GEORGE": "G. Cubas"
     },
     "BUTTON": {
@@ -55,7 +55,7 @@
         "PLACEHOLDER_NAME": "Dein Name",
         "NAME": "Dein Name ist erforderlich.",
         "PLACEHOLDER_EMAIL": "Deine E-Mail-Adresse",
-        "EMAIL": "Deine gültige Mail-Adresse ist erforderlich, z. B. steven.miller@gmail.com.",
+        "EMAIL": "Deine gültige Mail-Adresse ist erforderlich.",
         "PLACEHOLDER_MESSAGE": "Deine Nachricht",
         "MESSAGE": "Was ist dein Anliegen?",
         "READ": "Ich habe die",

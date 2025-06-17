@@ -116,9 +116,9 @@ a {
         display: none;
     }
 
-    @media (max-width: 632px) and (max-height: 632px) {
-        top: 66px;
-        height: calc(100vh - 66px);
+    @media (max-height: 632px) {
+        top: 67px;
+        height: calc(100vh - 67px);
     }
 
     &.resp-menu-closed {

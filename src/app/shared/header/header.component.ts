@@ -16,6 +16,8 @@ export class HeaderComponent {
   iconState: 'menu' | 'menu-transition' | 'close-transition' | 'close' = 'menu';
 
   constructor(private translate: TranslateService) {
+    const savedLang = localStorage.getItem('lang');
+    this.currentLang = savedLang ?? 'de';
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
   }
@@ -23,6 +25,7 @@ export class HeaderComponent {
   switchLanguage(lang: string) {
     this.currentLang = lang;
     this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 
   toggleMenu(): void {
