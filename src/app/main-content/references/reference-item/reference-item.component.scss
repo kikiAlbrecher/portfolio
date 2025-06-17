@@ -94,10 +94,10 @@
 .reference-img {
     @include dFlex($jc: flex-end);
     padding-right: 100px;
+    position: relative;
 
     @media (max-width: 1150px) {
         @include dFlex($jc: center);
-        position: relative;
         width: 100%;
         padding-right: 0;
     }
@@ -124,15 +124,25 @@
     }
 
     >.separator-references {
-        transform: rotate(0.55deg);
-        width: 100vw;
-        top: 47%;
-        right: calc(-100vw + 104px);
         z-index: -40;
+        width: calc(50vw - 136px);
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(0.55deg);
 
         @media (max-width: 1150px) {
-            top: 50%;
-            right: calc(-100vw + 50%);
+            width: calc(50vw - 114px);
+            left: calc(50vw + 114px - 8px);
+        }
+
+        @media (max-width: 800px) {
+            width: calc(50vw - 93px);
+            left: calc(50vw + 93px - 6px);
+        }
+
+        @media (max-width: 432px) {
+            width: calc(50vw - 72px);
+            left: calc(50vw + 72px - 4px);
         }
     }
 }

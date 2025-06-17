@@ -7,7 +7,7 @@
                 [recommender]="references[currentIndex].recommender | translate"
                 [role]="references[currentIndex].role | translate" [imageUrl]="references[currentIndex].imageUrl">
             </app-reference-item>
-            <div class="slider">
+            <div class="slider fade-in">
                 <img class="arrow" src="assets/icons/back.svg" alt="arrow left" (click)="prevReference()">
 
                 <div *ngFor="let item of references; let i = index" class="point"
