@@ -6,6 +6,11 @@ $red: #E61C40;
     @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
     position: relative;
     overflow-x: hidden;
+    padding-left: 32px;
+
+    @media (max-width: 1150px) {
+        padding-left: 0;
+    }
 }
 
 .field {
@@ -37,7 +42,7 @@ $red: #E61C40;
         border: unset;
         outline: none;
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
         background: $blue-grey;
     }
 
@@ -114,14 +119,14 @@ $red: #E61C40;
 }
 
 .fs-ultra-small {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 100%;
     text-wrap: wrap;
 }
 
 .validation-space {
-    height: 16px;
-    font-size: 14px;
+    height: 18px;
+    font-size: 16px;
     line-height: 100%;
     padding-top: 2px;
 }
@@ -250,7 +255,7 @@ $red: #E61C40;
         text-align: center;
         border: unset;
         border-radius: 25px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
