@@ -11,21 +11,18 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TranslateModule, MainContentComponent, HeaderComponent, FooterComponent, ImprintComponent, PrivacyPolicyComponent],
+  imports: [CommonModule, RouterOutlet, TranslateModule, MainContentComponent, HeaderComponent, FooterComponent,
+    ImprintComponent, PrivacyPolicyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
   currentLang = 'de';
 
   constructor(private translate: TranslateService) {
+    const savedLang = localStorage.getItem('lang');
+    this.currentLang = savedLang ?? 'de';
     this.translate.setDefaultLang(this.currentLang);
     this.translate.use(this.currentLang);
-  }
-
-  switchLanguage(lang: string) {
-    this.currentLang = lang;
-    this.translate.use(lang);
   }
 }

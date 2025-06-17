@@ -10,23 +10,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  currentLang = 'de';
   isMenuClosed = true;
   isAnimating = false;
   iconState: 'menu' | 'menu-transition' | 'close-transition' | 'close' = 'menu';
 
-  constructor(private translate: TranslateService) {
-    const savedLang = localStorage.getItem('lang');
-    this.currentLang = savedLang ?? 'de';
-    this.translate.setDefaultLang(this.currentLang);
-    this.translate.use(this.currentLang);
-  }
-
-  switchLanguage(lang: string) {
-    this.currentLang = lang;
-    this.translate.use(lang);
-    localStorage.setItem('lang', lang);
-  }
+  constructor(public translate: TranslateService) { }
 
   toggleMenu(): void {
     if (this.isAnimating) return;
@@ -54,5 +42,10 @@ export class HeaderComponent {
       this.isMenuClosed = true;
       this.isAnimating = false;
     }, 125);
+  }
+
+  switchLanguage(lang: string): void {
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

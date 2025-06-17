@@ -29,9 +29,9 @@
     },
     "PROJECTS": {
         "SUBHEADLINE": "Explore a selection of my work here. Interact with projects to see my skills in action.",
-        "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign contacts and categories.",
-        "DESCRIPTION_POKEDEX": "Based on the pokéAPI a simple library that provides and catalogues pokemon information. Search in more than 1300 pokémons.",
-        "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach. Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",
+        "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System: Create and organize tasks using drag and drop functions, assign contacts and categories.",
+        "DESCRIPTION_POKEDEX": "Based on the pokéAPI: A library that provides and catalogues pokemon information. Search in more than 1300 pokémons.",
+        "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach: Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",
         "LIVE_TEST": "Live test"
     },
     "REFERENCES": {

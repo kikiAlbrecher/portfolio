@@ -13,7 +13,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
-    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' })),
+    provideRouter(routes, withInMemoryScrolling({ anchorScrolling: 'enabled' })),
     importProvidersFrom(
       TranslateModule.forRoot({
         defaultLanguage: 'de',
