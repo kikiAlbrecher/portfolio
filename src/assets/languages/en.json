@@ -15,7 +15,7 @@
     "ABOUT": {
         "HEADER": "About me",
         "PASSION": "My goal is to actively contribute to the development of user-friendly, scalable web applications. I love helping projects grow, diving into complex requirements, and crafting robust solutions through clean, maintainable code.",
-        "LOCATION": "Vienna, Graz or somewhere else. I am also open to all different ways of working: remote, on-site, hybrid ...",
+        "LOCATION": "Vienna, Graz, or elsewhere. I am also open regarding the work modell: remote, on-site, hybrid ...",
         "MINDSET": "I am passionate about learning, whether it is through new technologies, teamwork, or challenges in day-to-day project work. Openness, curiosity, and forward thinking are essential parts of my professional mindset.",
         "FIND_SOLUTIONS": "Thanks to my interdisciplinary background, I approach challenges both analytically and creatively. I value tried-and-tested methods but remain open to unconventional paths. I don´t aim for complicated solutions, but for the right ones – ideally in collaboration with others."
     },
@@ -29,6 +29,7 @@
     },
     "PROJECTS": {
         "SUBHEADLINE": "Explore a selection of my work here. Interact with projects to see my skills in action.",
+        "DESCRIPTION_DABUBBLE": "Slack-Clone: It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
         "DESCRIPTION_JOIN": "Task manager inspired by the Kanban System: Create and organize tasks using drag and drop functions, assign contacts and categories.",
         "DESCRIPTION_POKEDEX": "Based on the pokéAPI: A library that provides and catalogues pokemon information. Search in more than 1300 pokémons.",
         "DESCRIPTION_SHARKY": "A 2D Jump-and-Run game based on an object-oriented approach: Help Sharky to find coins and poison bottles to fight against the killer whale and other enemies.",

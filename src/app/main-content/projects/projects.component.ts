@@ -13,6 +13,14 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects = [
     {
+      projectPhotoUrl: 'assets/img/dabubble.png',
+      projectTitle: 'DA-Bubble',
+      projectStack: 'Angular | TypeScript | Firebase',
+      projectDescription: 'PROJECTS.DESCRIPTION_DABUBBLE',
+      liveTestUrl: 'https://dabubble.christina-albrecher.at',
+      githubUrl: 'https://github.com/kikiAlbrecher/join'
+    },
+    {
       projectPhotoUrl: 'assets/img/join.png',
       projectTitle: 'Join',
       projectStack: 'JavaScript | HTML | CSS | Firebase',
