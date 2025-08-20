@@ -17,8 +17,8 @@ export class ProjectsComponent {
       projectTitle: 'DA-Bubble',
       projectStack: 'Angular | TypeScript | Firebase',
       projectDescription: 'PROJECTS.DESCRIPTION_DABUBBLE',
-      liveTestUrl: 'https://dabubble.christina-albrecher.at',
-      githubUrl: 'https://github.com/kikiAlbrecher/join'
+      liveTestUrl: 'https://da-bubble.christina-albrecher.at',
+      githubUrl: 'https://github.com/kikiAlbrecher/DA-Bubble'
     },
     {
       projectPhotoUrl: 'assets/img/join.png',
