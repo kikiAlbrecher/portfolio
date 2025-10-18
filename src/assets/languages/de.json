@@ -46,10 +46,8 @@
     },
     "CONTACT": {
         "HEADLINE": "Kontakt",
-        "SUBHEADLINE": "Du hast eine Vision?",
-        "TEXT1": "Zur Umsetzung benötigst du aber noch Unterstützung im Frontend? Dann nehme Kontakt zu mir auf! Ich bin ausgebildete Web-Entwicklerin mit einem starken Fokus auf JavaScript, TypeScript, Angular & Co und dem Anspruch, echten Mehrwert zu schaffen.",
-        "TEXT2": "Gemeinsam finden wir den passenden Weg, deine Vision zu realisieren.",
-        "PLEA": "Melde dich bei mir!"
+        "SUBHEADLINE": "Du hast eine Frage?",
+        "TEXT1": "Wenn du eine Frage hast oder eine individuelle Legung wünschst, zögere nicht, mich zu kontaktieren."
     },
     "FORM": {
         "PLACEHOLDER_NAME": "Dein Name",
@@ -65,7 +63,8 @@
         "SEND": "Nachricht senden :)"
     },
     "FOOTER": {
-        "IMPRINT": "Impressum"
+        "IMPRINT": "Impressum",
+        "POLICY": "Datenschutzerklärung"
     },
     "IMPRINT": {
         "HEADER": "Impressum",

@@ -1,0 +1,6 @@
+@import 'shared';
+
+.board {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 8px);
+    flex-wrap: wrap;
+}

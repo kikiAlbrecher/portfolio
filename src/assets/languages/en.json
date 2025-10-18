@@ -46,10 +46,8 @@
     },
     "CONTACT": {
         "HEADLINE": "Contact",
-        "SUBHEADLINE": "You´ve got a vision?",
-        "TEXT1": "But still need some frontend support to bring it to life? Then let us connect! I am a trained web developer with a strong focus on JavaScript, TypeScript, Angular & more – and a clear goal: to create real value.",
-        "TEXT2": "Together, we will find the best way to turn your vision into reality.",
-        "PLEA": "Contact me!"
+        "SUBHEADLINE": "You´ve got a question?",
+        "TEXT1": "If you have a question or you wish an individual card, don´t hesitate to contact me."
     },
     "FORM": {
         "PLACEHOLDER_NAME": "Your name",
@@ -65,7 +63,8 @@
         "SEND": "Send message :)"
     },
     "FOOTER": {
-        "IMPRINT": "Legal Notice"
+        "IMPRINT": "Legal Notice",
+        "POLICY": "Privacy Policy"
     },
     "IMPRINT": {
         "HEADER": "Legal Notice",

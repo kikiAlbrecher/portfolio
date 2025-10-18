@@ -3,4 +3,5 @@
     flex-direction: column;
     gap: 140px;
     position: relative;
+    min-height: calc(100vh - 68px - 148px);
 }

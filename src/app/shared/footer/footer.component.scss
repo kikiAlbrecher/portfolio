@@ -1,7 +1,7 @@
 @import 'shared';
 
 footer {
-    height: 291px;
+    padding: 20px 0;
     width: 100%;
     border-top: 4px solid $green;
     @include dFlex();

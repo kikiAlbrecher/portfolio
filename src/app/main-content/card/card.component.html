@@ -1,0 +1,9 @@
+<div class="card" 
+     [style.left.px]="card.position?.x" 
+     [style.top.px]="card.position?.y"
+     (mouseenter)="showKeywords()"
+     (mouseleave)="hideKeywords()"
+     (click)="selectCard()">
+  <img [src]="card.image" [alt]="card.name" />
+  <div class="tooltip" *ngIf="hovering">{{ card.keywords.join(', ') }}</div>
+</div>

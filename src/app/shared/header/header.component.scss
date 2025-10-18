@@ -2,7 +2,6 @@
 
 header {
     width: 100%;
-    position: fixed;
     @include dFlex();
     z-index: 300;
     background: $blue-grey;

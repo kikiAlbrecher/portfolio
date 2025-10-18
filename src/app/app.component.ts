@@ -7,12 +7,13 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ContactComponent } from './shared/contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, TranslateModule, MainContentComponent, HeaderComponent, FooterComponent,
-    ImprintComponent, PrivacyPolicyComponent],
+    ContactComponent, ImprintComponent, PrivacyPolicyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
