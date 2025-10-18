@@ -1,0 +1,26 @@
+<div class="project-container"
+    [ngClass]="[isReversed ? 'reverse scroll-anim-slide-in-bottom-left' : 'scroll-anim-slide-in-bottom-right']"
+    appScrollAnimation>
+    <div class="project-photo">
+        <img [src]="projectPhotoUrl" [alt]="projectPhotoUrl">
+    </div>
+    <div class="project-teaser">
+        <div class="project-specification">
+            <span class="project-title">
+                {{ projectTitle }}
+            </span>
+            <span class="project-stack">
+                {{ projectStack }}
+            </span>
+            <span class="fs-small">
+                {{ projectDescription }}
+            </span>
+        </div>
+        <div class="watch">
+            <a [href]="liveTestUrl" target="_blank">
+                <button class="live-test-btn">{{ 'PROJECTS.LIVE_TEST' | translate }}</button>
+            </a>
+            <a [href]="githubUrl" target="_blank"><button class="github-btn">Github</button></a>
+        </div>
+    </div>
+</div>

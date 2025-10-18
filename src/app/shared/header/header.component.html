@@ -2,15 +2,14 @@
     <div class="section-content">
         <nav class="header-menu" aria-label="main navigation">
             <a class="logo-position" href="index.html" aria-label="main page">
-                <img class="logo" src="assets/icons/logo.png" alt="leni-nav logo">
+                <img class="logo" src="assets/icons/logo.png" alt="Logo">
             </a>
 
             <div class="desktop-nav">
                 <div class="forwarding" aria-label="primary links">
-                    <a [routerLink]="'/contact'" aria-label="contact">{{ 'NAV.CONTACT' | translate}}</a>
-                    <!-- <a href="#contact" aria-label="contact">{{ 'NAV.CONTACT' | translate }}</a> -->
-                    <!-- <a href="#skills" aria-label="skills section">{{ 'NAV.SKILLS' | translate }}</a>
-                    <a href="#projects" aria-label="projects section">{{ 'NAV.PROJECTS' | translate }}</a> -->
+                    <a href="#about-me" aria-label="about me section">{{ 'NAV.ABOUT' | translate }}</a>
+                    <a href="#skills" aria-label="skills section">{{ 'NAV.SKILLS' | translate }}</a>
+                    <a href="#projects" aria-label="projects section">{{ 'NAV.PROJECTS' | translate }}</a>
                 </div>
 
                 <div class="languages" aria-label="language selection">
@@ -38,7 +37,7 @@
         </nav>
 
         <div class="resp-menu-box" [class.resp-menu-closed]="isMenuClosed" aria-label="mobile menu">
-            <!-- <a class="resp-menu-link" href="#about-me" (click)="toggleMenu()" aria-label="about me section">
+            <a class="resp-menu-link" href="#about-me" (click)="toggleMenu()" aria-label="about me section">
                 {{ 'NAV.ABOUT' | translate }}
             </a>
             <a class="resp-menu-link" href="#skills" (click)="toggleMenu()" aria-label="skills section">
@@ -49,8 +48,7 @@
             </a>
             <a class="resp-menu-link" href="#contact" (click)="toggleMenu()" aria-label="contact section">
                 {{ 'NAV.CONTACT' | translate }}
-            </a> -->
-            <a [routerLink]="'/contact'" class="resp-menu-link" (click)="toggleMenu()" aria-label="contact section">{{ 'NAV.CONTACT' | translate}}</a>
+            </a>
 
             <div class="languages-resp" aria-label="language selection">
                 <button class="lang-btn-resp" [attr.aria-pressed]="translate.currentLang === 'en'"

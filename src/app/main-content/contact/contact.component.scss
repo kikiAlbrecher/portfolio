@@ -1,0 +1,138 @@
+@import 'shared';
+
+.headline {
+    @include dFlex($g: 32px);
+    position: relative;
+
+    @media (max-width: 800px) {
+        @include dFlex($jc: flex-start, $g: 16px);
+    }
+
+    >.headline-line {
+        position: absolute;
+        left: calc(-100vw + (50% - (366px / 2) - 32px));
+        width: 100vw;
+
+        @media (max-width: 1920px) {
+            left: 0;
+            width: calc(50% - (366px / 2) - 32px);
+        }
+
+        @media (max-width: 1150px) {
+            width: calc(50% - (366px / 2) - 16px);
+        }
+
+        @media (max-width: 800px) {
+            width: calc(50px - 8px);
+        }
+
+        @media (max-width: 432px) {
+            width: calc(25px - 4px);
+        }
+    }
+
+    >h2 {
+        @media (max-width: 800px) {
+            padding-left: 50px;
+        }
+
+        @media (max-width: 432px) {
+            padding-left: 25px;
+        }
+    }
+}
+
+.contact-columns {
+    @include dFlex($fd: column, $ai: stretch);
+    width: 100%;
+    padding-top: 40px;
+}
+
+.contact-text-column {
+    @include dFlex($jc: flex-start, $ai: stretch);
+
+    @media (max-width: 1150px) {
+        @include dFlex($fd: column);
+    }
+
+    >.invitation {
+        width: 50%;
+        @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+
+        @media (max-width: 1150px) {
+            width: 100%;
+        }
+
+        >.invitation-text {
+            @include dFlex($fd: column, $jc: flex-start, $ai: flex-start, $g: 16px);
+            padding-right: 32px;
+            padding-bottom: 24px;
+
+            @media (max-width: 1150px) {
+                padding-right: 0;
+            }
+
+            >.appeal {
+                @include dFlex($jc: flex-start, $ai: baseline, $g: 8px);
+                flex-wrap: wrap;
+
+                >.contact-plea {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    >.contact-form-column {
+        width: 50%;
+        display: flex;
+
+        @media (max-width: 1150px) {
+            width: 100%;
+        }
+    }
+}
+
+.arrow {
+    @include dFlex($jc: flex-end);
+    transition: all 200ms ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+    @media (max-width: 1150px) {
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 800px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 432px) {
+        padding-bottom: 40px;
+    }
+}
+
+.arrow-up {
+    width: 39px;
+    aspect-ratio: 1 / 1;
+
+    rect {
+        stroke: white;
+        transition: stroke 0.2s ease-in-out;
+    }
+
+    path {
+        fill: white;
+        transition: fill 0.2s ease-in-out;
+    }
+
+    &:hover {
+        rect {
+            stroke: $green;
+        }
+
+        path {
+            fill: $green;
+        }
+    }
+}

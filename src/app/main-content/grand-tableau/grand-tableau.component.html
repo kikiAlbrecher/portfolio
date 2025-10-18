@@ -1,5 +1,0 @@
-<div class="board padding-right padding-left">
-    <app-card-slot *ngFor="let slot of slots; let i = index" [slotIndex]="i + 1" [card]="cards[i]"
-        (cardSelected)="assignCard($event, i)">
-    </app-card-slot>
-</div>

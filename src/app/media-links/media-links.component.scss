@@ -1,0 +1,18 @@
+@import 'shared';
+
+.media-links {
+    @include dFlex($jc: space-between);
+    width: 174px;
+    height: 40px;
+}
+
+.link-icon {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: left;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}

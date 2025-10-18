@@ -1,0 +1,36 @@
+<section class="general-main-section scroll-anchor-offset" id="about-me">
+    <div class="section-content">
+        <div class="splashes about-splash"></div>
+        <div class="about-me padding-left padding-right">
+            <div class="about-me-text scroll-anim-slide-in-left" appScrollAnimation [threshold]="0.05">
+                <h2>{{ 'ABOUT.HEADER' | translate }}</h2>
+                <div class="facts">
+                    <span class="fs-small">{{ 'ABOUT.PASSION' | translate }}
+                    </span>
+                    <div class="categories">
+                        <div class="category">
+                            <img class="category-icon" src="assets/icons/location.svg" alt="location">
+                            <span class="fs-small">{{ 'ABOUT.LOCATION' | translate }}
+                            </span>
+                        </div>
+                        <div class="category">
+                            <img class="category-icon" src="assets/icons/open-mindset.svg" alt="open minded">
+                            <span class="fs-small">{{ 'ABOUT.MINDSET' | translate }}
+                            </span>
+                        </div>
+                        <div class="category">
+                            <img class="category-icon" src="assets/icons/problem-solving.svg"
+                                alt="problem-solving attitude">
+                            <span class="fs-small">{{ 'ABOUT.FIND_SOLUTIONS' | translate }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me-photo scroll-anim-slide-in-right" appScrollAnimation [threshold]="0.05">
+                <img class="close-up" src="assets/img/close-up.png" alt="my close-up">
+                <div class="separator-general separator-about-me"></div>
+            </div>
+        </div>
+    </div>
+</section>
