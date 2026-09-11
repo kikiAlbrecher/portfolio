@@ -1,7 +1,7 @@
 {
     "NAV": {
         "ABOUT": "Über mich",
-        "SKILLS": "Fertigkeiten",
+        "SKILLS": "Fähigkeiten",
         "SKILLS_RESP": "Meine Skills",
         "PROJECTS": "Projekte",
         "CONTACT": "Kontakt"
@@ -23,7 +23,7 @@
         "HEADLINE": "Meine Skills",
         "DESCRIPTION": "In meinen Projekten – einen Vorgeschmack gibt es weiter unten – kommen viele verschiedene Frontend-Technologien zur Anwendung.",
         "QUESTION_START": "Suchst du eine ",
-        "QUESTION_END": "andere Fertigkeit",
+        "QUESTION_END": "andere Fähigkeit",
         "AMBITION": "Gerne! Ich eigne mir neue Skills mit Begeisterung an.",
         "APPEAL": "Lass uns ins Gespräch kommen!"
     },

@@ -55,7 +55,7 @@ export class SkillsComponent {
     },
     {
       stackIconUrl: 'assets/icons/learning-ambition.svg',
-      stackName: 'Continually learning',
+      stackName: 'Learning in progress',
     }
   ];
 }

@@ -9,22 +9,22 @@
     "HERO": {
         "I_AM": "I am",
         "PROFESSION": "FRONTEND DEVELOPER",
-        "TALK_APPEAL": "Let´s talk!",
+        "TALK_APPEAL": "Let's talk!",
         "SCROLL": "scroll-down "
     },
     "ABOUT": {
         "HEADER": "About me",
         "PASSION": "My goal is to actively contribute to the development of user-friendly, scalable web applications. I love helping projects grow, diving into complex requirements, and crafting robust solutions through clean, maintainable code.",
-        "LOCATION": "Vienna, Graz, or elsewhere. I am also open regarding the work modell: remote, on-site, hybrid ...",
-        "MINDSET": "I am passionate about learning, whether it is through new technologies, teamwork, or challenges in day-to-day project work. Openness, curiosity, and forward thinking are essential parts of my professional mindset.",
-        "FIND_SOLUTIONS": "Thanks to my interdisciplinary background, I approach challenges both analytically and creatively. I value tried-and-tested methods but remain open to unconventional paths. I don´t aim for complicated solutions, but for the right ones – ideally in collaboration with others."
+        "LOCATION": "Vienna, Graz, or elsewhere. I am also open regarding the work model: remote, on-site, hybrid ...",
+        "MINDSET": "I am passionate about learning, whether it is through new technologies, teamwork, or challenges in day-to-day project work. Openness, curiosity and forward thinking are essential parts of my professional mindset.",
+        "FIND_SOLUTIONS": "Thanks to my interdisciplinary background, I approach challenges both analytically and creatively. I value tried-and-tested methods, but remain open to unconventional paths. I don't aim for complicated solutions, but for the right ones – ideally in collaboration with others."
     },
     "SKILLS": {
         "HEADLINE": "My skills",
-        "DESCRIPTION": "My projects – a preview awaits below – showcase how I apply a variety of modern frontend technologies.",
+        "DESCRIPTION": "My projects showcase how I apply a variety of modern frontend technologies. Check them out below!",
         "QUESTION_START": "Looking for ",
         "QUESTION_END": "another skill",
-        "AMBITION": "Not an issue. I'm always keen to grow and expand my skill set.",
+        "AMBITION": "No problem. I'm always keen to grow and expand my skill set.",
         "APPEAL": "Get in touch!"
     },
     "PROJECTS": {
@@ -47,7 +47,7 @@
     },
     "CONTACT": {
         "HEADLINE": "Contact",
-        "SUBHEADLINE": "You´ve got a vision?",
+        "SUBHEADLINE": "You've got a vision?",
         "TEXT1": "But still need some frontend support to bring it to life? Then let us connect! I am a trained web developer with a strong focus on JavaScript, TypeScript, Angular & more – and a clear goal: to create real value.",
         "TEXT2": "Together, we will find the best way to turn your vision into reality.",
         "PLEA": "Contact me!"
@@ -59,7 +59,7 @@
         "EMAIL": "Your valid email is required.",
         "PLACEHOLDER_MESSAGE": "Your message",
         "MESSAGE": "Your message is empty.",
-        "READ": "I´ve read the",
+        "READ": "I've read the",
         "PRIVACY_POLICY": " privacy policy ",
         "AGREEMENT": "and agree to the processing of my data as outlined.",
         "POLICY": "Please accept the privacy policy.",
